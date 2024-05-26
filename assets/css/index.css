@@ -1,4 +1,22 @@
 main {
+    >img {
+        width: 100vw;
+        anchor-name: --anchor-name;
+        transform: translateX(-10vw);
+    }
+
+    h1 {
+        position: absolute;
+        position-anchor: --anchor-name;
+        /* top: anchor(top); */
+        justify-self: anchor-center;
+        align-self: anchor-center;
+        transform: translateX(-10vw);
+
+
+    }
+
+
     section {
         h2 {
             justify-self: left;
@@ -37,6 +55,15 @@ main {
 
 
     @media screen and (541px <=width) {
+        h1 {
+            transform: translateX(-7.5vw);
+
+
+        }
+        >img {
+
+            transform: translateX(-7.5vw);
+        }
         section {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -51,6 +78,7 @@ main {
     }
 
     @media screen and (1083px <=width) {
+
         section {
             grid-template-columns: repeat(3, 1fr);
             gap: 3em 4em;
