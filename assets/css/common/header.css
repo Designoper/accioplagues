@@ -20,7 +20,8 @@ header {
         /* transform: translateY(0.1em); */
         margin-right: auto;
     }
-    >img{
+
+    >img {
         width: 1.5em;
     }
 
@@ -117,9 +118,11 @@ header {
         >[href="./"] {
             font-size: 2em;
         }
-        >img{
+
+        >img {
             width: 1.8em;
         }
+
         >details {
             width: 1.7em;
         }
