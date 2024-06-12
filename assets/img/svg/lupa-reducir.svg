@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64px" height="64px" viewBox="0 0 48 48" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5">
-    <g stroke="#000">
-        <circle cx="16.796" cy="15.059" r="6.915" fill="#fff" stroke-width="2.19" transform="matrix(1.89913 0 0 1.89913 -16.6983 -13.3382)"/>
-        <path d="M20.91 15.412H9.203" fill="none" stroke-width="4.162"/>
-    </g>
-    <path d="M30.906 25.403L25.07 31.03l14.176 16.134a1.73 1.73 0 0 0 1.243.589c.477.013.941-.17 1.279-.508l5.431-5.431c.283-.283.437-.669.425-1.069s-.19-.776-.491-1.042l-16.227-14.3z"/>
-</svg>
