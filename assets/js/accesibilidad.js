@@ -1,17 +1,3 @@
-const applyColorTheme = (() => {
-	const COLOR_TOGGLER = document.getElementById('color-toggle');
-	const PREFERRED_THEME = localStorage.getItem('Theme');
-	PREFERRED_THEME === 'light' ? COLOR_TOGGLER.toggleAttribute('open') : localStorage.setItem('Theme', 'dark');
-	COLOR_TOGGLER.onclick = () => updateColorTheme();
-})();
-
-const updateColorTheme = () => {
-	const CURRENT_THEME = localStorage.getItem('Theme');
-	let newTheme = CURRENT_THEME === "dark" ? "light" : "dark";
-	localStorage.setItem('Theme', newTheme);
-}
-
-
 function mouseoverHandler() {
 	this.toggleAttribute('open', true);
 }
