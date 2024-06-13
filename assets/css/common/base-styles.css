@@ -22,7 +22,7 @@
 
 :root {
     --primary-bg: #e4f4ec;
-    --secondary-bg: #24a4a4;
+    --secondary-bg: #2fd1d1;
     --text: #0a0909cc;
     --background-text: #24a4a4;
     --background-text-3: #24a4a4;
@@ -65,6 +65,7 @@ h1 {
 
 h2 {
     font-size: 1.45em;
+    column-span: all;
 }
 
 p {
@@ -175,7 +176,8 @@ main {
             margin-bottom: 1.5em;
         }
     }
+
     :is(h1, h2) {
-       line-height: initial;
+        line-height: initial;
     }
 }
