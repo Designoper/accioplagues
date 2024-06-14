@@ -1,0 +1,12 @@
+main {
+	@media screen and (1083px <=width) {
+		h2 {
+			text-align: left;
+		}
+
+		section {
+			grid-template-columns: repeat(3, 1fr);
+			column-gap: 4em;
+		}
+	}
+}
