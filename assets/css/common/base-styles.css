@@ -1,46 +1,11 @@
-/* @font-face {
-    font-family: 'Orbitron';
-    src: url('../../fonts/public/orbitron-extrabold.woff2') format('woff2');
-}
-
-@font-face {
-    font-family: 'Poppins';
-    src: url('../../fonts/public/poppins-medium.woff2') format('woff2');
-}
-
-@font-face {
-    font-family: 'Poppins';
-    src: url('../../fonts/public/poppins-semibold.woff2') format('woff2');
-    font-weight: 600;
-}
-
-@font-face {
-    font-family: 'Poppins';
-    src: url('../../fonts/public/poppins-bold.woff2') format('woff2');
-    font-weight: bold;
-} */
-
 :root {
     --primary-bg: #e4f4ec;
     --secondary-bg: #2fd1d1;
     --text: #0a0909cc;
-    --background-text: #24a4a4;
-    --background-text-3: #24a4a4;
+    --background-text: rgb(43, 182, 182);
     --svg-primary-color: #000000;
     --svg-secondary-color: #ffffff;
-
     scrollbar-color: var(--secondary-bg) var(--primary-bg);
-
-    &:has(#color-toggle[open]) {
-        --primary-bg: #2c2c2c;
-        --secondary-bg: #474747;
-        --text: #f3f2f2e1;
-        --background-text: #141414;
-
-        --background-text-3: #3b3b3b;
-        --svg-primary-color: #ffffff;
-        --svg-secondary-color: #000000;
-    }
 }
 
 body {
@@ -77,20 +42,8 @@ li {
 
     &::marker {
         font-weight: bold;
-        color: var(--list-number);
         font-size: 1.25em;
     }
-}
-
-figure {
-    display: flex;
-    flex-flow: column wrap;
-    gap: 1.25em 0;
-}
-
-figcaption {
-    text-wrap: balance;
-    text-align: right;
 }
 
 :focus-visible {
