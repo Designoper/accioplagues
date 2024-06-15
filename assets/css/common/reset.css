@@ -5,10 +5,6 @@
 	box-sizing: border-box;
 }
 
-:is(strong, em, address) {
-	all: unset;
-}
-
 :is(ol, ul) {
 	list-style: none;
 }
