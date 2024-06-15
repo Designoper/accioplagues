@@ -3,6 +3,35 @@ main {
         h2 {
             justify-self: left;
         }
+
+        &:nth-of-type(2) {
+            a {
+                color: var(--text);
+                background-color: var(--secondary-bg);
+            }
+
+            p {
+                padding: 1.5em 0;
+            }
+
+            h3 {
+                text-wrap: balance;
+                padding: 0;
+            }
+
+            article {
+                padding: 0;
+                text-align: center;
+
+                background-color: initial;
+            }
+
+            img {
+                padding-top: 1em;
+                width: 50%;
+                border-radius: 50%;
+            }
+        }
     }
 
     article {
@@ -33,7 +62,6 @@ main {
 
     @media screen and (541px <=width) {
         section {
-            display: grid;
             grid-template-columns: repeat(2, 1fr);
         }
 
