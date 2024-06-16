@@ -3,6 +3,7 @@
 	margin: 0;
 	border: 0;
 	box-sizing: border-box;
+	font: inherit;
 }
 
 :is(ol, ul) {
@@ -12,10 +13,6 @@
 :is(img, video) {
 	width: 100%;
 	height: auto;
-}
-
-pre {
-	font: inherit;
 }
 
 a {
