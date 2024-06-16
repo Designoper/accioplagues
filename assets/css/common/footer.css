@@ -1,5 +1,6 @@
 footer {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     gap: 3em 0;
     padding: 2em 10vw;
     background-color: var(--secondary-bg);
@@ -21,12 +22,15 @@ footer {
     h2 {
         text-align: left;
     }
-/*
+
+    ul {
+        /* display: grid; */
+        gap: 0.75em 0;
+    }
+
+    /*
     address {
-        ul {
-            display: grid;
-            gap: 1.15em 3em;
-        }
+
 
         a {
             display: flex;
@@ -36,9 +40,10 @@ footer {
     } */
 
     @media screen and (541px <=width) {
+        /* display: flex; */
         padding: 2em 7.5vw;
         grid: auto / repeat(2, min-content);
-        justify-content: space-between;
+        /* justify-content: space-between; */
 
         h2 {
             font-size: 1.4em;
