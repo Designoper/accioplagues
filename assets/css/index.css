@@ -8,7 +8,6 @@ main {
             a {
                 color: var(--text);
                 background-color: var(--secondary-bg);
-
             }
 
             p {
@@ -17,18 +16,16 @@ main {
 
             h3 {
                 text-wrap: balance;
-                padding: 0;
+                /* padding: 0; */
             }
 
             article {
                 padding: 0;
                 text-align: center;
-
                 background-color: initial;
             }
 
             img {
-                padding-top: 1em;
                 width: 50%;
                 border-radius: 50%;
             }
@@ -88,9 +85,35 @@ main {
                 grid-template-columns: repeat(3, 1fr);
             }
 
-            article {
-                h3 {
-                    font-size: 1.5em;
+            &:nth-of-type(2) {
+                grid-template: repeat(2, min-content) / 10% auto auto auto 10%;
+                grid-template-areas: "h2 h2 h2 h2 h2"
+                    ". article1 article2 article3 .";
+
+                h2 {
+                    grid-area: h2;
+                }
+
+                article {
+                    h3 {
+                        font-size: 1.5em;
+                    }
+
+                    img {
+                        width: 75%;
+                    }
+
+                    &:nth-of-type(1) {
+                        grid-area: article1;
+                    }
+
+                    &:nth-of-type(2) {
+                        grid-area: article2;
+                    }
+
+                    &:nth-of-type(3) {
+                        grid-area: article3;
+                    }
                 }
             }
         }
