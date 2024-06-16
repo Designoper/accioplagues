@@ -16,7 +16,6 @@ main {
 
             h3 {
                 text-wrap: balance;
-                /* padding: 0; */
             }
 
             article {
@@ -51,7 +50,7 @@ main {
         a {
             display: block;
             width: fit-content;
-            color: var(--secondary-bg);
+            color: var(--terciary-bg);
             background-color: var(--primary-bg);
             /* color: var(--primary-bg);
             background-color: black; */
