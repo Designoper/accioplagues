@@ -11,6 +11,10 @@ main {
 		text-decoration: underline;
 	}
 
+	strong {
+		font-weight: bold;
+	}
+
 	@media screen and (1083px <=width) {
 		h2 {
 			text-align: left;
