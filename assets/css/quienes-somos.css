@@ -5,6 +5,7 @@ main {
 
 	img {
 		width: 75%;
+		border-radius: 50%;
 		display: block;
 		margin: 2em auto;
 	}
@@ -14,16 +15,15 @@ main {
 		font-weight: bold;
 	}
 
+	h4 {
+		font-size: 1.15em;
+	}
 
 	@media screen and (541px <=width) {
 		section {
 			&:nth-of-type(2) {
 				grid-template-columns: repeat(2, 1fr);
 			}
-		}
-
-		h3 {
-			font-size: 1.25em;
 		}
 	}
 
@@ -38,6 +38,10 @@ main {
 			&:nth-of-type(2) {
 				grid-template-columns: repeat(4, 1fr);
 			}
+		}
+
+		h3 {
+			font-size: 1.5em;
 		}
 	}
 }
