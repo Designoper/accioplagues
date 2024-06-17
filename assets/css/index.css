@@ -58,10 +58,8 @@ main {
 
     @media screen and (541px <=width) {
         section {
-            grid-template-columns: repeat(2, 1fr);
-
-            &:nth-of-type(1) {
-                grid-template-columns: 1fr;
+            &:is(:nth-of-type(2), :nth-of-type(3)) {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
 
@@ -77,7 +75,7 @@ main {
             grid-template-columns: repeat(3, 1fr);
             gap: 3em 4em;
 
-            &:nth-of-type(1) {
+            &:nth-of-type(3) {
                 grid-template-columns: repeat(3, 1fr);
             }
 
