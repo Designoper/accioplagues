@@ -52,11 +52,9 @@ main {
             width: fit-content;
             color: var(--terciary-bg);
             background-color: var(--primary-bg);
-
             margin: 0 auto;
         }
     }
-
 
     @media screen and (541px <=width) {
         section {
