@@ -25,7 +25,7 @@ main {
             }
 
             img {
-                width: 50%;
+                width: 70%;
                 border-radius: 50%;
             }
         }
@@ -52,8 +52,7 @@ main {
             width: fit-content;
             color: var(--terciary-bg);
             background-color: var(--primary-bg);
-            /* color: var(--primary-bg);
-            background-color: black; */
+
             margin: 0 auto;
         }
     }
@@ -93,13 +92,13 @@ main {
                     grid-area: h2;
                 }
 
+                img {
+                    width: 75%;
+                }
+
                 article {
                     h3 {
                         font-size: 1.5em;
-                    }
-
-                    img {
-                        width: 75%;
                     }
 
                     &:nth-of-type(1) {
