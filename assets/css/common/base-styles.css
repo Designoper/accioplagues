@@ -55,10 +55,11 @@ main {
     display: flex;
     flex-wrap: wrap;
     gap: 4em 0;
-    padding: 3em 10vw 4em;
+    padding: 0 0 4em;
 
     section {
         display: grid;
+        margin: 0 10vw;
         flex-wrap: wrap;
         gap: 2.5em;
     }
@@ -88,7 +89,11 @@ main {
     }
 
     main {
-        padding: 4em 7.5vw 6em;
+        padding: 0 0 6em;
+
+        section{
+            margin: 0 7.5vw;
+        }
 
         ul {
             gap: 1.25em 2em;
