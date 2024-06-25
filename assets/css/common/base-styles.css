@@ -58,7 +58,7 @@ main {
     gap: 4em 0;
     padding: 0 0 4em;
 
-    div {
+    >div {
         position: relative;
 
         img {
