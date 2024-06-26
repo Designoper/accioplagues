@@ -1,9 +1,9 @@
 :root {
     --primary-bg: #e4f4ec;
-    --secondary-bg: #2fd1d1;
+    --secondary-bg: #3eebeb;
     --terciary-bg: #005050;
     --text: #0a0909cc;
-    --background-text: rgb(43, 182, 182);
+    --background-text: #34d8d8;
     --svg-primary-color: #000000;
     --svg-secondary-color: #ffffff;
     scrollbar-color: var(--secondary-bg) var(--primary-bg);
