@@ -1,0 +1,48 @@
+main {
+	@media screen and (1083px <=width) {
+		section {
+			grid-template-columns: repeat(3, 1fr);
+			gap: 3em 4em;
+
+			&:nth-of-type(2) {
+				grid-template: repeat(3, min-content) / repeat(3, 1fr);
+				grid-template-areas: "h2 h2 h2"
+					"p1 div ."
+					"p2 div .";
+
+				h2 {
+					grid-area: h2;
+				}
+
+				p {
+					&:nth-of-type(1) {
+						grid-area: p1;
+					}
+
+					&:nth-of-type(2) {
+						grid-area: p2;
+					}
+				}
+
+				div {
+					grid-area: div;
+					display: flex;
+					flex-direction: column;
+					row-gap: 1.25em;
+				}
+
+			}
+
+
+
+			ul {
+				display: grid;
+				gap: 0.8em;
+
+			}
+
+			li {
+				margin-bottom: 0;
+			}
+		}
+	}
