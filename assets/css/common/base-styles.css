@@ -55,8 +55,8 @@ li {
 main {
     display: flex;
     flex-wrap: wrap;
-    gap: 4em 0;
-    padding: 0 0 4em;
+    /* gap: 4em 0; */
+    /* padding: 0 0 4em; */
 
     >div {
         position: relative;
@@ -77,9 +77,13 @@ main {
 
     section {
         display: grid;
-        padding: 0 10vw;
+        padding: 4em 10vw;
         flex-wrap: wrap;
         gap: 2.5em;
+
+        &:nth-of-type(even) {
+            background-color: #b0e2da;
+        }
     }
 
     ul {
@@ -107,10 +111,10 @@ main {
     }
 
     main {
-        padding: 0 0 6em;
+        /* padding: 0 0 6em; */
 
         section {
-            padding: 0 7.5vw;
+            padding: 4em 7.5vw;
         }
 
         ul {
@@ -133,7 +137,7 @@ main {
     }
 
     main {
-        gap: 5em 0;
+        /* gap: 5em 0; */
 
         h1 {
             font-size: 3.5em;
