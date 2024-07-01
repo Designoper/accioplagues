@@ -1,0 +1,84 @@
+main {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4em 0;
+	padding: 0 0 4em;
+
+	>div {
+		position: relative;
+	}
+
+	h1 {
+		font-size: 1.75em;
+		color: white;
+		width: 80%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	section {
+		display: grid;
+		flex-wrap: wrap;
+		padding: 0 10vw;
+		gap: 2.5em;
+	}
+
+	ul {
+		list-style: decimal inside;
+		display: grid;
+		gap: 1em 0;
+	}
+
+	a {
+		justify-self: center;
+		padding: 0.5em 1em;
+		background-color: var(--secondary-bg);
+		border-radius: 0.5em;
+		transition: transform 0.5s;
+
+		&:hover {
+			transform: scale(1.07);
+		}
+	}
+
+	@media screen and (541px <=width) {
+		padding: 0 0 6em;
+
+		section {
+			padding: 0 7.5vw;
+		}
+
+		h1 {
+			font-size: 2em;
+		}
+
+		ul {
+			gap: 1.25em 2em;
+		}
+	}
+
+	@media screen and (1083px <=width) {
+		gap: 5em 0;
+
+		h1 {
+			font-size: 3.5em;
+		}
+
+		section {
+			grid-template-columns: repeat(3, 1fr);
+			gap: var(--row-gap) var(--column-gap);
+		}
+
+		ul {
+			display: block;
+			column-count: 3;
+			column-gap: var(--column-gap);
+		}
+
+		li {
+			margin-bottom: 1.5em;
+		}
+	}
+}

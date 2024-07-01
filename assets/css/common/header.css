@@ -17,20 +17,8 @@ header {
     >[href="./"] {
         font-size: 1.5em;
         line-height: initial;
-        /* transform: translateY(0.1em); */
         margin-right: auto;
     }
-
-    >img {
-        width: 1.5em;
-    }
-
-    /* [hreflang] {
-        font-size: 1.25em;
-        font-weight: 600;
-        line-height: initial;
-        transform: translateY(0.075em);
-    } */
 
     button {
         width: 1em;
@@ -105,7 +93,6 @@ header {
 
     @media screen and (1083px <=width) {
         padding: 1em 7.5vw;
-        /* justify-content: space-between; */
 
         [href="#main"] {
             display: initial;
@@ -124,7 +111,6 @@ header {
 
         >[href="./"] {
             font-size: 2.25em;
-            /* margin-right: 0; */
         }
 
         button {

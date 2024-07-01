@@ -1,0 +1,57 @@
+:root {
+	--primary-bg: #e4f4ec;
+	--secondary-bg: #3eebeb;
+	--terciary-bg: #005050;
+	--text: #0a0909cc;
+	--background-text: #34d8d8;
+
+	--row-gap: 3em;
+	--column-gap: 4em;
+	scrollbar-color: var(--secondary-bg) var(--primary-bg);
+}
+
+body {
+	font: 4.5vw/1.5 "Poppins", sans-serif;
+	color: var(--text);
+	background-color: var(--primary-bg);
+
+	&:focus-visible {
+		outline: var(--text) solid 4px;
+	}
+
+	:is(h1, h2) {
+		font-weight: bold;
+		text-align: center;
+		text-wrap: balance;
+		flex-basis: 100%;
+		grid-column: 1/-1;
+		line-height: initial;
+	}
+
+	h2 {
+		font-size: 1.45em;
+		column-span: all;
+	}
+
+	li {
+		&::marker {
+			font-weight: bold;
+		}
+	}
+
+	@media screen and (541px <=width) {
+		font-size: 2.5vw;
+
+		h2 {
+			font-size: 1.5em;
+		}
+	}
+
+	@media screen and (1083px <=width) {
+		font-size: 0.95vw;
+
+		h2 {
+			font-size: 2em;
+		}
+	}
+}
