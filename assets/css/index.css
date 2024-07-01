@@ -58,7 +58,24 @@ main {
 
     @media screen and (541px <=width) {
         section {
-            &:is(:nth-of-type(2), :nth-of-type(3)) {
+            /* &:is(:nth-of-type(2), :nth-of-type(3)) {
+                grid-template-columns: repeat(2, 1fr);
+            } */
+
+            &:nth-of-type(2) {
+                display: flex;
+                justify-content: space-between;
+
+                article {
+                    flex-basis: 45%;
+
+                    &:nth-of-type(3) {
+                        margin: auto;
+                    }
+                }
+            }
+
+            &:nth-of-type(3) {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
@@ -73,6 +90,7 @@ main {
     @media screen and (1083px <=width) {
         section {
             &:nth-of-type(2) {
+                display: grid;
                 grid-template: repeat(2, min-content) / 10% auto auto auto 10%;
                 grid-template-areas: "h2 h2 h2 h2 h2"
                     ". article1 article2 article3 .";
