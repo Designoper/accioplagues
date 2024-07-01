@@ -1,7 +1,6 @@
 main {
 	@media screen and (1083px <=width) {
 		section {
-			gap: 3em 4em;
 			grid-template: repeat(4, min-content) / repeat(3, 1fr);
 			grid-template-areas: "h2 h2 h2"
 				"p1 img p4"

@@ -6,6 +6,9 @@
     --background-text: #34d8d8;
     --svg-primary-color: #000000;
     --svg-secondary-color: #ffffff;
+
+    --row-gap: 3em;
+    --column-gap: 4em;
     scrollbar-color: var(--secondary-bg) var(--primary-bg);
 }
 
@@ -22,12 +25,17 @@ body {
     flex-basis: 100%;
     grid-column: 1/-1;
     line-height: initial;
-    color: var(--text);
 }
 
 h1 {
     font-size: 1.75em;
     justify-content: center;
+    color: white;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 h2 {
@@ -60,25 +68,12 @@ main {
 
     >div {
         position: relative;
-
-        img {
-            /* filter: grayscale(100%); */
-        }
-
-        h1 {
-            color: white;
-            width: 80%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
     }
 
     section {
         display: grid;
-        padding: 0 10vw;
         flex-wrap: wrap;
+        padding: 0 10vw;
         gap: 2.5em;
     }
 
@@ -143,18 +138,19 @@ main {
             font-size: 2em;
         }
 
+        section {
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--row-gap) var(--column-gap);
+        }
+
         ul {
             display: block;
             column-count: 3;
-            column-gap: 4em;
+            column-gap: var(--column-gap);
         }
 
         li {
             margin-bottom: 1.5em;
         }
-    }
-
-    :is(h1, h2) {
-        line-height: initial;
     }
 }

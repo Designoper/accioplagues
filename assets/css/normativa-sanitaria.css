@@ -21,9 +21,6 @@ main {
 		}
 
 		section {
-			grid-template-columns: repeat(3, 1fr);
-			column-gap: 4em;
-
 			&:nth-of-type(1) {
 				grid-template: repeat(3, min-content) / repeat(3, 1fr);
 				grid-template-areas: "h2 h2 h2"

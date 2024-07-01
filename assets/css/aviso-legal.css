@@ -7,4 +7,10 @@ main {
 		list-style: none;
 		column-gap: 0;
 	}
+
+	@media screen and (1083px <=width) {
+		section {
+			grid-template-columns: 1fr;
+		}
+	}
 }

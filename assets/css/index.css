@@ -11,7 +11,7 @@ main {
             }
 
             p {
-                padding: 1.5em 0;
+                margin: 1.5em 0;
             }
 
             h3 {
@@ -38,13 +38,13 @@ main {
         background-color: var(--secondary-bg);
 
         p {
-            padding: 0.75em 10% 1.75em;
+            margin: 0.75em 10% 1.75em;
         }
 
         h3 {
             font-size: 1.25em;
             font-weight: bold;
-            padding: 1em 10% 0;
+            margin: 1em 10% 0;
         }
 
         a {
@@ -72,13 +72,6 @@ main {
 
     @media screen and (1083px <=width) {
         section {
-            grid-template-columns: repeat(3, 1fr);
-            gap: 3em 4em;
-
-            &:nth-of-type(3) {
-                grid-template-columns: repeat(3, 1fr);
-            }
-
             &:nth-of-type(2) {
                 grid-template: repeat(2, min-content) / 10% auto auto auto 10%;
                 grid-template-areas: "h2 h2 h2 h2 h2"
@@ -109,6 +102,10 @@ main {
                         grid-area: article3;
                     }
                 }
+            }
+
+            &:nth-of-type(3) {
+                grid-template-columns: repeat(3, 1fr);
             }
         }
     }
