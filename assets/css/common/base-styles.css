@@ -4,8 +4,6 @@
     --terciary-bg: #005050;
     --text: #0a0909cc;
     --background-text: #34d8d8;
-    --svg-primary-color: #000000;
-    --svg-secondary-color: #ffffff;
 
     --row-gap: 3em;
     --column-gap: 4em;
@@ -43,13 +41,7 @@ h2 {
     column-span: all;
 }
 
-p {
-    break-inside: avoid;
-}
-
 li {
-    break-inside: avoid;
-
     &::marker {
         font-weight: bold;
         /* font-size: 1.25em; */
