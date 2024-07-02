@@ -1,4 +1,13 @@
 main {
+	@media screen and (541px <=width) {
+		section {
+			picture {
+				width: 65%;
+				margin: auto;
+			}
+		}
+	}
+
 	@media screen and (1083px <=width) {
 		section {
 			&:nth-of-type(1) {
@@ -11,6 +20,10 @@ main {
 
 				p {
 					margin-bottom: 3em;
+				}
+
+				picture {
+					width: 100%;
 				}
 			}
 		}
