@@ -26,6 +26,41 @@ main {
 					width: 100%;
 				}
 			}
+
+			&:nth-of-type(2) {
+				display: block;
+				column-count: 3;
+
+				h2 {
+					margin-bottom: 3rem;
+				}
+
+				p {
+					margin-bottom: 3em;
+				}
+
+				picture {
+					width: 100%;
+				}
+			}
+
+			&:nth-of-type(3) {
+				display: block;
+				column-count: 3;
+
+				h2 {
+					margin-bottom: 3rem;
+				}
+
+				p {
+					margin-bottom: 3em;
+				}
+
+				img {
+					width: 100%;
+					margin-bottom: 3em;
+				}
+			}
 		}
 	}
 }
