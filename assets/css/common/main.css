@@ -5,7 +5,7 @@ main {
 	padding: 0 0 4em;
 
 	>img {
-		anchor-name: big-image;
+		anchor-name: bigimage;
 	}
 
 	h1 {
@@ -13,13 +13,13 @@ main {
 		color: white;
 		/* width: 100%; */
 		position: absolute;
-		position-anchor: big-image;
+		position-anchor: bigimage;
 
-		/* justify-self: anchor-center; */
-		/* align-self: anchor-center; */
+		justify-self: anchor-center;
+		align-self: anchor-center;
 
 		/* background: linear-gradient(to right,
-					rgba(0, 0, 0, .8), rgba(0, 0, 0, 0)); */
+				rgba(0, 0, 0, .8), rgba(0, 0, 0, 0)); */
 	}
 
 	section {
