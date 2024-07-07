@@ -15,7 +15,6 @@ main {
 			}
 
 			&:nth-of-type(2) {
-				grid-template: repeat(3, min-content) / repeat(3, 1fr);
 				grid-template-areas: "h2 h2 h2"
 					"ul picture1 picture2"
 					"p picture1 picture2";

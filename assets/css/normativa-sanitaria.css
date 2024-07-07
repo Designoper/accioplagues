@@ -22,7 +22,6 @@ main {
 
 		section {
 			&:nth-of-type(1) {
-				grid-template: repeat(3, min-content) / repeat(3, 1fr);
 				grid-template-areas: "h2 h2 h2"
 					"p1 div ."
 					"p2 div .";
@@ -52,7 +51,6 @@ main {
 			}
 
 			&:nth-of-type(5) {
-				grid-template: repeat(3, min-content) / repeat(3, 1fr);
 				grid-template-areas: "h2 h2 h2"
 					"p1 p3 p5"
 					"p2 p4 .";

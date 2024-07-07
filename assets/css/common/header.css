@@ -25,6 +25,7 @@ header {
 
         path {
             stroke: var(--text);
+            stroke: black;
             stroke-width: 3em;
         }
     }
@@ -53,7 +54,7 @@ header {
         }
 
         button {
-            margin: 1.25em 10vw 0 auto;
+            margin: 1.35em 10vw 0 auto;
         }
 
         :is(summary, a) {

@@ -10,54 +10,23 @@ main {
 
 	@media screen and (1083px <=width) {
 		section {
-			&:nth-of-type(1) {
-				display: block;
-				column-count: 3;
+			display: block;
+			column-count: 3;
 
-				h2 {
-					margin-bottom: 3rem;
-				}
-
-				p {
-					margin-bottom: 3em;
-				}
-
-				picture {
-					width: 100%;
-				}
+			h2 {
+				margin-bottom: 3rem;
 			}
 
-			&:nth-of-type(2) {
-				display: block;
-				column-count: 3;
+			p {
+				margin-bottom: 3em;
+			}
 
-				h2 {
-					margin-bottom: 3rem;
-				}
-
-				p {
-					margin-bottom: 3em;
-				}
-
-				picture {
-					width: 100%;
-				}
+			picture {
+				width: 100%;
 			}
 
 			&:nth-of-type(3) {
-				display: block;
-				column-count: 3;
-
-				h2 {
-					margin-bottom: 3rem;
-				}
-
-				p {
-					margin-bottom: 3em;
-				}
-
 				img {
-					width: 100%;
 					margin-bottom: 3em;
 				}
 			}
