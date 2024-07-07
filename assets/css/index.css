@@ -91,10 +91,6 @@ main {
                 grid-template-areas: "h2 h2 h2 h2 h2"
                     ". article1 article2 article3 .";
 
-                h2 {
-                    grid-area: h2;
-                }
-
                 img {
                     width: 75%;
                 }

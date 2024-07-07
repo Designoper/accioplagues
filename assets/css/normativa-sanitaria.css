@@ -1,7 +1,6 @@
 main {
 	div {
 		display: flex;
-		flex-wrap: wrap;
 		gap: 1.25em;
 	}
 

@@ -5,8 +5,10 @@
 	--terciary-bg: hsl(180, 100%, 16%);
 	--text: hsla(0, 0, 0, 0.7);
 
-	--row-gap: 3em;
-	--column-gap: 4em;
+	--row-gap: 3vw;
+	/* --row-gap: 3em; */
+	--column-gap: 3.75vw;
+	/* --column-gap: 4em; */
 
 	/* --font-size: 4.5vw;
 	--font-size-h1: 1.45em;

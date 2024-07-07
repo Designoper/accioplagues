@@ -1,13 +1,11 @@
 footer {
     display: grid;
-    flex-wrap: wrap;
     gap: 3em 0;
     padding: 2em 10vw;
     background-color: var(--secondary-bg);
 
     section {
         display: grid;
-        flex-wrap: wrap;
         gap: 1.25em 0;
 
         &:nth-of-type(1) {

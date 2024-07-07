@@ -24,7 +24,7 @@ header {
         width: 1em;
 
         path {
-            stroke: var(--text);
+            /* stroke: var(--text); */
             stroke: black;
             stroke-width: 3em;
         }

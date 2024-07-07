@@ -14,11 +14,11 @@ main {
 			column-count: 3;
 
 			h2 {
-				margin-bottom: 3rem;
+				margin-bottom: var(--row-gap);
 			}
 
 			p {
-				margin-bottom: 3em;
+				margin-bottom: var(--row-gap);
 			}
 
 			picture {
@@ -27,7 +27,7 @@ main {
 
 			&:nth-of-type(3) {
 				img {
-					margin-bottom: 3em;
+					margin-bottom: var(--row-gap);
 				}
 			}
 		}
