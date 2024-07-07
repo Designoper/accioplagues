@@ -1,12 +1,16 @@
 :root {
-	--primary-bg: #e4f4ec;
-	--secondary-bg: #3eebeb;
-	--terciary-bg: #005050;
-	--text: #0a0909cc;
-	--background-text: #34d8d8;
+	--primary-bg: hsl(180, 42%, 93%);
+	--secondary-bg: hsl(180, 81%, 58%);
+	--background-text: hsl(from var(--secondary-bg) h calc(s) calc(l/1.25) / 1);
+	--terciary-bg: hsl(180, 100%, 16%);
+	--text: hsla(0, 0, 0, 0.7);
 
 	--row-gap: 3em;
 	--column-gap: 4em;
+
+	/* --font-size: 4.5vw;
+	--font-size-h1: 1.45em;
+	--font-size-h2: 1.45em; */
 	scrollbar-color: var(--secondary-bg) var(--primary-bg);
 }
 
