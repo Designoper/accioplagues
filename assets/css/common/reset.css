@@ -10,6 +10,7 @@
 	flex-wrap: wrap;
 	/* text-align: justify;
 	hyphens: auto; */
+	inset: auto;
 }
 
 :is(ol, ul) {
@@ -35,8 +36,4 @@ button {
 	cursor: pointer;
 	display: grid;
 	background-color: transparent;
-}
-
-[popover] {
-	inset: unset;
 }
