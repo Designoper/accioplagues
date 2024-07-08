@@ -3,7 +3,8 @@
 	--secondary-bg: hsl(180, 81%, 58%);
 	--background-text: hsl(from var(--secondary-bg) h calc(s) calc(l/1.25) / 1);
 	--terciary-bg: hsl(180, 100%, 16%);
-	--text: hsla(0, 0, 0, 0.7);
+	--text: hsla(0, 0%, 0%, 0.8);
+	--h1: hsl(0, 0%, 100%);
 
 	--row-gap: 3vw;
 	/* --row-gap: 3em; */
@@ -25,18 +26,22 @@ body {
 		outline: var(--text) solid 4px;
 	}
 
-	:is(h1, h2) {
+	:is(h1, h2, h3, h4, h5, h6) {
 		font-weight: bold;
 		text-align: center;
 		text-wrap: balance;
 		flex-basis: 100%;
 		grid-column: 1/-1;
-		line-height: initial;
+		column-span: all;
+		/* line-height: initial; */
 	}
 
 	h2 {
 		font-size: 1.45em;
-		column-span: all;
+	}
+
+	ul {
+		display: grid;
 	}
 
 	li {
@@ -58,6 +63,7 @@ body {
 
 		h2 {
 			font-size: 2em;
+			text-align: left;
 		}
 	}
 }

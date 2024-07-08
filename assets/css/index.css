@@ -1,9 +1,16 @@
 main {
-    section {
-        h2 {
-            justify-self: left;
-        }
+    a {
+        padding: 0.5em 1em;
+        background-color: var(--secondary-bg);
+        border-radius: 0.5em;
+        transition: transform 0.5s;
 
+        &:hover {
+            transform: scale(1.07);
+        }
+    }
+
+    section {
         &:nth-of-type(2) {
             a {
                 color: var(--text);
@@ -12,10 +19,6 @@ main {
 
             p {
                 margin: 1.5em 0;
-            }
-
-            h3 {
-                text-wrap: balance;
             }
 
             article {
@@ -43,7 +46,6 @@ main {
 
         h3 {
             font-size: 1.25em;
-            font-weight: bold;
             margin: 1em 10% 0;
         }
 

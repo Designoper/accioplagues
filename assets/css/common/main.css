@@ -11,7 +11,7 @@ main {
 		/* width: 100%; */
 		/* height: 100%; */
 		font-size: 1.75em;
-		color: white;
+		color: var(--h1);
 		position: absolute;
 		position-anchor: --banner-image;
 
@@ -30,20 +30,7 @@ main {
 
 	ul {
 		list-style: decimal inside;
-		display: grid;
 		gap: 1em 0;
-	}
-
-	a {
-		justify-self: center;
-		padding: 0.5em 1em;
-		background-color: var(--secondary-bg);
-		border-radius: 0.5em;
-		transition: transform 0.5s;
-
-		&:hover {
-			transform: scale(1.07);
-		}
 	}
 
 	@media screen and (541px <=width) {

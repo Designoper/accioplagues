@@ -1,11 +1,17 @@
 main {
 	h3 {
-		font-weight: bold;
+		text-align: left;
 	}
 
 	ul {
+		gap: 2em;
 		list-style: none;
 		column-gap: 0;
+	}
+
+	li {
+		display: grid;
+		gap: 1em;
 	}
 
 	@media screen and (1083px <=width) {

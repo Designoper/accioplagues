@@ -5,8 +5,6 @@ main {
 	}
 
 	a {
-		padding: 0;
-		background-color: initial;
 		text-decoration: underline;
 	}
 
@@ -15,10 +13,6 @@ main {
 	}
 
 	@media screen and (1083px <=width) {
-		h2 {
-			text-align: left;
-		}
-
 		section {
 			&:nth-of-type(1) {
 				grid-template-areas: "h2 h2 h2"
