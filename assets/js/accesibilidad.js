@@ -1,3 +1,5 @@
+const DETAILS = document.querySelectorAll('nav details');
+
 function mouseoverHandler() {
 	this.toggleAttribute('open', true);
 }
@@ -7,13 +9,17 @@ function mouseoutHandler() {
 }
 
 const addEventListeners = () => {
-	document.querySelectorAll('nav details').addEventListener('mouseover', mouseoverHandler);
-	document.querySelectorAll('nav details').addEventListener('mouseout', mouseoutHandler);
+	DETAILS.forEach(detail => {
+		detail.addEventListener('mouseover', mouseoverHandler);
+		detail.addEventListener('mouseout', mouseoutHandler);
+	});
 }
 
 const removeEventListeners = () => {
-	document.querySelectorAll('nav details').removeEventListener('mouseover', mouseoverHandler);
-	document.querySelectorAll('nav details').removeEventListener('mouseout', mouseoutHandler);
+	DETAILS.forEach(detail => {
+		detail.removeEventListener('mouseover', mouseoverHandler);
+		detail.removeEventListener('mouseout', mouseoutHandler);
+	});
 }
 
 window.innerWidth >= 1083 ? addEventListeners() : null;

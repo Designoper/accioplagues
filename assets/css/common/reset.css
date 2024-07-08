@@ -17,9 +17,10 @@
 :is(img, video) {
 	width: 100%;
 	height: auto;
+	display: grid;
 }
 
-:is(h1, h2, h3, h4, h5, h6, p) {
+:is(h1, h2, h3, h4, h5, h6, p, a, summary, button, figcaption, li) {
 	text-box-trim: both;
 	text-box-edge: cap alphabetic;
 }

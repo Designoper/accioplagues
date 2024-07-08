@@ -4,9 +4,7 @@ main {
 	}
 
 	ul {
-		gap: 2em;
 		list-style: none;
-		column-gap: 0;
 	}
 
 	li {

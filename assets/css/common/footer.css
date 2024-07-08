@@ -4,6 +4,10 @@ footer {
     padding: 2em 10vw;
     background-color: var(--secondary-bg);
 
+    h2 {
+        text-align: left;
+    }
+
     section {
         display: grid;
         gap: 1.25em 0;
@@ -25,12 +29,12 @@ footer {
         }
     }
 
-    h2 {
-        text-align: left;
-    }
-
     @media screen and (541px <=width) {
         padding: 2em 7.5vw;
+
+        h2 {
+            font-size: 1.4em;
+        }
 
         section {
             &:nth-of-type(1) {
@@ -50,10 +54,6 @@ footer {
                     width: 100%;
                 }
             }
-        }
-
-        h2 {
-            font-size: 1.4em;
         }
     }
 

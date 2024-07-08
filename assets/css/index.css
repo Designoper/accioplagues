@@ -28,7 +28,9 @@ main {
             }
 
             img {
+                display: block;
                 width: 70%;
+                margin: auto;
                 border-radius: 50%;
             }
         }

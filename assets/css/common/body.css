@@ -7,13 +7,7 @@
 	--h1: hsl(0, 0%, 100%);
 
 	--row-gap: 3vw;
-	/* --row-gap: 3em; */
 	--column-gap: 3.75vw;
-	/* --column-gap: 4em; */
-
-	/* --font-size: 4.5vw;
-	--font-size-h1: 1.45em;
-	--font-size-h2: 1.45em; */
 	scrollbar-color: var(--secondary-bg) var(--primary-bg);
 }
 

@@ -10,8 +10,7 @@ main {
 
 	@media screen and (1083px <=width) {
 		section {
-			display: block;
-			column-count: 3;
+			display: initial;
 
 			h2 {
 				margin-bottom: var(--row-gap);
