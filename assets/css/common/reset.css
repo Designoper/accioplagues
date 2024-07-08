@@ -8,6 +8,8 @@
 	text-decoration: none;
 	break-inside: avoid;
 	flex-wrap: wrap;
+	/* text-align: justify;
+	hyphens: auto; */
 }
 
 :is(ol, ul) {
