@@ -161,7 +161,7 @@ header {
 
         [popovertarget="a"] {
             &::before {
-                content: "▶" / "";
+                content: "►" / "";
                 margin-right: 0.25em;
             }
         }
@@ -173,17 +173,23 @@ header {
         li:has([popovertarget="a"]):hover [popovertarget] {
             &::before {
                 content: "▼" / "";
+                margin-right: 0.25em;
             }
         }
 
         [popovertarget="a"]:has(+:popover-open) {
-            color: red;
+            &::before {
+                content: "▼" / "";
+                margin-right: 0.25em;
+            }
         }
 
         [popovertarget="a"]:has(+[popover]:hover) {
-            color: red;
+            &::before {
+                content: "▼" / "";
+                margin-right: 0.25em;
+            }
         }
-
 
         #a {
             position: absolute;
