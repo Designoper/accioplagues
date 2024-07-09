@@ -10,7 +10,7 @@
 	flex-wrap: wrap;
 	/* text-align: justify;
 	hyphens: auto; */
-	inset: auto;
+	inset: unset;
 }
 
 :is(ol, ul) {

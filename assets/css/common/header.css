@@ -21,7 +21,7 @@ header {
     }
 
     button {
-        width: 1em;
+        /* width: 1em; */
 
         path {
             /* stroke: var(--text); */
@@ -53,7 +53,7 @@ header {
         }
 
         button {
-            margin: 1.35em 10vw 0 auto;
+            /* margin: 1.35em 10vw 0 auto; */
         }
 
         :is(summary, a) {
@@ -81,12 +81,12 @@ header {
         }
 
         button {
-            width: 1.25em;
+            /* width: 1.25em; */
         }
 
         nav {
             button {
-                margin: 1.65em 7.5vw 0 auto;
+                /* margin: 1.65em 7.5vw 0 auto; */
             }
         }
     }
@@ -113,9 +113,56 @@ header {
             font-size: 2.25em;
         }
 
-        button {
+        button:has(path) {
             display: none;
+            /* width: auto; */
         }
+
+        [popovertarget="a"] {
+            /* all: initial; */
+
+            display: list-item;
+            counter-increment: list-item 0;
+            list-style: inside disclosure-closed;
+            /* display: initial; */
+            /* font: inherit;
+            cursor: pointer; */
+            anchor-name: --anchor-name;
+            /* margin: 0; */
+            padding: 0.5em 0.75em;
+
+            &::marker {
+                counter-increment: list-item 0;
+                list-style: inside disclosure-closed;
+            }
+        }
+
+        [popovertarget="a"]:hover {
+            /* display: initial; */
+            /* pointer-events: none; */
+        }
+
+        [popovertarget="a"]:hover+ul {
+            /* display: initial; */
+            display: block;
+        }
+
+        [popovertarget="a"]:has(+ul) {
+            color: red;
+        }
+
+
+        #a {
+            position: absolute;
+            position-anchor: --anchor-name;
+            top: anchor(bottom);
+            left: anchor(left);
+        }
+
+        #a:hover {
+            display: block;
+        }
+
 
         nav {
             all: unset;
@@ -126,7 +173,7 @@ header {
                 align-items: baseline;
             }
 
-            :is(summary, a) {
+            :is(summary, a, [popovertarget="a"]) {
                 padding: 0.5em 0.75em;
                 transition: background-color 0.35s;
                 border-radius: 0.2em;
