@@ -130,14 +130,7 @@ header {
             anchor-name: --anchor-name;
             /* margin: 0; */
             padding: 0.5em 0.75em;
-
-            &::marker {
-                /* counter-increment: list-item 0;
-                list-style: inside disclosure-closed; */
-            }
         }
-
-
 
         [popovertarget="a"]:active {
             pointer-events: none;
@@ -169,6 +162,7 @@ header {
         [popovertarget="a"] {
             &::before {
                 content: "▶" / "";
+                margin-right: 0.25em;
             }
         }
 
@@ -177,7 +171,9 @@ header {
         }
 
         li:has([popovertarget="a"]):hover [popovertarget] {
-            color: red;
+            &::before {
+                content: "▼" / "";
+            }
         }
 
         [popovertarget="a"]:has(+:popover-open) {
