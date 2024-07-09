@@ -65,19 +65,39 @@ header {
             width: 100%;
             padding: 0.35em 2em;
             text-align: left;
-        }
 
-        button:has(+[popover]) {
             &::before {
                 content: "►" / "";
                 margin-right: 0.25em;
             }
+
+            /* &:has {
+                &+ {
+                    &:popover-open {
+                        &::before {
+                            content: "▼" / "";
+                            margin-right: 0.25em;
+                        }
+                    }
+                }
+            } */
         }
 
         button:has(+:popover-open) {
             &::before {
                 content: "▼" / "";
-                margin-right: 0.25em;
+            }
+        }
+
+        [popover] {
+            position: absolute;
+            top: anchor(bottom);
+            left: anchor(left);
+            overflow: visible;
+            background-color: var(--secondary-bg);
+
+            &:hover {
+                display: block;
             }
         }
     }
@@ -127,70 +147,6 @@ header {
             display: none;
         }
 
-        [popovertarget="a"] {
-            anchor-name: --anchor-1;
-        }
-
-        [popovertarget="b"] {
-            anchor-name: --anchor-2;
-        }
-
-        [popovertarget="c"] {
-            anchor-name: --anchor-3;
-        }
-
-        button:has(+[popover]):active {
-            pointer-events: none;
-        }
-
-        [popover] {
-            overflow: visible;
-        }
-
-        li:has(button):hover [popover] {
-            display: block;
-        }
-
-        li:has([popovertarget]):hover [popovertarget] {
-            transition: background-color 0.35s;
-            background-color: var(--background-text);
-        }
-
-        li:has([popovertarget]):hover [popovertarget] {
-            &::before {
-                content: "▼" / "";
-                margin-right: 0.25em;
-            }
-        }
-
-        button:has(+[popover]:hover) {
-            &::before {
-                content: "▼" / "";
-                margin-right: 0.25em;
-            }
-        }
-
-        [popover] {
-            position: absolute;
-            top: anchor(bottom);
-            left: anchor(left);
-        }
-
-        #a {
-            position-anchor: --anchor-1;
-        }
-
-        #b {
-            position-anchor: --anchor-2;
-        }
-
-        #c {
-            position-anchor: --anchor-3;
-        }
-
-        [popover]:hover {
-            display: block;
-        }
 
         nav {
             all: unset;
@@ -210,6 +166,58 @@ header {
                     background-color: var(--background-text);
                 }
             }
+
+            [popovertarget="dropdown1"] {
+                anchor-name: --anchor-1;
+            }
+
+            [popovertarget="dropdown2"] {
+                anchor-name: --anchor-2;
+            }
+
+            [popovertarget="dropdown3"] {
+                anchor-name: --anchor-3;
+            }
+
+            #dropdown1 {
+                position-anchor: --anchor-1;
+            }
+
+            #dropdown2 {
+                position-anchor: --anchor-2;
+            }
+
+            #dropdown3 {
+                position-anchor: --anchor-3;
+            }
+
+            [popovertarget]:active {
+                pointer-events: none;
+            }
+
+            li:has([popovertarget]):hover [popover] {
+                display: block;
+            }
+
+            li:has([popovertarget]):hover [popovertarget] {
+                background-color: var(--background-text);
+
+                &::before {
+                    content: "▼" / "";
+                }
+            }
+
+            /* [popover] {
+                position: absolute;
+                top: anchor(bottom);
+                left: anchor(left);
+                overflow: visible;
+                background-color: var(--secondary-bg);
+
+                &:hover {
+                    display: block;
+                }
+            } */
         }
     }
 }
