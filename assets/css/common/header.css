@@ -142,7 +142,6 @@ header {
 
             >ul {
                 display: flex;
-                align-items: baseline;
             }
 
             :is(a, button:has(+[popover])) {
@@ -194,18 +193,6 @@ header {
                     content: "▼" / "";
                 }
             }
-
-            /* [popover] {
-                position: absolute;
-                top: anchor(bottom);
-                left: anchor(left);
-                overflow: visible;
-                background-color: var(--secondary-bg);
-
-                &:hover {
-                    display: block;
-                }
-            } */
         }
     }
 }
