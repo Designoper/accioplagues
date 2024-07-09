@@ -128,12 +128,18 @@ header {
         }
 
         [popovertarget="a"] {
-            display: list-item;
-            anchor-name: --anchor-name;
-            padding: 0.5em 0.75em;
+            anchor-name: --anchor-1;
         }
 
-        [popovertarget="a"]:active {
+        [popovertarget="b"] {
+            anchor-name: --anchor-2;
+        }
+
+        [popovertarget="c"] {
+            anchor-name: --anchor-3;
+        }
+
+        button:has(+[popover]):active {
             pointer-events: none;
         }
 
@@ -141,30 +147,23 @@ header {
             overflow: visible;
         }
 
-        li:has([popovertarget="a"]):hover [popover] {
+        li:has(button):hover [popover] {
             display: block;
         }
 
-        li:has([popovertarget="a"]):hover [popovertarget="a"] {
-            cursor: pointer;
-            padding: 0.5em 0.75em;
+        li:has([popovertarget]):hover [popovertarget] {
             transition: background-color 0.35s;
-            border-radius: 0.2em;
             background-color: var(--background-text);
         }
 
-        li:has([popovertarget="a"]):hover {
-            cursor: pointer;
-        }
-
-        li:has([popovertarget="a"]):hover [popovertarget] {
+        li:has([popovertarget]):hover [popovertarget] {
             &::before {
                 content: "▼" / "";
                 margin-right: 0.25em;
             }
         }
 
-        [popovertarget="a"]:has(+[popover]:hover) {
+        button:has(+[popover]:hover) {
             &::before {
                 content: "▼" / "";
                 margin-right: 0.25em;
@@ -173,9 +172,20 @@ header {
 
         [popover] {
             position: absolute;
-            position-anchor: --anchor-name;
             top: anchor(bottom);
             left: anchor(left);
+        }
+
+        #a {
+            position-anchor: --anchor-1;
+        }
+
+        #b {
+            position-anchor: --anchor-2;
+        }
+
+        #c {
+            position-anchor: --anchor-3;
         }
 
         [popover]:hover {
