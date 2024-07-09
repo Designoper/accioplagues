@@ -122,8 +122,8 @@ header {
             /* all: initial; */
 
             display: list-item;
-            counter-increment: list-item 0;
-            list-style: inside disclosure-closed;
+            /* counter-increment: list-item 0;
+            list-style: inside disclosure-closed; */
             /* display: initial; */
             /* font: inherit;
             cursor: pointer; */
@@ -132,8 +132,8 @@ header {
             padding: 0.5em 0.75em;
 
             &::marker {
-                counter-increment: list-item 0;
-                list-style: inside disclosure-closed;
+                /* counter-increment: list-item 0;
+                list-style: inside disclosure-closed; */
             }
         }
 
@@ -143,9 +143,9 @@ header {
             pointer-events: none;
         }
 
-        li:has(button) button::marker {
+        /* li:has(button) button::marker {
             content: "▶";
-        }
+        } */
 
         /* li:has(button)::marker {
             content: "▶";
@@ -166,8 +166,10 @@ header {
 
         }
 
-        [popovertarget="a"]{
-            color: blue;
+        [popovertarget="a"] {
+            &::before {
+                content: "▶" / "";
+            }
         }
 
         li:has([popovertarget="a"]):hover {
