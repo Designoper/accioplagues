@@ -113,7 +113,7 @@ header {
         }
 
         [popover] {
-            position: absolute;
+            position: fixed;
             top: anchor(bottom);
             left: anchor(left);
             overflow: visible;
