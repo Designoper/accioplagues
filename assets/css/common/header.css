@@ -51,6 +51,10 @@ header {
             }
         }
 
+        li {
+            position: relative;
+        }
+
         button:has(path) {
             margin: 1.35em 10vw 0 auto;
         }
@@ -95,7 +99,7 @@ header {
             position: absolute;
             top: anchor(bottom);
             left: anchor(left);
-        } */
+        }  */
 
         #dropdown1 {
             anchor-name: --dropdown1;
@@ -112,10 +116,10 @@ header {
             position-anchor: --anchor-3;
         }
 
-        [popover] {
+        [popover]:popover-open {
             position: absolute;
-            top: anchor(bottom);
-            left: anchor(left);
+            top: 0;
+            left: 0;
             overflow: visible;
             background-color: var(--secondary-bg);
 
@@ -187,30 +191,6 @@ header {
                     background-color: var(--background-text);
                 }
             }
-
-            /* [popovertarget="dropdown1"] {
-                anchor-name: --anchor-1;
-            }
-
-            [popovertarget="dropdown2"] {
-                anchor-name: --anchor-2;
-            }
-
-            [popovertarget="dropdown3"] {
-                anchor-name: --anchor-3;
-            }
-
-            #dropdown1 {
-                position-anchor: --anchor-1;
-            }
-
-            #dropdown2 {
-                position-anchor: --anchor-2;
-            }
-
-            #dropdown3 {
-                position-anchor: --anchor-3;
-            } */
 
             [popovertarget]:active {
                 pointer-events: none;
