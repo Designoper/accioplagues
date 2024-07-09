@@ -55,14 +55,29 @@ header {
             margin: 1.35em 10vw 0 auto;
         }
 
-        :is(summary, a) {
+        a {
             padding: 0.35em 2em;
             display: list-item;
         }
 
-        details {
-            a {
-                padding-left: 3em;
+        button:has(+[popover]) {
+            display: list-item;
+            width: 100%;
+            padding: 0.35em 2em;
+            text-align: left;
+        }
+
+        button:has(+[popover]) {
+            &::before {
+                content: "►" / "";
+                margin-right: 0.25em;
+            }
+        }
+
+        button:has(+:popover-open) {
+            &::before {
+                content: "▼" / "";
+                margin-right: 0.25em;
             }
         }
     }
@@ -73,10 +88,6 @@ header {
 
         >[href="./"] {
             font-size: 2em;
-        }
-
-        >img {
-            width: 1.8em;
         }
 
         button:has(path) {
@@ -114,20 +125,11 @@ header {
 
         button:has(path) {
             display: none;
-            /* width: auto; */
         }
 
         [popovertarget="a"] {
-            /* all: initial; */
-
             display: list-item;
-            /* counter-increment: list-item 0;
-            list-style: inside disclosure-closed; */
-            /* display: initial; */
-            /* font: inherit;
-            cursor: pointer; */
             anchor-name: --anchor-name;
-            /* margin: 0; */
             padding: 0.5em 0.75em;
         }
 
@@ -135,37 +137,20 @@ header {
             pointer-events: none;
         }
 
-        /* li:has(button) button::marker {
-            content: "▶";
-        } */
-
-        /* li:has(button)::marker {
-            content: "▶";
-        } */
-         [popover]{
+        [popover] {
             overflow: visible;
-         }
+        }
 
-        li:has([popovertarget="a"]):hover ul {
-            /* display: initial; */
+        li:has([popovertarget="a"]):hover [popover] {
             display: block;
         }
 
         li:has([popovertarget="a"]):hover [popovertarget="a"] {
-            /* display: initial; */
             cursor: pointer;
             padding: 0.5em 0.75em;
             transition: background-color 0.35s;
             border-radius: 0.2em;
             background-color: var(--background-text);
-
-        }
-
-        [popovertarget="a"] {
-            &::before {
-                content: "►" / "";
-                margin-right: 0.25em;
-            }
         }
 
         li:has([popovertarget="a"]):hover {
@@ -179,13 +164,6 @@ header {
             }
         }
 
-        [popovertarget="a"]:has(+:popover-open) {
-            &::before {
-                content: "▼" / "";
-                margin-right: 0.25em;
-            }
-        }
-
         [popovertarget="a"]:has(+[popover]:hover) {
             &::before {
                 content: "▼" / "";
@@ -193,17 +171,16 @@ header {
             }
         }
 
-        #a {
+        [popover] {
             position: absolute;
             position-anchor: --anchor-name;
             top: anchor(bottom);
             left: anchor(left);
         }
 
-        #a:hover {
+        [popover]:hover {
             display: block;
         }
-
 
         nav {
             all: unset;
@@ -214,24 +191,13 @@ header {
                 align-items: baseline;
             }
 
-            :is(summary, a, [popovertarget="a"]) {
+            :is(a, button:has(+[popover])) {
                 padding: 0.5em 0.75em;
                 transition: background-color 0.35s;
                 border-radius: 0.2em;
 
                 &:hover {
                     background-color: var(--background-text);
-                }
-            }
-
-            details {
-                ul {
-                    position: absolute;
-                    background-color: var(--secondary-bg);
-
-                    a {
-                        padding: 0.5em 1em;
-                    }
                 }
             }
         }
