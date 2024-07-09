@@ -173,7 +173,7 @@ header {
             cursor: pointer;
         }
 
-        [popovertarget="a"]:has(+ul) {
+        [popovertarget="a"]:has(+:popover-open) {
             color: red;
         }
 
