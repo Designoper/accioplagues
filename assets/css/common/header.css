@@ -90,8 +90,16 @@ header {
             anchor-name: --anchor-3;
         }
 
+        [popovertarget]:hover+[popover] {
+            display: block;
+        }
+
         /* li:has(:popover-open) {
-            position-anchor: --dropdown1;
+            position: absolute;
+        } */
+
+        /* #list3 {
+            anchor-name: --anchor-1;
             position: absolute;
             top: anchor(bottom);
             left: anchor(left);
@@ -112,10 +120,18 @@ header {
             position-anchor: --anchor-3;
         }
 
-        [popover] {
-            position: fixed;
+        /* &:has(#dropdown1:popover-open) #list2 {
+            position-anchor: --dropdown1;
+            position: absolute;
             top: anchor(bottom);
             left: anchor(left);
+            color: green;
+        } */
+
+        [popover] {
+            position: static;
+            /* top: anchor(bottom);
+            left: anchor(left); */
             overflow: visible;
             background-color: var(--secondary-bg);
 
