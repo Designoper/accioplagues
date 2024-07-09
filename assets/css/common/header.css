@@ -78,21 +78,7 @@ header {
             }
         }
 
-        [popovertarget="dropdown1"] {
-            anchor-name: --anchor-1;
-        }
 
-        [popovertarget="dropdown2"] {
-            anchor-name: --anchor-2;
-        }
-
-        [popovertarget="dropdown3"] {
-            anchor-name: --anchor-3;
-        }
-
-        [popovertarget]:hover+[popover] {
-            display: block;
-        }
 
         /* li:has(:popover-open) {
             position: absolute;
@@ -105,20 +91,7 @@ header {
             left: anchor(left);
         } */
 
-        #dropdown1 {
-            anchor-name: --dropdown1;
-            position-anchor: --anchor-1;
-        }
 
-        #dropdown2 {
-            anchor-name: --dropdown2;
-            position-anchor: --anchor-2;
-        }
-
-        #dropdown3 {
-            anchor-name: --dropdown3;
-            position-anchor: --anchor-3;
-        }
 
         /* &:has(#dropdown1:popover-open) #list2 {
             position-anchor: --dropdown1;
@@ -130,14 +103,14 @@ header {
 
         [popover] {
             position: static;
-            /* top: anchor(bottom);
-            left: anchor(left); */
-            overflow: visible;
+            top: anchor(bottom);
+            left: anchor(left);
             background-color: var(--secondary-bg);
 
-            &:hover {
-                display: block;
-            }
+
+        }
+        [popovertarget]:hover+[popover] {
+            display: block;
         }
     }
 
@@ -201,6 +174,46 @@ header {
 
                 &:hover {
                     background-color: var(--background-text);
+                }
+            }
+
+            [popovertarget="dropdown1"] {
+                anchor-name: --anchor-1;
+            }
+
+            [popovertarget="dropdown2"] {
+                anchor-name: --anchor-2;
+            }
+
+            [popovertarget="dropdown3"] {
+                anchor-name: --anchor-3;
+            }
+
+
+
+            #dropdown1 {
+                anchor-name: --dropdown1;
+                position-anchor: --anchor-1;
+            }
+
+            #dropdown2 {
+                anchor-name: --dropdown2;
+                position-anchor: --anchor-2;
+            }
+
+            #dropdown3 {
+                anchor-name: --dropdown3;
+                position-anchor: --anchor-3;
+            }
+
+            [popover] {
+                position: fixed;
+                top: anchor(bottom);
+                left: anchor(left);
+                overflow: visible;
+
+                &:hover {
+                    display: block;
                 }
             }
 
