@@ -33,6 +33,7 @@ header {
         display: flex;
         flex-direction: column;
         gap: 1em 0;
+        position: fixed;
         top: 0;
         right: -100%;
         height: 100vh;
@@ -78,7 +79,9 @@ header {
             }
         }
 
-
+        /* [popovertarget]:hover {
+            color: blue;
+        } */
 
         /* li:has(:popover-open) {
             position: absolute;
@@ -101,17 +104,29 @@ header {
             color: green;
         } */
 
-        [popover] {
-            position: static;
-            top: anchor(bottom);
-            left: anchor(left);
-            background-color: var(--secondary-bg);
+        [popover]:not(:popover-open) {
+            all: unset;
+            display: none;
+            /* position: static; */
+            /* top: anchor(bottom);
+            left: anchor(left); */
+            /* background-color: var(--secondary-bg); */
 
 
         }
-        [popovertarget]:hover+[popover] {
+        [popover]:popover-open{
+            all: unset;
+            position: absolute;
+            /* inset: unset; */
+        }
+
+        /* :popover-open{
+            all: unset;
+        } */
+
+        /* [popovertarget]:hover+[popover] {
             display: block;
-        }
+        } */
     }
 
     @media screen and (541px <=width) {
@@ -163,7 +178,7 @@ header {
             all: unset;
             margin-right: 7em;
 
-            >ul {
+            menu {
                 display: flex;
             }
 

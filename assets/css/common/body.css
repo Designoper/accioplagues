@@ -34,9 +34,7 @@ body {
 		font-size: 1.45em;
 	}
 
-	/* ul {
-		display: grid;
-	} */
+
 
 	li {
 		&::marker {

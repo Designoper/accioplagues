@@ -28,6 +28,7 @@ main {
 	}
 
 	ul {
+		display: grid;
 		list-style: decimal inside;
 		gap: 1em 0;
 	}
