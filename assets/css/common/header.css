@@ -138,8 +138,11 @@ header {
         }
 
         [popovertarget="a"]:hover {
-            /* display: initial; */
             /* pointer-events: none; */
+        }
+
+        [popovertarget="a"]:active {
+            pointer-events: none;
         }
 
         li:has(button) button::marker {
@@ -150,9 +153,24 @@ header {
             content: "▶";
         } */
 
-        [popovertarget="a"]:hover+ul {
+        li:has([popovertarget="a"]):hover ul {
             /* display: initial; */
             display: block;
+        }
+
+        li:has([popovertarget="a"]):hover [popovertarget="a"] {
+            /* display: initial; */
+            cursor: pointer;
+            padding: 0.5em 0.75em;
+            transition: background-color 0.35s;
+            border-radius: 0.2em;
+            background-color: var(--background-text);
+
+        }
+
+        li:has([popovertarget="a"]):hover {
+            /* display: initial; */
+            cursor: pointer;
         }
 
         [popovertarget="a"]:has(+ul) {
