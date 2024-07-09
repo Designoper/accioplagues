@@ -137,9 +137,7 @@ header {
             }
         }
 
-        [popovertarget="a"]:hover {
-            /* pointer-events: none; */
-        }
+
 
         [popovertarget="a"]:active {
             pointer-events: none;
@@ -169,11 +167,18 @@ header {
         }
 
         li:has([popovertarget="a"]):hover {
-            /* display: initial; */
             cursor: pointer;
         }
 
+        li:has([popovertarget="a"]):hover [popovertarget] {
+            color: red;
+        }
+
         [popovertarget="a"]:has(+:popover-open) {
+            color: red;
+        }
+
+        [popovertarget="a"]:has(+[popover]:hover) {
             color: red;
         }
 
