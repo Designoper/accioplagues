@@ -71,21 +71,10 @@ header {
                 margin-right: 0.25em;
             }
 
-            /* &:has {
-                &+ {
-                    &:popover-open {
-                        &::before {
-                            content: "▼" / "";
-                            margin-right: 0.25em;
-                        }
-                    }
+            &:has(+:popover-open) {
+                &::before {
+                    content: "▼" / "";
                 }
-            } */
-        }
-
-        button:has(+:popover-open) {
-            &::before {
-                content: "▼" / "";
             }
         }
 
@@ -146,7 +135,6 @@ header {
         button:has(path) {
             display: none;
         }
-
 
         nav {
             all: unset;
