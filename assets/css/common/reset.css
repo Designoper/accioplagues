@@ -13,7 +13,7 @@
 	inset: auto;
 }
 
-:is(ol, ul) {
+:is(ol, ul, menu) {
 	list-style: none;
 }
 

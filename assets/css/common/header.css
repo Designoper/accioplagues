@@ -121,7 +121,7 @@ header {
             all: unset;
             margin-right: 7em;
 
-            >ul {
+            menu {
                 display: flex;
                 align-items: baseline;
             }
