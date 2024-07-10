@@ -140,6 +140,10 @@ header {
                 }
             }
 
+            summary{
+                display: block;
+            }
+
             details {
                 +ul {
                     position: absolute;
@@ -164,10 +168,20 @@ header {
             li:has(details) {
                 &:hover {
                     summary {
-                        a: a;
+                        &::before {
+                            content: "▼" / "";
+                        }
                     }
                 }
             }
+
+            /* li:has([popovertarget]):hover [popovertarget] {
+                background-color: var(--background-text);
+
+                &::before {
+                    content: "▼" / "";
+                }
+            } */
         }
     }
 }
