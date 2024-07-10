@@ -141,16 +141,26 @@ header {
                 }
             }
 
-            details {
+
+
+
+            /* details {
                 &:active {
                     summary {
                         pointer-events: none;
                     }
                 }
-            }
+            } */
+
+
+
 
             summary {
                 display: block;
+
+                &:hover:not(:active) {
+                    pointer-events: all;
+                }
 
                 &:active {
                     pointer-events: none;
