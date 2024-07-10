@@ -61,12 +61,12 @@ header {
         transition-property: right, visibility;
         transition-duration: 0.7s;
 
-        :is(summary, a) {
+        :is(button, a) {
             padding: 0.35em 2em;
             display: list-item;
         }
 
-        details {
+        button {
             cursor: pointer;
             transition: background-color 0.35s;
             border-radius: 0.2em;
@@ -79,8 +79,18 @@ header {
                 padding-left: 3em;
             } */
 
-            &:not([open])+ul {
+            /* &:not([open])+ul {
                 display: none;
+            } */
+        }
+
+        ul {
+            display: none;
+        }
+
+        li:has( :popover-open) {
+            ul {
+                display: initial;
             }
         }
     }
@@ -131,7 +141,7 @@ header {
                 display: flex;
             }
 
-            :is(summary, a) {
+            :is(button, a) {
                 padding: 0.5em 0.75em;
                 transition: background-color 0.35s;
                 border-radius: 0.2em;
@@ -152,7 +162,9 @@ header {
                 }
             } */
 
-
+            button:active {
+                pointer-events: none;
+            }
 
 
             summary {
