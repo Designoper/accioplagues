@@ -6,7 +6,7 @@ header {
     justify-content: right;
     align-items: center;
     gap: 0 1em;
-    z-index: 2;
+    /* z-index: 2; */
     background-color: var(--secondary-bg);
     /* box-shadow: 0 0 0 0.15em #6bc9e6; */
 
@@ -44,7 +44,7 @@ header {
 
         &:popover-open {
             right: 0;
-            visibility: visible;
+            visibility: initial;
 
             &::backdrop {
                 background-color: #000000;
@@ -61,15 +61,24 @@ header {
             display: list-item;
         }
 
+
+
         details {
             cursor: pointer;
+            transition: background-color 0.35s;
+            border-radius: 0.2em;
+
+            &:hover {
+                background-color: var(--background-text);
+            }
+
             /* a {
                 padding-left: 3em;
             } */
 
-            /* &:not([open])+ul {
+            &:not([open])+ul {
                 display: none;
-            } */
+            }
         }
     }
 
@@ -81,9 +90,9 @@ header {
             font-size: 2em;
         }
 
-        >img {
+        /* >img {
             width: 1.8em;
-        }
+        } */
 
         button {
             width: 1.25em;
@@ -131,7 +140,7 @@ header {
                 align-items: baseline;
             }
 
-            :is(details, a) {
+            :is(summary, a) {
                 padding: 0.5em 0.75em;
                 transition: background-color 0.35s;
                 border-radius: 0.2em;
