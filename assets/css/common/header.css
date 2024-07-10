@@ -162,8 +162,12 @@ header {
                 }
             } */
 
-            button:active {
+            button {
                 pointer-events: none;
+
+                P{
+                    pointer-events: all;
+                }
             }
 
 
