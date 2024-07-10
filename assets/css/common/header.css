@@ -56,7 +56,7 @@ header {
             margin: 1.35em 10vw 0 auto;
         }
 
-        :is(details, a) {
+        :is(summary, a) {
             padding: 0.35em 2em;
             display: list-item;
         }
@@ -67,9 +67,9 @@ header {
                 padding-left: 3em;
             } */
 
-            &:not([open])+ul {
+            /* &:not([open])+ul {
                 display: none;
-            }
+            } */
         }
     }
 
@@ -172,7 +172,7 @@ header {
                 }
             }
 
-            li:has(details) {
+            details {
                 &:hover {
                     summary {
                         &::before {
@@ -182,7 +182,7 @@ header {
                 }
             }
 
-            li:has(details[open]) {
+            details[open] {
                 summary {
                     &::before {
                         content: "▼" / "";
