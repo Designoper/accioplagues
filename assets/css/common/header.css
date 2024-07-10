@@ -62,8 +62,12 @@ header {
         }
 
         details {
-            a {
+            /* a {
                 padding-left: 3em;
+            } */
+
+            &:not([open])+ul {
+                display: none;
             }
         }
     }
@@ -137,12 +141,30 @@ header {
             }
 
             details {
-                ul {
+                +ul {
                     position: absolute;
                     background-color: var(--secondary-bg);
 
+                    &:hover {
+                        display: block;
+                    }
+
                     a {
                         padding: 0.5em 1em;
+                    }
+                }
+
+                &:hover {
+                    +ul {
+                        display: block;
+                    }
+                }
+            }
+
+            li:has(details) {
+                &:hover {
+                    summary {
+                        a: a;
                     }
                 }
             }
