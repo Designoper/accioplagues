@@ -3,7 +3,7 @@ header {
     top: 0;
     padding: 1em 10vw;
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
     align-items: center;
     gap: 0 1em;
     z-index: 1;
@@ -17,51 +17,54 @@ header {
     >[href="./"] {
         font-size: 1.5em;
         line-height: initial;
-        margin-right: auto;
     }
 
-    button {
+    >details {
+        z-index: 2;
         width: 1em;
 
         path {
-            /* stroke: var(--text); */
-            stroke: black;
+            stroke: var(--text);
             stroke-width: 3em;
+        }
+
+        &[open] {
+            +nav {
+                right: 0;
+                visibility: initial;
+            }
+
+            svg {
+                &:first-of-type {
+                    display: none;
+                }
+            }
+        }
+
+        &:not([open]) {
+            svg {
+                &:last-of-type {
+                    display: none;
+                }
+            }
         }
     }
 
     nav {
-        display: flex;
-        flex-direction: column;
-        gap: 1em 0;
+        position: fixed;
         top: 0;
         right: -100%;
         height: 100vh;
+        padding-top: 4em;
         background-color: inherit;
         visibility: hidden;
         transition-property: right, visibility;
         transition-duration: 0.7s;
 
-        &:popover-open {
-            right: 0;
-            visibility: initial;
-
-            &::backdrop {
-                background-color: #000000;
-                opacity: 75%;
-            }
-        }
-
-        button {
-            margin: 1.35em 10vw 0 auto;
-        }
-
         :is(summary, a) {
             padding: 0.35em 2em;
             display: list-item;
         }
-
-
 
         details {
             cursor: pointer;
@@ -90,18 +93,8 @@ header {
             font-size: 2em;
         }
 
-        /* >img {
-            width: 1.8em;
-        } */
-
-        button {
+        >details {
             width: 1.25em;
-        }
-
-        nav {
-            button {
-                margin: 1.65em 7.5vw 0 auto;
-            }
         }
     }
 
@@ -127,17 +120,15 @@ header {
             font-size: 2.25em;
         }
 
-        button {
+        >details {
             display: none;
         }
 
         nav {
             all: unset;
-            margin-right: 7em;
 
             menu {
                 display: flex;
-                align-items: baseline;
             }
 
             :is(summary, a) {
@@ -147,6 +138,14 @@ header {
 
                 &:hover {
                     background-color: var(--background-text);
+                }
+            }
+
+            details {
+                &:active {
+                    summary {
+                        pointer-events: none;
+                    }
                 }
             }
 
@@ -181,26 +180,27 @@ header {
                     +ul {
                         display: block;
                     }
-                }
-            }
 
-            details {
-                &:hover {
                     summary {
                         &::before {
                             content: "▼" / "";
                         }
                     }
                 }
-            }
 
-            details[open] {
-                summary {
+                &[open] {
+                    summary {
+                        &::before {
+                            content: "▼" / "";
+                        }
+                    }
+                }
+
+                &:has(+ul:hover) summary {
                     &::before {
                         content: "▼" / "";
                     }
                 }
-
             }
         }
     }

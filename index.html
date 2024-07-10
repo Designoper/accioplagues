@@ -47,7 +47,7 @@
     <link href="https://www.ea3uu.com/en/" rel="alternate" hreflang="en">
     <link href="https://www.ea3uu.com/en/" rel="alternate" hreflang="x-default"> -->
 
-    <script src="./assets/js/accesibilidad.js" defer></script>
+    <!-- <script src="./assets/js/accesibilidad.js" defer></script> -->
 
 </head>
 
@@ -63,14 +63,18 @@
 
         <a href="./" tabindex="-1">Logo</a>
 
-        <nav id="nav" popover>
-
-            <button type="button" popovertarget="nav" popovertargetaction="hide" aria-label="Cerrar menú de navegación">
+        <details>
+            <summary aria-label="Menú de navegación">
+                <svg viewBox="0 0 556 556">
+                    <path d="M0 277.66h555.187M0 30.91h555.187M0 525.844h555.187" />
+                </svg>
                 <svg viewBox="0 0 556 556">
                     <path d="m24.336 24.336 506.648 506.648M530.984 24.336 24.336 530.984" />
                 </svg>
-            </button>
+            </summary>
+        </details>
 
+        <nav>
             <menu>
                 <li><a href="./">Inicio</a></li>
                 <li><a href="./quienes-somos">Quiénes somos</a></li>
@@ -131,16 +135,8 @@ y legionela</pre>
 
                     </ul>
                 </li>
-
             </menu>
-
         </nav>
-
-        <button type="button" popovertarget="nav" popovertargetaction="show" aria-label="Abrir menú de navegación">
-            <svg viewBox="0 0 556 556">
-                <path d="M0 277.66h555.187M0 30.91h555.187M0 525.844h555.187" />
-            </svg>
-        </button>
 
     </header>
 

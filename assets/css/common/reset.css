@@ -30,6 +30,7 @@
 
 summary {
 	cursor: pointer;
+	display: grid;
 }
 
 button {
