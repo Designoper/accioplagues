@@ -65,20 +65,6 @@ header {
             padding: 0.35em 2em;
             display: list-item;
         }
-
-        /* details {
-            cursor: pointer;
-            transition: background-color 0.35s;
-            border-radius: 0.2em;
-
-            &:hover {
-                background-color: var(--background-text);
-            } */
-
-        /* a {
-                padding-left: 3em;
-            } */
-
     }
 
     @media screen and (541px <=width) {
@@ -137,45 +123,12 @@ header {
                 }
             }
 
+            ul {
+                position: absolute;
+                background-color: var(--secondary-bg);
 
-
-
-            /* details {
-                &:active {
-                    summary {
-                        pointer-events: none;
-                    }
-                }
-            } */
-
-
-
-
-            summary {
-                /* display: block; */
-
-                /* &:hover:not(:active) {
-                    pointer-events: all;
-                }
-
-                &:active {
-                    pointer-events: none;
-                } */
-
-                /* &::before {
-                    content: "►" / "";
-                    margin-right: 0.25em;
-                } */
-            }
-
-            details {
-                ul {
-                    position: absolute;
-                    background-color: var(--secondary-bg);
-
-                    a {
-                        padding: 0.5em 1em;
-                    }
+                a {
+                    padding: 0.5em 1em;
                 }
             }
         }
