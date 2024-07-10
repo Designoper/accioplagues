@@ -6,7 +6,7 @@ header {
     justify-content: right;
     align-items: center;
     gap: 0 1em;
-    /* z-index: 2; */
+    z-index: 1;
     background-color: var(--secondary-bg);
     /* box-shadow: 0 0 0 0.15em #6bc9e6; */
 
@@ -152,7 +152,10 @@ header {
 
             summary {
                 display: block;
-                pointer-events: none;
+
+                &:active {
+                    pointer-events: none;
+                }
 
                 &::before {
                     content: "►" / "";
