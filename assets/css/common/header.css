@@ -56,12 +56,13 @@ header {
             margin: 1.35em 10vw 0 auto;
         }
 
-        :is(summary, a) {
+        :is(details, a) {
             padding: 0.35em 2em;
             display: list-item;
         }
 
         details {
+            cursor: pointer;
             /* a {
                 padding-left: 3em;
             } */
@@ -130,7 +131,7 @@ header {
                 align-items: baseline;
             }
 
-            :is(summary, a) {
+            :is(details, a) {
                 padding: 0.5em 0.75em;
                 transition: background-color 0.35s;
                 border-radius: 0.2em;
@@ -140,8 +141,14 @@ header {
                 }
             }
 
-            summary{
+            summary {
                 display: block;
+                pointer-events: none;
+
+                &::before {
+                    content: "►" / "";
+                    margin-right: 0.25em;
+                }
             }
 
             details {
@@ -175,13 +182,14 @@ header {
                 }
             }
 
-            /* li:has([popovertarget]):hover [popovertarget] {
-                background-color: var(--background-text);
-
-                &::before {
-                    content: "▼" / "";
+            li:has(details[open]) {
+                summary {
+                    &::before {
+                        content: "▼" / "";
+                    }
                 }
-            } */
+
+            }
         }
     }
 }
