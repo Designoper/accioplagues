@@ -1,42 +1,40 @@
-@layer reset {
-	:is(*, *::before, *::after) {
-		padding: 0;
-		margin: 0;
-		border: 0;
-		box-sizing: border-box;
-		font: inherit;
-		color: inherit;
-		text-decoration: none;
-		break-inside: avoid;
-		flex-wrap: wrap;
-		/* text-align: justify;
+:is(*, *::before, *::after) {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+	font: inherit;
+	color: inherit;
+	text-decoration: none;
+	break-inside: avoid;
+	flex-wrap: wrap;
+	/* text-align: justify;
 		hyphens: auto; */
-		inset: unset;
-	}
+	inset: unset;
+}
 
-	:is(ol, ul, menu) {
-		list-style: none;
-	}
+:is(ol, ul, menu) {
+	list-style: none;
+}
 
-	:is(img, video) {
-		width: 100%;
-		height: auto;
-		display: grid;
-	}
+:is(img, video) {
+	width: 100%;
+	height: auto;
+	display: grid;
+}
 
-	:is(h1, h2, h3, h4, h5, h6, p, a, summary, button, figcaption, li) {
-		text-box-trim: both;
-		text-box-edge: cap alphabetic;
-	}
+:is(h1, h2, h3, h4, h5, h6, p, a, summary, button, figcaption, li) {
+	text-box-trim: both;
+	text-box-edge: cap alphabetic;
+}
 
-	summary {
-		cursor: pointer;
-		display: grid;
-	}
+summary {
+	cursor: pointer;
+	display: grid;
+}
 
-	button {
-		cursor: pointer;
-		display: grid;
-		background-color: transparent;
-	}
+button {
+	cursor: pointer;
+	display: grid;
+	background-color: transparent;
 }
