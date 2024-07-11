@@ -1,6 +1,25 @@
+@property --secondary-bg {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: hsl(180, 81%, 58%);
+}
+
+@property --primary-bg {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: hsl(180, 42%, 93%);
+}
+
 :root {
-	--primary-bg: hsl(180, 42%, 93%);
-	--secondary-bg: hsl(180, 81%, 58%);
+	/* --primary-bg: hsl(180, 42%, 93%); */
+
+
+
+
+
+
+
+	/* --secondary-bg: hsl(180, 81%, 58%); */
 	--background-text: hsl(from var(--secondary-bg) h calc(s) calc(l/1.25) / 1);
 	--terciary-bg: hsl(180, 100%, 16%);
 	--text: hsla(0, 0%, 0%, 0.8);
@@ -8,6 +27,10 @@
 
 	--row-gap: 3vw;
 	--column-gap: 3.75vw;
+
+}
+
+html{
 	scrollbar-color: var(--secondary-bg) var(--primary-bg);
 }
 
