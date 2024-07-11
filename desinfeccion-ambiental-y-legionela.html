@@ -63,15 +63,19 @@
 
         <a href="./" tabindex="-1">Logo</a>
 
-        <nav id="nav" popover>
-
-            <button type="button" popovertarget="nav" popovertargetaction="hide" aria-label="Cerrar menú de navegación">
+        <details>
+            <summary aria-label="Menú de navegación">
+                <svg viewBox="0 0 556 556">
+                    <path d="M0 277.66h555.187M0 30.91h555.187M0 525.844h555.187" />
+                </svg>
                 <svg viewBox="0 0 556 556">
                     <path d="m24.336 24.336 506.648 506.648M530.984 24.336 24.336 530.984" />
                 </svg>
-            </button>
+            </summary>
+        </details>
 
-            <ul>
+        <nav>
+            <menu>
                 <li><a href="./">Inicio</a></li>
                 <li><a href="./quienes-somos">Quiénes somos</a></li>
                 <li>
@@ -93,20 +97,25 @@ voladores</pre>
 carcomas</pre>
                                 </a></li>
                             <li><a href="./aves.html">Aves</a></li>
+                        </ul>
+                    </details>
+
+                </li>
+                <li>
+                    <details>
+                        <summary>Control de plagas</summary>
+                        <ul>
                             <li><a href="./industria-negocios-oficina.html">
-                                    <pre>Control de plagas
-industrial, negocios y oficinas</pre>
+                                    <pre>Industrial, negocios
+y oficinas</pre>
                                 </a></li>
                             <li><a href="./restauracion-y-alimentacion.html">
-                                    <pre>Control de plagas
-restauración y alimentación</pre>
-                                </a></li>
-                            <li><a href="./desinfeccion-ambiental-y-legionela.html">
-                                    <pre>Desinfección ambiental
-y legionela</pre>
+                                    <pre>Restauración
+y alimentación</pre>
                                 </a></li>
                         </ul>
                     </details>
+
                 </li>
                 <li>
                     <details>
@@ -120,22 +129,17 @@ y viviendas</pre>
                                     <pre>Limpieza síndrome
 de Diógenes</pre>
                                 </a></li>
+                            <li><a href="./desinfeccion-ambiental-y-legionela.html">
+                                    <pre>Desinfección ambiental
+y legionela</pre>
+                                </a></li>
 
                         </ul>
                     </details>
+
                 </li>
-                <!-- <li><a href="./noticias.html">Noticias</a></li> -->
-
-
-            </ul>
-
+            </menu>
         </nav>
-
-        <button type="button" popovertarget="nav" popovertargetaction="show" aria-label="Abrir menú de navegación">
-            <svg viewBox="0 0 556 556">
-                <path d="M0 277.66h555.187M0 30.91h555.187M0 525.844h555.187" />
-            </svg>
-        </button>
 
     </header>
 
