@@ -1,76 +1,74 @@
-@layer main {
-	main {
-		display: flex;
-		gap: 4em 0;
-		padding: 0 0 4em;
+main {
+	display: flex;
+	gap: 4em 0;
+	padding: 0 0 4em;
 
-		>picture {
-			anchor-name: --banner-image;
+	>picture {
+		anchor-name: --banner-image;
+	}
+
+	h1 {
+		/* width: 100%; */
+		font-size: 1.75em;
+		color: var(--h1);
+		position: absolute;
+		position-anchor: --banner-image;
+
+		justify-self: anchor-center;
+		align-self: anchor-center;
+
+		/* background: linear-gradient(to right, */
+		/* rgba(0, 0, 0, .8), rgba(0, 0, 0, 0)); */
+	}
+
+	section {
+		display: grid;
+		padding: 0 10vw;
+		gap: 2.5em;
+	}
+
+	ul {
+		list-style: decimal inside;
+		gap: 1em 0;
+	}
+
+	@media screen and (541px <=width) {
+		padding: 0 0 6em;
+
+		section {
+			padding: 0 7.5vw;
 		}
 
 		h1 {
-			/* width: 100%; */
-			font-size: 1.75em;
-			color: var(--h1);
-			position: absolute;
-			position-anchor: --banner-image;
-
-			justify-self: anchor-center;
-			align-self: anchor-center;
-
-			/* background: linear-gradient(to right, */
-			/* rgba(0, 0, 0, .8), rgba(0, 0, 0, 0)); */
-		}
-
-		section {
-			display: grid;
-			padding: 0 10vw;
-			gap: 2.5em;
+			font-size: 2em;
 		}
 
 		ul {
-			list-style: decimal inside;
-			gap: 1em 0;
+			gap: 1.25em 2em;
+		}
+	}
+
+	@media screen and (1083px <=width) {
+		gap: 5em 0;
+
+		h1 {
+			font-size: 3.5em;
 		}
 
-		@media screen and (541px <=width) {
-			padding: 0 0 6em;
-
-			section {
-				padding: 0 7.5vw;
-			}
-
-			h1 {
-				font-size: 2em;
-			}
-
-			ul {
-				gap: 1.25em 2em;
-			}
+		section {
+			grid-template-columns: repeat(3, 1fr);
+			gap: var(--row-gap) var(--column-gap);
+			column-count: 3;
 		}
 
-		@media screen and (1083px <=width) {
-			gap: 5em 0;
+		ul {
+			display: initial;
+			column-count: 3;
+			column-gap: var(--column-gap);
+		}
 
-			h1 {
-				font-size: 3.5em;
-			}
-
-			section {
-				grid-template-columns: repeat(3, 1fr);
-				gap: var(--row-gap) var(--column-gap);
-				column-count: 3;
-			}
-
-			ul {
-				display: initial;
-				column-count: 3;
-				column-gap: var(--column-gap);
-			}
-
-			li {
-				margin-bottom: 1.5em;
-			}
+		li {
+			margin-bottom: 1.5em;
 		}
 	}
 }
