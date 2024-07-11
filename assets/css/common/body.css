@@ -1,4 +1,4 @@
-:root {
+html {
 	--primary-bg: hsl(180, 42%, 93%);
 	--secondary-bg: hsl(180, 81%, 58%);
 	--background-text: hsl(from var(--secondary-bg) h calc(s) calc(l/1.25) / 1);
@@ -8,13 +8,11 @@
 
 	--row-gap: 3vw;
 	--column-gap: 3.75vw;
-	scrollbar-color: var(--secondary-bg) var(--primary-bg);
-}
 
-body {
 	font: 4.5vw/1.5 "Poppins", sans-serif;
 	color: var(--text);
 	background-color: var(--primary-bg);
+	scrollbar-color: var(--secondary-bg) var(--primary-bg);
 
 	&:focus-visible {
 		outline: var(--text) solid 4px;
