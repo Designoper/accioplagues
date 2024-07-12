@@ -15,8 +15,7 @@ body>header{
     }
 
     >[href="./"] {
-        font-size: 1.5em;
-        line-height: initial;
+        width: 1.75em;
     }
 
     >details {
@@ -72,7 +71,7 @@ body>header{
         gap: 0 1.5em;
 
         >[href="./"] {
-            font-size: 2em;
+            width: 2.5em;
         }
 
         >details {
@@ -99,7 +98,7 @@ body>header{
         }
 
         >[href="./"] {
-            font-size: 2.25em;
+            width: 3em;
         }
 
         >details {
