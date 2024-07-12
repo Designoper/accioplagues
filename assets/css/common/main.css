@@ -3,19 +3,24 @@ main {
 	gap: 4em 0;
 	padding: 0 0 4em;
 
-	>picture {
+	/* >picture {
 		anchor-name: --banner-image;
+	} */
+
+	>div {
+		align-content: center;
+		/* height: 300px; */
 	}
 
 	h1 {
 		/* width: 100%; */
 		font-size: 1.75em;
 		color: var(--h1);
-		position: absolute;
+		/* position: absolute;
 		position-anchor: --banner-image;
 
 		justify-self: anchor-center;
-		align-self: anchor-center;
+		align-self: anchor-center; */
 
 		/* background: linear-gradient(to right, */
 		/* rgba(0, 0, 0, .8), rgba(0, 0, 0, 0)); */
