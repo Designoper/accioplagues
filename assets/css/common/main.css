@@ -3,7 +3,7 @@ main {
 	gap: 4em 0;
 	padding: 0 0 4em;
 
-	>picture {
+	>header {
 		anchor-name: --banner-image;
 	}
 
