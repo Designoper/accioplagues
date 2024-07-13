@@ -9,7 +9,7 @@ html {
 	--row-gap: 3vw;
 	--column-gap: 3.75vw;
 
-	font: 4.5vw/1.5 "Poppins", sans-serif;
+	font: 4.5vw/1.5 "Arial", sans-serif;
 	color: var(--text);
 	background-color: var(--primary-bg);
 	scrollbar-color: var(--secondary-bg) var(--primary-bg);
