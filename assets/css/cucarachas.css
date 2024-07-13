@@ -1,0 +1,36 @@
+main {
+	@media screen and (541px <=width) {
+		section {
+			&:nth-of-type(4) {
+				display: flex;
+				justify-content: space-between;
+				column-gap: 0;
+
+				figure {
+					width: 45%;
+
+					&:last-of-type {
+						margin: auto;
+					}
+				}
+			}
+		}
+	}
+
+	@media screen and (1083px <=width) {
+		section {
+			&:nth-of-type(4) {
+				display: grid;
+				column-gap: var(--column-gap);
+
+				figure {
+					width: 100%;
+				}
+			}
+		}
+
+		ul {
+			column-count: 1;
+		}
+	}
+}

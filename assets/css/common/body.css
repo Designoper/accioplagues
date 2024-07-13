@@ -42,6 +42,12 @@ html {
 		}
 	}
 
+	figure {
+		display: grid;
+		gap: 1em 0;
+		text-align: right;
+	}
+
 	@media screen and (541px <=width) {
 		font-size: 2.5vw;
 
