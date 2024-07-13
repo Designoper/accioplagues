@@ -1,7 +1,7 @@
 main {
 	@media screen and (541px <=width) {
 		section {
-			&:nth-of-type(4) {
+			&:nth-of-type(3) {
 				display: flex;
 				justify-content: space-between;
 				column-gap: 0;
@@ -19,7 +19,16 @@ main {
 
 	@media screen and (1083px <=width) {
 		section {
-			&:nth-of-type(4) {
+			&:nth-of-type(2) {
+				grid-template-areas: "h2 h2 h2"
+					"ul picture picture";
+
+				picture {
+					grid-area: picture;
+				}
+			}
+
+			&:nth-of-type(3) {
 				display: grid;
 				column-gap: var(--column-gap);
 
@@ -30,7 +39,11 @@ main {
 		}
 
 		ul {
-			column-count: 1;
+			display: grid;
+		}
+
+		li {
+			margin-bottom: 0;
 		}
 	}
 }
