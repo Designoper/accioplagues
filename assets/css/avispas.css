@@ -1,4 +1,32 @@
 main {
+	h3 {
+		font-size: 1.25em;
+		padding: 0.5em;
+	}
+
+	article {
+		background-color: var(--secondary-bg);
+		border-radius: 1em;
+
+		ul {
+			padding: 2em;
+
+		}
+	}
+
+	@media screen and (541px <=width) {
+		h3 {
+			font-size: 1.5em;
+		}
+
+		article {
+			picture {
+				width: 75%;
+				margin: auto;
+			}
+		}
+	}
+
 	@media screen and (1083px <=width) {
 		ul {
 			display: grid;
