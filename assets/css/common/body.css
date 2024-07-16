@@ -4,7 +4,6 @@ html {
 	--background-text: hsl(from var(--secondary-bg) h calc(s) calc(l/1.25) / 1);
 	--terciary-bg: hsl(180, 100%, 16%);
 	--text: hsla(0, 0%, 0%, 0.8);
-	--h1: hsl(0, 0%, 100%);
 
 	--row-gap: 3vw;
 	--column-gap: 3.75vw;
