@@ -28,7 +28,6 @@ main {
 				ul {
 					display: grid;
 					row-gap: 0.8em;
-					grid-area: ul;
 				}
 
 				li {
