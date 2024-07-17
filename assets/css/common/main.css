@@ -8,7 +8,6 @@ main {
 
 		picture {
 			filter: brightness(50%);
-			-webkit-filter: brightness(50%);
 		}
 	}
 
@@ -31,7 +30,7 @@ main {
 
 	ul {
 		list-style: decimal inside;
-		gap: 1em 0;
+		gap: 1em var(--column-gap);
 		column-count: 3;
 	}
 
@@ -48,7 +47,7 @@ main {
 		}
 
 		ul {
-			gap: 1.25em 2em;
+			gap: 1.25em var(--column-gap);
 		}
 	}
 
@@ -63,10 +62,6 @@ main {
 			grid-template-columns: repeat(3, 1fr);
 			column-count: 3;
 			gap: var(--row-gap) var(--column-gap);
-		}
-
-		ul {
-			column-gap: var(--column-gap);
 		}
 	}
 }
