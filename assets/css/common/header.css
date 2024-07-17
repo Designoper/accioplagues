@@ -1,4 +1,4 @@
-body>header{
+header {
     position: sticky;
     top: 0;
     padding: 1em 10vw;
@@ -45,6 +45,14 @@ body>header{
                 &:last-of-type {
                     display: none;
                 }
+            }
+        }
+
+        summary {
+            display: grid;
+
+            &::-webkit-details-marker {
+                display: none;
             }
         }
     }
