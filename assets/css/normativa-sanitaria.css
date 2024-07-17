@@ -30,12 +30,7 @@ main {
 				}
 
 				ul {
-					display: grid;
 					row-gap: 0.8em;
-
-					li {
-						margin-bottom: 0;
-					}
 				}
 			}
 

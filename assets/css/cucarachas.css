@@ -37,13 +37,5 @@ main {
 				}
 			}
 		}
-
-		ul {
-			display: grid;
-		}
-
-		li {
-			margin-bottom: 0;
-		}
 	}
 }

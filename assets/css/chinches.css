@@ -1,32 +1,17 @@
 main {
-	@media screen and (541px <=width) {
-		section {
-			&:nth-of-type(4) {
-				display: flex;
-				justify-content: space-between;
-				column-gap: 0;
-			}
-		}
-	}
-
 	@media screen and (1083px <=width) {
 		section {
 			&:nth-of-type(3) {
 				grid-template-columns: 1fr;
 			}
-
-			&:nth-of-type(4) {
-				display: grid;
-				column-gap: var(--column-gap);
-
-				figure {
-					width: 100%;
-				}
-			}
 		}
 
-		/* ul {
-			column-count: 1;
-		} */
+		ul {
+			display: initial;
+		}
+
+		li {
+			margin-bottom: 1.5em;
+		}
 	}
 }

@@ -21,5 +21,13 @@ main {
 				grid-template-columns: 1fr;
 			}
 		}
+
+		ul {
+			display: initial;
+		}
+
+		li {
+			margin-bottom: 1.5em;
+		}
 	}
 }

@@ -2,14 +2,4 @@ main {
 	a {
 		text-decoration: underline;
 	}
-
-	@media screen and (1083px <=width) {
-		ul {
-			display: grid;
-		}
-
-		li {
-			margin-bottom: 0;
-		}
-	}
 }

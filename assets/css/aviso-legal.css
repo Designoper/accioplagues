@@ -5,6 +5,7 @@ main {
 
 	ul {
 		list-style: none;
+		row-gap: 2em;
 	}
 
 	li {
@@ -13,6 +14,14 @@ main {
 	}
 
 	@media screen and (1083px <=width) {
+		ul {
+			display: initial;
+		}
+
+		li {
+			margin-bottom: 1.5em;
+		}
+
 		section {
 			grid-template-columns: 1fr;
 		}

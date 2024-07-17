@@ -21,12 +21,7 @@ main {
 			}
 
 			ul {
-				display: grid;
 				gap: 0.8em;
-			}
-
-			li {
-				margin-bottom: 0;
 			}
 		}
 	}
