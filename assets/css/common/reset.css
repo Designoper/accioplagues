@@ -27,7 +27,7 @@ img {
 	display: grid;
 }
 
-:is(h1, h2, h3, h4, h5, h6, p, a, summary, button, figcaption, li) {
+:is(h1, h2, h3, h4, h5, h6, p, a, summary, button, figcaption, li, label, legend, dt, dd) {
 	text-box-trim: both;
 	text-box-edge: cap alphabetic;
 }
