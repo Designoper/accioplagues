@@ -20,7 +20,7 @@
 :is(img, video) {
 	width: 100%;
 	height: auto;
-	display: grid;
+	object-fit: cover;
 }
 
 :is(h1, h2, h3, h4, h5, h6, p, a, summary, button, figcaption, li) {

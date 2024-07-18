@@ -56,7 +56,7 @@ html {
 	}
 
 	@media screen and (1083px <=width) {
-		font-size: 0.95vw;
+		font-size: 1em;
 
 		h2 {
 			font-size: 2em;
