@@ -19,6 +19,9 @@ main {
 
 	@media screen and (1083px <=width) {
 		section {
+			img{
+				height: 100%;
+			}
 			&:nth-of-type(2) {
 				grid-template-areas: "h2 h2 h2"
 					"ul picture picture";

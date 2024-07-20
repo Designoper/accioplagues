@@ -1,0 +1,7 @@
+main {
+	@media screen and (1083px <=width) {
+		img {
+			height: 100%;
+		}
+	}
+}
