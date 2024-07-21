@@ -36,6 +36,7 @@ main {
 
 	@media screen and (541px <=width) {
 		padding: 0 0 6em;
+		gap: 6em 0;
 
 		section {
 			padding: 0 7.5vw;
@@ -52,8 +53,6 @@ main {
 	}
 
 	@media screen and (1083px <=width) {
-		gap: 5em 0;
-
 		h1 {
 			font-size: 3.5em;
 		}
