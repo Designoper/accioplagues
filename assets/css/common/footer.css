@@ -27,8 +27,6 @@ footer {
     }
 
     @media screen and (541px <=width) {
-        /* padding: 2em 10vw; */
-
         h2 {
             font-size: 1.4em;
         }

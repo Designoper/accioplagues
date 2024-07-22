@@ -8,7 +8,10 @@ html {
 	--row-gap: 2rem;
 	--column-gap: 4rem;
 
-	font: 1.1rem/1.5 "Roboto", sans-serif;
+	--base-font-size: 1.1rem;
+	--h2-font-size: calc(var(--base-font-size)*1.35);
+
+	font: var(--base-font-size)/1.5 "Roboto", sans-serif;
 	color: var(--text);
 	background-color: var(--primary-bg);
 	scrollbar-color: var(--secondary-bg) var(--primary-bg);
@@ -28,7 +31,7 @@ html {
 	}
 
 	h2 {
-		font-size: 1.5rem;
+		font-size: var(--h2-font-size);
 	}
 
 	ul {
@@ -48,27 +51,32 @@ html {
 	}
 
 	@media screen and (541px <=width) {
-		font-size: 1.3rem;
-
-		h2 {
-			font-size: 1.75rem;
-		}
+		--base-font-size: 1.3rem;
+		--h2-font-size: calc(var(--base-font-size)*1.35);
 	}
 
 	@media screen and (925px <=width) {
-		font-size: 0.85rem;
+		--base-font-size: 0.85rem;
+		--h2-font-size: calc(var(--base-font-size)*2);
 
 		h2 {
-			font-size: 2rem;
 			text-align: left;
 		}
 	}
 
 	@media screen and (1280px <=width) {
-		font-size: 1.1rem;
+		--base-font-size: 1.1rem;
+	}
+
+	@media screen and (1281px <=width) {
+		--base-font-size: 0.95rem;
+	}
+
+	@media screen and (1400px <=width) {
+		--base-font-size: 1.2rem;
 	}
 
 	@media screen and (1921px <=width) {
-		font-size: 1vw;
+		--base-font-size: 1vw;
 	}
 }
