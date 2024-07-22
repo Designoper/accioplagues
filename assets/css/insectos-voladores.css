@@ -47,9 +47,10 @@ main {
 					display: initial;
 				}
 
-				li{
-					margin-bottom: 1.5em;
+				li {
+					margin-bottom: 0.8em;
 				}
 			}
 		}
 	}
+}

@@ -12,8 +12,8 @@ main {
 		section {
 			grid-template-areas: "h2 h2 h2"
 				"p1 p2 p3"
-				"p4 p5 p6"
-				"picture picture picture";
+				"picture1 . ."
+				"p4 p5 p6";
 
 			p {
 				&:nth-of-type(1) {
@@ -48,9 +48,9 @@ main {
 			}
 
 			picture {
-				grid-area: picture;
+				grid-area: picture1;
 				width: 100%;
-				margin: 0;
+				/* margin: 0; */
 			}
 
 			img {

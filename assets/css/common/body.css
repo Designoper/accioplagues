@@ -63,4 +63,8 @@ html {
 			text-align: left;
 		}
 	}
+
+	@media screen and (1920px <=width) {
+		font-size: 1vw;
+	}
 }
