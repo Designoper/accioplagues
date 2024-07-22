@@ -8,7 +8,7 @@ html {
 	--row-gap: 2rem;
 	--column-gap: 4rem;
 
-	font: 4.5vw/1.5 "Roboto", sans-serif;
+	font: 1.1rem/1.5 "Roboto", sans-serif;
 	color: var(--text);
 	background-color: var(--primary-bg);
 	scrollbar-color: var(--secondary-bg) var(--primary-bg);
@@ -28,7 +28,7 @@ html {
 	}
 
 	h2 {
-		font-size: 1.45em;
+		font-size: 1.5rem;
 	}
 
 	ul {
@@ -49,20 +49,25 @@ html {
 
 	@media screen and (541px <=width) {
 		/* font-size: 2.5vw; */
-		font-size: 2.75vw;
+		/* font-size: 2.75vw; */
+		font-size: 1.3rem;
 
 		h2 {
 			font-size: 1.75rem;
 		}
 	}
 
-	@media screen and (1083px <=width) {
-		font-size: 1.1rem;
+	@media screen and (925px <=width) {
+		font-size: 0.85rem;
 
 		h2 {
 			font-size: 2rem;
 			text-align: left;
 		}
+	}
+
+	@media screen and (1280px <=width) {
+		font-size: 1.1rem;
 	}
 
 	@media screen and (1920px <=width) {

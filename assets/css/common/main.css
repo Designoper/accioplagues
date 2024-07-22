@@ -38,9 +38,9 @@ main {
 		padding: 0 0 6em;
 		gap: 6em 0;
 
-		section {
+		/* section {
 			padding: 0 7.5vw;
-		}
+		} */
 
 		h1 {
 			font-size: 2.5em;
@@ -52,12 +52,13 @@ main {
 		}
 	}
 
-	@media screen and (1083px <=width) {
+	@media screen and (1280px <=width) {
 		h1 {
 			font-size: 3.5em;
 		}
 
 		section {
+			padding: 0 7.5vw;
 			grid-template-columns: repeat(3, 1fr);
 			column-count: 3;
 			gap: var(--row-gap) var(--column-gap);
