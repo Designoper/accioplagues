@@ -48,10 +48,11 @@ html {
 	}
 
 	@media screen and (541px <=width) {
-		font-size: 2.5vw;
+		/* font-size: 2.5vw; */
+		font-size: 2.75vw;
 
 		h2 {
-			font-size: 1.75em;
+			font-size: 1.75rem;
 		}
 	}
 
@@ -59,7 +60,7 @@ html {
 		font-size: 1.1rem;
 
 		h2 {
-			font-size: 2em;
+			font-size: 2rem;
 			text-align: left;
 		}
 	}
