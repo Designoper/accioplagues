@@ -1,4 +1,12 @@
 main {
+	section {
+		div {
+			display: flex;
+			flex-direction: column;
+			row-gap: 1.25em;
+		}
+	}
+
 	@media screen and (1083px <=width) {
 		section {
 			&:nth-of-type(2) {
@@ -14,9 +22,6 @@ main {
 
 				div {
 					grid-area: div;
-					display: flex;
-					flex-direction: column;
-					row-gap: 1.25em;
 				}
 			}
 
