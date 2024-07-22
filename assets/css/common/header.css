@@ -75,7 +75,7 @@ header {
     }
 
     @media screen and (541px <=width) {
-        padding: 1.35em 7.5vw;
+        padding: 1.35em 10vw;
         gap: 0 1.5em;
 
         >[href="./"] {
@@ -87,7 +87,7 @@ header {
         }
     }
 
-    @media screen and (1083px <=width) {
+    @media screen and (925px <=width) {
         padding: 1em 7.5vw;
 
         [href="#main"] {

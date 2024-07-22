@@ -17,7 +17,7 @@ html {
 		outline: var(--text) solid 4px;
 	}
 
-	:is(h1, h2, h3, h4, h5, h6) {
+	:is(h1, h2, h3) {
 		font-weight: bold;
 		text-align: center;
 		text-wrap: balance;
@@ -48,8 +48,6 @@ html {
 	}
 
 	@media screen and (541px <=width) {
-		/* font-size: 2.5vw; */
-		/* font-size: 2.75vw; */
 		font-size: 1.3rem;
 
 		h2 {
@@ -70,7 +68,7 @@ html {
 		font-size: 1.1rem;
 	}
 
-	@media screen and (1920px <=width) {
+	@media screen and (1921px <=width) {
 		font-size: 1vw;
 	}
 }

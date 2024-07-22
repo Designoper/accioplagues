@@ -17,7 +17,7 @@ main {
 		}
 	}
 
-	@media screen and (1083px <=width) {
+	@media screen and (925px <=width) {
 		section {
 			img{
 				height: 100%;

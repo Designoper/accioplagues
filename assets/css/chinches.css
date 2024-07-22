@@ -13,7 +13,7 @@ main {
 		}
 	}
 
-	@media screen and (1083px <=width) {
+	@media screen and (925px <=width) {
 		h3 {
 			font-size: 1.35em;
 		}

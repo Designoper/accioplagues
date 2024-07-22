@@ -27,7 +27,7 @@ footer {
     }
 
     @media screen and (541px <=width) {
-        padding: 2em 7.5vw;
+        /* padding: 2em 10vw; */
 
         h2 {
             font-size: 1.4em;
@@ -48,7 +48,8 @@ footer {
         }
     }
 
-    @media screen and (1083px <=width) {
+    @media screen and (925px <=width) {
+        padding: 2em 7.5vw;
         grid-template-columns: auto 60%;
 
         h2 {
