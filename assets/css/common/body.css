@@ -51,8 +51,8 @@ html {
 	}
 
 	@media screen and (541px <=width) {
-		--base-font-size: 1.3rem;
-		--h2-font-size: calc(var(--base-font-size)*1.35);
+		--base-font-size: 1.25rem;
+		/* --h2-font-size: calc(var(--base-font-size)*1.35); */
 	}
 
 	@media screen and (925px <=width) {
