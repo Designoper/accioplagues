@@ -74,6 +74,7 @@ html {
 
 	@media screen and (1400px <=width) {
 		--base-font-size: 1.2rem;
+		--h2-font-size: calc(var(--base-font-size)*1.75);
 	}
 
 	@media screen and (1921px <=width) {
