@@ -25,12 +25,12 @@ main {
                 background-color: var(--secondary-bg);
 
                 p {
-                    margin: 0.75em 10% 1.75em;
+                    margin: 0 10% 1.75em;
                 }
 
                 h3 {
                     font-size: 1.25em;
-                    margin: 1em 10% 0;
+                    margin: 1.25em 10% 0.5em;
                 }
 
                 a {
@@ -73,7 +73,7 @@ main {
 
             &:nth-of-type(3) {
                 article {
-                    width: 70%;
+                    width: 80%;
                     margin: auto;
                 }
             }
