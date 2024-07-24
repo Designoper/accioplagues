@@ -44,7 +44,7 @@ main {
 			&:nth-of-type(3) {
 				grid-template-areas: "h2 h2 h2"
 					"p1 picture p3"
-					"p2 picture p4";
+					"p2 picture .";
 
 				p {
 					&:nth-of-type(2) {
@@ -53,10 +53,6 @@ main {
 
 					&:nth-of-type(3) {
 						grid-area: p3;
-					}
-
-					&:nth-of-type(4) {
-						grid-area: p4;
 					}
 				}
 

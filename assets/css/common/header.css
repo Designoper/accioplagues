@@ -1,11 +1,10 @@
 header {
     position: sticky;
     top: 0;
-    padding: 1em 10vw;
+    padding: 1rem 10vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 0 1em;
     z-index: 1;
     background-color: var(--secondary-bg);
     /* box-shadow: 0 0 0 0.15em #6bc9e6; */
@@ -15,16 +14,16 @@ header {
     }
 
     >[href="./"] {
-        width: 1.75em;
+        width: 1.75rem;
     }
 
     >details {
         z-index: 2;
-        width: 1em;
+        width: 1rem;
 
         path {
             stroke: var(--text);
-            stroke-width: 3em;
+            stroke-width: 3rem;
         }
 
         &[open] {
@@ -75,8 +74,7 @@ header {
     }
 
     @media screen and (541px <=width) {
-        padding: 1.35em 10vw;
-        gap: 0 1.5em;
+        padding: 1.35rem 10vw;
 
         >[href="./"] {
             width: 2.5em;
