@@ -47,7 +47,11 @@ html {
 	figure {
 		display: grid;
 		gap: 1em 0;
+	}
+
+	figcaption {
 		text-align: right;
+
 	}
 
 	strong {
