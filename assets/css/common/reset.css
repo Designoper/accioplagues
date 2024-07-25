@@ -13,8 +13,9 @@
 	background-color: transparent;
 	break-inside: avoid;
 	flex-wrap: wrap;
-	/* text-align: justify;
-	hyphens: auto; */
+	text-align: justify;
+	hyphens: auto;
+	background-color: transparent;
 	inset: unset;
 }
 
