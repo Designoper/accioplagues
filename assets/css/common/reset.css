@@ -11,6 +11,7 @@
 	flex-wrap: wrap;
 	/* text-align: justify;
 	hyphens: auto; */
+	background-color: transparent;
 	inset: unset;
 }
 
@@ -26,7 +27,6 @@
 img {
 	object-fit: cover;
 	display: grid;
-	background-color: transparent;
 }
 
 /* :is(h1, h2, h3, h4, h5, h6, p, a, summary, button, figcaption, li, label, legend, dt, dd) {
@@ -41,5 +41,4 @@ summary {
 button {
 	cursor: pointer;
 	display: grid;
-	background-color: transparent;
 }

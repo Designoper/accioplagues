@@ -8,10 +8,6 @@ main {
 		text-decoration: underline;
 	}
 
-	strong {
-		font-weight: bold;
-	}
-
 	@media screen and (925px <=width) {
 		section {
 			&:nth-of-type(1) {
