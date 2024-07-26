@@ -2,4 +2,28 @@ main {
 	a {
 		text-decoration: underline;
 	}
+
+	@media screen and (925px <=width) {
+		section {
+			&:nth-of-type(2) {
+				grid-template-areas: "h2 h2 h2"
+					"p1 ul ."
+					"p2 ul .";
+
+				p {
+					&:nth-of-type(1) {
+						grid-area: p1;
+					}
+
+					&:nth-of-type(2) {
+						grid-area: p2;
+					}
+				}
+
+				ul {
+					grid-area: ul;
+				}
+			}
+		}
+	}
 }
