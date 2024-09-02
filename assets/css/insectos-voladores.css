@@ -6,7 +6,8 @@ main {
 	@media screen and (925px <=width) {
 		section {
 			&:nth-of-type(2) {
-				grid-template-areas: "h2 h2 h2"
+				grid-template-areas:
+					"h2 h2 h2"
 					"p1 p2 p3"
 					"figure1 figure2 figure3";
 

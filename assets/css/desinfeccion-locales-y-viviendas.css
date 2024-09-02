@@ -1,7 +1,7 @@
 main {
 	@media screen and (541px <=width) {
 		section {
-			picture {
+			img {
 				width: 65%;
 				margin: auto;
 			}
@@ -20,7 +20,7 @@ main {
 				margin-bottom: var(--row-gap);
 			}
 
-			picture {
+			img {
 				width: 100%;
 			}
 
