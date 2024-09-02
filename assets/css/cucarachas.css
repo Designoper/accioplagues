@@ -27,7 +27,7 @@ main {
 				grid-template-areas: "h2 h2 h2"
 					"ul picture picture";
 
-				picture {
+				img {
 					grid-area: picture;
 				}
 			}

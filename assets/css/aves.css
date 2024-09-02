@@ -10,7 +10,7 @@ main {
 					"p1 picture1 picture2"
 					"p2 picture1 picture2";
 
-				picture {
+				img {
 					&:nth-of-type(1) {
 						grid-area: picture1;
 					}

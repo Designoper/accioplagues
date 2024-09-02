@@ -6,7 +6,8 @@ main {
 			}
 
 			&:nth-of-type(1) {
-				grid-template-areas: "h2 h2 h2"
+				grid-template-areas:
+					"h2 h2 h2"
 					"p1 picture ."
 					"p2 picture .";
 
@@ -16,7 +17,7 @@ main {
 					}
 				}
 
-				picture {
+				img {
 					grid-area: picture;
 				}
 			}
