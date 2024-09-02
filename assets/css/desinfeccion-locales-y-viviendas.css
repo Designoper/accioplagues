@@ -1,4 +1,11 @@
 main {
+	section {
+		div {
+			display: grid;
+			gap: inherit;
+		}
+	}
+
 	@media screen and (541px <=width) {
 		section {
 			img {
@@ -10,23 +17,80 @@ main {
 
 	@media screen and (925px <=width) {
 		section {
-			display: initial;
+			&:nth-of-type(1) {
+				align-items: flex-start;
+				grid-template-areas:
+					"h2 h2 h2"
+					"div1 img div2";
 
-			h2 {
-				margin-bottom: var(--row-gap);
+				div {
+					&:nth-of-type(1) {
+						grid-area: div1;
+					}
+
+					&:nth-of-type(2) {
+						grid-area: div2;
+					}
+				}
+
+				img {
+					width: 100%;
+					/* height: 100%; */
+					margin: 0;
+					grid-area: img;
+				}
 			}
 
-			p {
-				margin-bottom: var(--row-gap);
-			}
+			&:nth-of-type(2) {
+				align-items: flex-start;
+				grid-template-areas:
+					"h2 h2 h2"
+					"div1 img div2";
 
-			img {
-				width: 100%;
+				div {
+					&:nth-of-type(1) {
+						grid-area: div1;
+					}
+
+					&:nth-of-type(2) {
+						grid-area: div2;
+					}
+
+
+				}
+
+				img {
+					width: 100%;
+					height: 100%;
+					margin: 0;
+					grid-area: img;
+				}
 			}
 
 			&:nth-of-type(3) {
+				align-items: flex-start;
+				grid-template-areas:
+					"h2 h2 h2"
+					"div1 div2 div3";
+
+				div {
+					&:nth-of-type(1) {
+						grid-area: div1;
+					}
+
+					&:nth-of-type(2) {
+						grid-area: div2;
+					}
+
+					&:nth-of-type(3) {
+						grid-area: div3;
+					}
+				}
+
 				img {
-					margin-bottom: var(--row-gap);
+					width: 100%;
+					/* height: 100%; */
+					margin: 0;
 				}
 			}
 		}
