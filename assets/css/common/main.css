@@ -60,7 +60,6 @@ main {
 		section {
 			padding: 0 7.5vw;
 			grid-template-columns: repeat(3, 1fr);
-			column-count: 3;
 			gap: var(--row-gap) var(--column-gap);
 		}
 
