@@ -1,6 +1,6 @@
 :is(*, *::before, *::after) {
-	padding: 0;
 	margin: 0;
+	padding: 0;
 	border: 0;
 	box-sizing: border-box;
 	font: inherit;
@@ -8,34 +8,34 @@
 	/* text-box-trim: both;
 	text-box-edge: cap alphabetic; */
 	text-wrap: pretty;
+	text-align: justify;
+	hyphens: auto;
 	text-decoration: none;
+	overflow-wrap: break-word;
 	color: inherit;
 	background-color: transparent;
 	break-inside: avoid;
 	flex-wrap: wrap;
-	text-align: justify;
-	hyphens: auto;
 }
 
-:is(ol, ul, menu) {
+html {
+	font-family: sans-serif;
+}
+
+li {
 	list-style: none;
 }
 
-:is(img, video) {
+:is(img, svg, video) {
+	display: block;
 	width: 100%;
 	height: auto;
 }
 
 img {
-	display: block;
 	object-fit: cover;
 }
 
-summary {
+:is(button, summary) {
 	cursor: pointer;
-}
-
-button {
-	cursor: pointer;
-	display: grid;
 }

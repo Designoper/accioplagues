@@ -33,9 +33,13 @@ main {
 	}
 
 	ul {
-		list-style: decimal inside;
 		gap: 1em var(--column-gap);
 		column-count: 3;
+
+		li {
+			list-style: decimal inside;
+
+		}
 	}
 
 	@media screen and (541px <=width) {
