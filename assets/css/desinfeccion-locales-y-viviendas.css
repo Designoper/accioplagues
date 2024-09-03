@@ -55,8 +55,6 @@ main {
 					&:nth-of-type(2) {
 						grid-area: div2;
 					}
-
-
 				}
 
 				img {
