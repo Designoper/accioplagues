@@ -35,7 +35,8 @@ main {
                     width: fit-content;
                     color: var(--terciary-bg);
                     background-color: var(--primary-bg);
-                    margin: 0 auto;
+                    margin: 0 10%;
+                    text-wrap: balance;
                     padding: 0.5em 1em;
                     border-radius: 0.5em;
                     transition: transform 0.5s;
