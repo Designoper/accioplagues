@@ -32,7 +32,7 @@ main {
 
                 a {
                     display: block;
-                    width: fit-content;
+                    /* width: fit-content; */
                     color: var(--terciary-bg);
                     background-color: var(--primary-bg);
                     margin: 0 10%;
