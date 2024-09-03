@@ -6,7 +6,7 @@ main {
 	>div {
 		position: relative;
 
-		picture {
+		img {
 			filter: brightness(50%);
 		}
 	}
