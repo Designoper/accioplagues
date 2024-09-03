@@ -114,7 +114,7 @@ header {
         nav {
             all: unset;
 
-            menu {
+            >menu {
                 display: flex;
             }
 
@@ -128,12 +128,14 @@ header {
                 }
             }
 
-            ul {
-                position: absolute;
-                background-color: var(--secondary-bg);
+            details {
+                menu {
+                    position: absolute;
+                    background-color: var(--secondary-bg);
 
-                a {
-                    padding: 0.5em 1em;
+                    a {
+                        padding: 0.5em 1em;
+                    }
                 }
             }
         }
