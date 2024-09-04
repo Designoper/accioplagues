@@ -21,17 +21,15 @@ html {
 
 	main {
 		ul {
-			li {
-				list-style: decimal inside;
+			list-style: decimal inside;
+		}
 
-				&::marker {
-					font-weight: bold;
-				}
-			}
+		li::marker {
+			font-weight: bold;
 		}
 	}
 
-	:is(li::marker, strong) {
+	strong {
 		font-weight: bold;
 	}
 
