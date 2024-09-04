@@ -13,7 +13,7 @@ main {
 		gap: 1em;
 	}
 
-	@media screen and (925px <=width) {
+	@media screen and (1024px <=width) {
 		ul {
 			display: initial;
 		}

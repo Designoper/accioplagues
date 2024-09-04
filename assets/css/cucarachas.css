@@ -17,7 +17,7 @@ main {
 		}
 	}
 
-	@media screen and (925px <=width) {
+	@media screen and (1024px <=width) {
 		section {
 			img {
 				height: 100%;
@@ -35,7 +35,7 @@ main {
 
 			&:nth-of-type(3) {
 				display: grid;
-				column-gap: var(--column-gap);
+				column-gap: 4rem;
 
 				figure {
 					width: 100%;

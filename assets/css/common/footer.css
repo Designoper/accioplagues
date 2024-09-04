@@ -19,6 +19,7 @@ footer {
     }
 
     ul {
+        display: grid;
         gap: 1.5em;
     }
 
@@ -46,7 +47,7 @@ footer {
         }
     }
 
-    @media screen and (925px <=width) {
+    @media screen and (1024px <=width) {
         padding: 2em 7.5vw;
         grid-template-columns: auto 60%;
 

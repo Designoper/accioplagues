@@ -22,7 +22,7 @@ html {
 	font-family: sans-serif;
 }
 
-li {
+:is(ul, ol, menu) {
 	list-style: none;
 }
 

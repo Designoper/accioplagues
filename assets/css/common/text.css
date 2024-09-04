@@ -1,0 +1,78 @@
+html {
+	:is(h1, h2, h3) {
+		font-weight: bold;
+		text-align: center;
+		text-wrap: balance;
+		hyphens: none;
+		/* line-height: initial; */
+	}
+
+	h1 {
+		font-size: 2.5rem;
+	}
+
+	h2 {
+		font-size: 2rem;
+	}
+
+	h3 {
+		font-size: 1.5rem;
+	}
+
+	main {
+		ul {
+			li {
+				list-style: decimal inside;
+
+				&::marker {
+					font-weight: bold;
+				}
+			}
+		}
+	}
+
+	:is(li::marker, strong) {
+		font-weight: bold;
+	}
+
+	figcaption {
+		text-align: right;
+	}
+
+	@media screen and (801px <=width) {
+		font-size: 1.2rem;
+
+		h1 {
+			font-size: 3rem;
+		}
+
+		/* h2 {
+			font-size: 2rem;
+		} */
+	}
+
+	@media screen and (1024px <=width) {
+		font-size: 0.9rem;
+
+		h1 {
+			font-size: 3.5rem;
+		}
+
+		h2 {
+			/* font-size: 2rem; */
+			text-align: left;
+		}
+	}
+
+	@media screen and (1280px <=width) {
+		font-size: 1rem;
+	}
+
+	@media screen and (1700px <=width) {
+		font-size: 1.25rem;
+	}
+
+	@media screen and (1921px <=width) {
+		font-size: 1vw;
+	}
+}
