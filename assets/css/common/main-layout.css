@@ -5,6 +5,10 @@ main {
 
 	>div {
 		position: relative;
+
+		img {
+			height: 50vh;
+		}
 	}
 
 	:is(h1, h2, h3) {
@@ -40,7 +44,21 @@ main {
 		gap: 1rem 0;
 	}
 
+	/* @media screen and (541px <=width) {
+		>div {
+			img {
+				height: 50vh;
+			}
+		}
+	} */
+
 	@media screen and (1024px <=width) {
+		>div {
+			img {
+				height: auto;
+			}
+		}
+
 		h1 {
 			padding: 0 7.5vw;
 		}
