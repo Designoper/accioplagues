@@ -44,14 +44,6 @@ main {
 		gap: 1rem 0;
 	}
 
-	/* @media screen and (541px <=width) {
-		>div {
-			img {
-				height: 50vh;
-			}
-		}
-	} */
-
 	@media screen and (1024px <=width) {
 		>div {
 			img {

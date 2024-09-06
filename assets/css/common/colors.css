@@ -26,7 +26,7 @@ h1 {
 main {
 	>div {
 		img {
-			filter: brightness(50%);
+			filter: brightness(40%);
 		}
 	}
 }
