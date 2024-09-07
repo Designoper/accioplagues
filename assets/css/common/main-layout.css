@@ -7,7 +7,7 @@ main {
 		position: relative;
 
 		img {
-			height: 30rem;
+			height: 375px;
 		}
 	}
 
@@ -42,6 +42,14 @@ main {
 	figure {
 		display: grid;
 		gap: 1rem 0;
+	}
+
+	@media screen and (541px <= width) {
+		>div {
+			img {
+				height: 550px;
+			}
+		}
 	}
 
 	@media screen and (1024px <=width) {
