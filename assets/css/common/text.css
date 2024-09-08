@@ -50,9 +50,9 @@ hgroup p {
 		font-size: 3rem;
 	}
 
-	/* h2 {
-			font-size: 2rem;
-		} */
+	h2 {
+		font-size: 2rem;
+	}
 }
 
 @media screen and (1024px <=width) {
@@ -65,7 +65,6 @@ hgroup p {
 	}
 
 	h2 {
-		/* font-size: 2rem; */
 		text-align: left;
 	}
 }
