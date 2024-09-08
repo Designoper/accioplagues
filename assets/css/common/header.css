@@ -9,9 +9,7 @@ header {
         justify-content: space-between;
         align-items: center;
         background-color: var(--secondary-bg);
-        /* box-shadow: 0 0 0 0.15em #6bc9e6; */
         box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
-
 
         [href="#main"] {
             display: none;
