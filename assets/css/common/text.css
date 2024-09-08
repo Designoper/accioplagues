@@ -23,13 +23,9 @@ html {
 		ul {
 			list-style: decimal inside;
 		}
-
-		li::marker {
-			font-weight: bold;
-		}
 	}
 
-	strong {
+	:is(strong, li::marker) {
 		font-weight: bold;
 	}
 

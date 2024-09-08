@@ -1,12 +1,13 @@
 header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
     nav {
-        position: sticky;
-        top: 0;
         padding: 0.75rem 10vw;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        z-index: 2;
         background-color: var(--secondary-bg);
         /* box-shadow: 0 0 0 0.15em #6bc9e6; */
 
@@ -19,7 +20,7 @@ header {
         }
 
         >details {
-            z-index: 2;
+            z-index: 1;
             width: 1.5rem;
 
             path {
