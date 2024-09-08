@@ -29,7 +29,7 @@ a {
 }
 
 li {
-	list-style: inherit;
+	/* list-style: inherit; */
 	break-inside: avoid;
 	text-wrap: initial;
 }
