@@ -36,6 +36,11 @@ figcaption {
 	text-align: right;
 }
 
+hgroup p {
+	text-align: center;
+	font-weight: bold;
+}
+
 @media screen and (801px <=width) {
 	html {
 		font-size: 1.2rem;

@@ -1,9 +1,5 @@
 main {
 	section {
-		p:has(strong) {
-			text-align: center;
-		}
-
 		img {
 			width: 75%;
 			border-radius: 50%;
