@@ -8,18 +8,20 @@ main {
 			&:nth-of-type(1) {
 				grid-template-areas:
 					"h2 h2 h2"
-					"p1 img ."
-					"p2 img .";
+					"p1 img1 ."
+					"p2 img1 .";
+			}
 
-				p {
-					&:nth-of-type(2) {
-						grid-area: p2;
-					}
-				}
+			&:nth-of-type(2) {
+				grid-template-areas:
+					"h2 h2 h2"
+					"ul1 img1 .";
+			}
 
-				img {
-					grid-area: img;
-				}
+			&:nth-of-type(3) {
+				grid-template-areas:
+					"h2 h2 h2"
+					"ul1 img1 .";
 			}
 		}
 	}
