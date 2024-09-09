@@ -5,43 +5,35 @@ main {
 
 	@media screen and (1024px <=width) {
 		section {
+			&:nth-of-type(1) {
+				grid-template-areas:
+					"h2 h2 h2"
+					"p1 . .";
+			}
+
 			&:nth-of-type(2) {
 				grid-template-areas:
 					"h2 h2 h2"
 					"p1 p2 p3"
 					"figure1 figure2 figure3";
+			}
 
-				p {
-					&:nth-of-type(1) {
-						grid-area: p1;
-					}
+			&:nth-of-type(3) {
+				grid-template-areas:
+					"h2 h2 h2"
+					"p1 p2 p3";
+			}
 
-					&:nth-of-type(2) {
-						grid-area: p2;
-					}
-
-					&:nth-of-type(3) {
-						grid-area: p3;
-					}
-				}
-
-				figure {
-					&:nth-of-type(1) {
-						grid-area: figure1;
-					}
-
-					&:nth-of-type(2) {
-						grid-area: figure2;
-					}
-
-					&:nth-of-type(3) {
-						grid-area: figure3;
-					}
-				}
+			&:nth-of-type(4) {
+				grid-template-areas:
+					"h2 h2 h2"
+					"p1 p2 .";
 			}
 
 			&:nth-of-type(5) {
-				grid-template-columns: 1fr;
+				grid-template-areas:
+					"h2 h2 h2"
+					"ul1 ul1 ul1";
 
 				ul {
 					display: initial;
@@ -50,6 +42,12 @@ main {
 				li {
 					margin-bottom: 0.8em;
 				}
+			}
+
+			&:nth-of-type(6) {
+				grid-template-areas:
+					"h2 h2 h2"
+					"article1 article2 article3";
 			}
 		}
 	}

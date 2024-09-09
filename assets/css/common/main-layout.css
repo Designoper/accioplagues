@@ -20,9 +20,9 @@ main {
 		transform: translate(-50%, -50%);
 	}
 
-	/* h2 {
+	h2 {
 		grid-column: 1/-1;
-	} */
+	}
 
 	section {
 		display: grid;

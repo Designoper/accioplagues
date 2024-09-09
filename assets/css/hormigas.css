@@ -1,10 +1,6 @@
 main {
 	@media screen and (1024px <=width) {
 		section {
-			img {
-				height: 100%;
-			}
-
 			&:nth-of-type(1) {
 				grid-template-areas:
 					"h2 h2 h2"
@@ -22,6 +18,18 @@ main {
 				grid-template-areas:
 					"h2 h2 h2"
 					"ul1 img1 .";
+			}
+
+			&:nth-of-type(4) {
+				grid-template-areas:
+					"h2 h2 h2"
+					"p1 p2 .";
+			}
+
+			&:nth-of-type(5) {
+				grid-template-areas:
+					"h2 h2 h2"
+					"p1 p2 img1";
 			}
 		}
 	}
