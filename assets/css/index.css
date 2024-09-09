@@ -25,11 +25,11 @@ main {
             }
 
             p {
-                margin: 0 10% 1.75em;
+                margin: 1.75em 10%;
             }
 
             h3 {
-                margin: 1.25em 10% 0.5em;
+                margin: 0.75em 10% 0.5em;
             }
 
             a {
@@ -48,9 +48,9 @@ main {
                 }
             }
 
-            img {
+            /* img {
                 border-radius: 0.5em 0.5em 0 0;
-            }
+            } */
         }
     }
 
