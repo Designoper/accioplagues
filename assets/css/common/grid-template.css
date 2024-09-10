@@ -28,6 +28,18 @@ main {
 			&>:nth-child(7) {
 				grid-area: g;
 			}
+
+			&>:nth-child(8) {
+				grid-area: h;
+			}
+
+			&>:nth-child(9) {
+				grid-area: i;
+			}
+
+			&>:nth-child(10) {
+				grid-area: j;
+			}
 		}
 	}
 }
