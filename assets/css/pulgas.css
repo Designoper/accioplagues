@@ -15,13 +15,3 @@ main {
 		}
 	}
 }
-
-@media screen and (1024px <=width) {
-	section {
-		&:nth-of-type(5) {
-			img {
-				height: 100%;
-			}
-		}
-	}
-}

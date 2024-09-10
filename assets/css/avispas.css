@@ -12,14 +12,4 @@ main {
 	ul {
 		padding: 2em;
 	}
-
-	@media screen and (541px <=width) {
-		section {
-			&:nth-of-type(2) {
-				img {
-					height: 100%;
-				}
-			}
-		}
-	}
 }

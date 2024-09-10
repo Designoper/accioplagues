@@ -8,8 +8,6 @@ main {
 					"p2 img1 img2";
 
 				img {
-					height: 100%;
-
 					&:nth-of-type(1) {
 						grid-area: img1;
 					}

@@ -21,6 +21,7 @@ main {
 	}
 
 	h2 {
+		flex-basis: 100%;
 		grid-column: 1/-1;
 	}
 
@@ -42,7 +43,7 @@ main {
 		gap: 1rem 0;
 	}
 
-	@media screen and (541px <= width) {
+	@media screen and (541px <=width) {
 		>div {
 			img {
 				height: 550px;
@@ -65,6 +66,10 @@ main {
 			padding: 0 7.5vw;
 			grid-template-columns: repeat(3, 1fr);
 			gap: 1.75rem 4rem;
+
+			>img {
+				height: 100%;
+			}
 		}
 	}
 }
