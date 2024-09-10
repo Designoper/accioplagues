@@ -17,55 +17,38 @@ main {
 
 	@media screen and (541px <=width) {
 		section {
-			img {
-				/* width: 60%; */
+			/* img {
+				width: 60%;
 				margin: auto;
-			}
+			} */
 		}
 	}
 
 	@media screen and (1024px <=width) {
 		section {
+			&:nth-of-type(1) {
+				grid-template-areas:
+					"a a a"
+					"b c .";
+			}
+
 			&:nth-of-type(2) {
 				grid-template-areas:
-					"h2 h2 h2"
-					"p1 p2 p3"
-					"img1 img2 img3";
+					"a a a"
+					"b d f"
+					"c e g";
+			}
 
-				p {
-					&:nth-of-type(1) {
-						grid-area: p1;
-					}
-
-					&:nth-of-type(2) {
-						grid-area: p2;
-					}
-
-					&:nth-of-type(3) {
-						grid-area: p3;
-					}
-				}
-
-				img {
-					width: 100%;
-					margin: 0;
-
-					&:nth-of-type(1) {
-						grid-area: img1;
-					}
-
-					&:nth-of-type(2) {
-						grid-area: img2;
-					}
-
-					&:nth-of-type(3) {
-						grid-area: img3;
-					}
-				}
+			&:nth-of-type(3) {
+				grid-template-areas:
+					"a a a"
+					"b c d";
 			}
 
 			&:nth-of-type(4) {
-				grid-template-columns: 1fr;
+				grid-template-areas:
+				"a a a"
+				"b b b";
 			}
 		}
 

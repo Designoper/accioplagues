@@ -40,6 +40,22 @@ main {
 			&>:nth-child(10) {
 				grid-area: j;
 			}
+
+			&>:nth-child(11) {
+				grid-area: k;
+			}
+
+			&>:nth-child(12) {
+				grid-area: l;
+			}
+
+			&>:nth-child(13) {
+				grid-area: m;
+			}
+
+			&>:nth-child(14) {
+				grid-area: n;
+			}
 		}
 	}
 }
