@@ -23,6 +23,30 @@ main {
 				&:nth-of-type(4) {
 					grid-area: p4;
 				}
+
+				&:nth-of-type(5) {
+					grid-area: p5;
+				}
+
+				&:nth-of-type(6) {
+					grid-area: p6;
+				}
+
+				&:nth-of-type(7) {
+					grid-area: p7;
+				}
+
+				&:nth-of-type(8) {
+					grid-area: p8;
+				}
+
+				&:nth-of-type(9) {
+					grid-area: p9;
+				}
+
+				&:nth-of-type(10) {
+					grid-area: p10;
+				}
 			}
 
 			>img {
