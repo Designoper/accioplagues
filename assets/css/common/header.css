@@ -50,11 +50,11 @@ header {
             }
 
             summary {
-                display: grid;
+                list-style: none;
 
-                &::-webkit-details-marker {
+                /* &::-webkit-details-marker {
                     display: none;
-                }
+                } */
             }
         }
 
