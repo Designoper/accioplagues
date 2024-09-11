@@ -1,20 +1,22 @@
 main {
 	div {
-		display: flex;
-		gap: 1.25em;
+		display: grid;
+		/* gap: 1.25em; */
+		gap: inherit;
 	}
 
 	a {
 		text-decoration: underline;
+		color: revert;
 	}
 
 	@media screen and (1024px <=width) {
 		section {
 			&:nth-of-type(1) {
+				align-items: start;
 				grid-template-areas:
 					"a a a"
-					"b d ."
-					"c d ."
+					"b c ."
 				;
 
 				ul {

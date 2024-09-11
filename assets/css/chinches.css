@@ -15,14 +15,14 @@ main {
 		margin: 1.5em 0 0.5em;
 	}
 
-	@media screen and (541px <=width) {
+	/* @media screen and (541px <=width) {
 		section {
-			/* img {
+			img {
 				width: 60%;
 				margin: auto;
-			} */
+			}
 		}
-	}
+	} */
 
 	@media screen and (1024px <=width) {
 		section {
@@ -47,8 +47,8 @@ main {
 
 			&:nth-of-type(4) {
 				grid-template-areas:
-				"a a a"
-				"b b b";
+					"a a a"
+					"b b b";
 			}
 		}
 

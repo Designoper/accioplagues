@@ -1,6 +1,7 @@
 main {
 	a {
 		text-decoration: underline;
+		color: revert;
 	}
 
 	@media screen and (1024px <=width) {
@@ -58,7 +59,8 @@ main {
 			&:nth-of-type(8) {
 				grid-template-areas:
 					"a a a"
-					"b c ."
+					"b d ."
+					"c . ."
 				;
 			}
 
