@@ -18,7 +18,7 @@ header {
     }
 
     >details {
-        z-index: 1;
+        /* z-index: 1; */
         width: 1.5rem;
 
         path {
@@ -30,20 +30,6 @@ header {
             +nav {
                 right: 0;
                 visibility: initial;
-            }
-
-            svg {
-                /* &:first-of-type {
-                        display: none;
-                    } */
-            }
-        }
-
-        &:not([open]) {
-            svg {
-                /* &:last-of-type {
-                        display: none;
-                    } */
             }
         }
 
@@ -58,12 +44,15 @@ header {
 
     nav {
         display: flex;
+        flex-direction: column;
         position: fixed;
         top: 0;
         right: -100%;
         height: 100vh;
-        padding-top: 4rem;
+        padding-top: 1.25rem;
         background-color: inherit;
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+
         visibility: hidden;
         transition-property: right, visibility;
         transition-duration: 0.7s;
@@ -71,16 +60,18 @@ header {
         :is(summary, a) {
             padding: 0.35em 2em;
             display: list-item;
+            /* outline: solid 1px; */
         }
 
         >details {
-            z-index: 1;
             width: 1.5rem;
+            align-self: flex-end;
 
             path {
                 stroke: var(--text);
                 stroke-width: 4rem;
             }
+
             summary {
                 padding: 0;
                 list-style: none;
@@ -90,11 +81,16 @@ header {
                 }
             }
         }
-    }
-}
 
-@media screen and (1024px <=width) {
-    nav {
+        menu details[open] {
+            summary {
+                background-color: blue;
+
+            }
+        }
+    }
+
+    @media screen and (1024px <=width) {
         padding: 0.75rem 7.5vw;
 
         [href="#main"] {
@@ -120,10 +116,9 @@ header {
             display: none;
         }
 
-        >menu {
+        nav {
             all: unset;
-            display: flex;
-            list-style: none;
+            /* display: flex; */
 
             :is(summary, a) {
                 padding: 0.5em 0.75em;
@@ -133,6 +128,13 @@ header {
                 &:hover {
                     background-color: var(--background-text);
                 }
+            }
+
+            >details{
+                display: none;
+            }
+            >menu{
+                display: flex;
             }
 
             details {
@@ -147,5 +149,4 @@ header {
             }
         }
     }
-}
 }
