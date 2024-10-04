@@ -2,21 +2,75 @@ header {
     position: sticky;
     top: 0;
     z-index: 1;
+    padding: 0.75rem 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-bg);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
 
-    nav {
-        padding: 0.75rem 10vw;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: var(--secondary-bg);
-        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    [href="#main"] {
+        display: none;
+    }
 
-        [href="#main"] {
-            display: none;
+    >[href="./"] {
+        width: 2.5rem;
+    }
+
+    >details {
+        z-index: 1;
+        width: 1.5rem;
+
+        path {
+            stroke: var(--text);
+            stroke-width: 4rem;
         }
 
-        >[href="./"] {
-            width: 2.5rem;
+        &[open] {
+            +nav {
+                right: 0;
+                visibility: initial;
+            }
+
+            svg {
+                /* &:first-of-type {
+                        display: none;
+                    } */
+            }
+        }
+
+        &:not([open]) {
+            svg {
+                /* &:last-of-type {
+                        display: none;
+                    } */
+            }
+        }
+
+        summary {
+            list-style: none;
+
+            &::-webkit-details-marker {
+                display: none;
+            }
+        }
+    }
+
+    nav {
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        padding-top: 4rem;
+        background-color: inherit;
+        visibility: hidden;
+        transition-property: right, visibility;
+        transition-duration: 0.7s;
+
+        :is(summary, a) {
+            padding: 0.35em 2em;
+            display: list-item;
         }
 
         >details {
@@ -27,29 +81,8 @@ header {
                 stroke: var(--text);
                 stroke-width: 4rem;
             }
-
-            &[open] {
-                +menu {
-                    right: 0;
-                    visibility: initial;
-                }
-
-                svg {
-                    &:first-of-type {
-                        display: none;
-                    }
-                }
-            }
-
-            &:not([open]) {
-                svg {
-                    &:last-of-type {
-                        display: none;
-                    }
-                }
-            }
-
             summary {
+                padding: 0;
                 list-style: none;
 
                 &::-webkit-details-marker {
@@ -57,78 +90,62 @@ header {
                 }
             }
         }
+    }
+}
+
+@media screen and (1024px <=width) {
+    nav {
+        padding: 0.75rem 7.5vw;
+
+        [href="#main"] {
+            display: initial;
+            position: absolute;
+            top: -100%;
+
+            &:focus {
+                font-size: 1.5em;
+                padding: 1em;
+                top: 50vh;
+                left: 50vw;
+                transform: translate(-50%, -50%);
+                background-color: inherit;
+            }
+        }
+
+        >[href="./"] {
+            width: 3rem;
+        }
+
+        >details {
+            display: none;
+        }
 
         >menu {
-            position: fixed;
-            top: 0;
-            right: -100%;
-            height: 100vh;
-            padding-top: 4rem;
-            background-color: inherit;
-            visibility: hidden;
-            transition-property: right, visibility;
-            transition-duration: 0.7s;
+            all: unset;
+            display: flex;
+            list-style: none;
 
             :is(summary, a) {
-                padding: 0.35em 2em;
-                display: list-item;
-            }
-        }
-    }
+                padding: 0.5em 0.75em;
+                transition: background-color 0.35s;
+                border-radius: 0.2em;
 
-    @media screen and (1024px <=width) {
-        nav {
-            padding: 0.75rem 7.5vw;
-
-            [href="#main"] {
-                display: initial;
-                position: absolute;
-                top: -100%;
-
-                &:focus {
-                    font-size: 1.5em;
-                    padding: 1em;
-                    top: 50vh;
-                    left: 50vw;
-                    transform: translate(-50%, -50%);
-                    background-color: inherit;
+                &:hover {
+                    background-color: var(--background-text);
                 }
             }
 
-            >[href="./"] {
-                width: 3rem;
-            }
+            details {
+                menu {
+                    position: absolute;
+                    background-color: var(--secondary-bg);
 
-            >details {
-                display: none;
-            }
-
-            >menu {
-                all: unset;
-                display: flex;
-                list-style: none;
-
-                :is(summary, a) {
-                    padding: 0.5em 0.75em;
-                    transition: background-color 0.35s;
-                    border-radius: 0.2em;
-
-                    &:hover {
-                        background-color: var(--background-text);
-                    }
-                }
-
-                details {
-                    menu {
-                        position: absolute;
-                        background-color: var(--secondary-bg);
-
-                        a {
-                            padding: 0.5em 1em;
-                        }
+                    a {
+                        padding: 0.5em 1em;
                     }
                 }
             }
         }
     }
+}
 }
