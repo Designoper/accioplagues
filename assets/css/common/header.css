@@ -62,6 +62,7 @@ header {
             position: fixed;
             top: 0;
             right: -100%;
+            width: 100vw;
             height: 100vh;
             padding-top: 4rem;
             background-color: inherit;
@@ -72,6 +73,8 @@ header {
             :is(summary, a) {
                 padding: 0.35em 2em;
                 display: list-item;
+                /* text-align: center; */
+                /* border-bottom: 2px solid blue; */
             }
         }
     }
@@ -103,6 +106,10 @@ header {
                 display: none;
             }
 
+            span {
+                display: block;
+            }
+
             >menu {
                 all: unset;
                 display: flex;
@@ -112,6 +119,7 @@ header {
                     padding: 0.5em 0.75em;
                     transition: background-color 0.35s;
                     border-radius: 0.2em;
+                    text-align: left;
 
                     &:hover {
                         background-color: var(--background-text);
