@@ -73,6 +73,9 @@ header {
             :is(summary, a) {
                 padding: 0.35em 2em;
                 display: list-item;
+                text-align: left;
+                hyphens: none;
+
                 /* text-align: center; */
                 /* border-bottom: 2px solid blue; */
             }
@@ -119,7 +122,6 @@ header {
                     padding: 0.5em 0.75em;
                     transition: background-color 0.35s;
                     border-radius: 0.2em;
-                    text-align: left;
 
                     &:hover {
                         background-color: var(--background-text);
@@ -135,6 +137,15 @@ header {
                             padding: 0.5em 1em;
                         }
                     }
+                }
+
+                details::details-content {
+                    opacity: 0;
+                    transition: content-visibility 300ms allow-discrete, opacity 300ms;
+                }
+
+                details[open]::details-content {
+                    opacity: 1;
                 }
             }
         }
