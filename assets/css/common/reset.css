@@ -5,8 +5,7 @@
 	box-sizing: border-box;
 	font: inherit;
 	line-height: 1.5;
-	/* text-box-trim: both;
-	text-box-edge: cap alphabetic; */
+	/* text-box: trim-both cap alphabetic; */
 	text-wrap: pretty;
 	text-align: justify;
 	hyphens: auto;
