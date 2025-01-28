@@ -129,6 +129,15 @@ header {
                 }
 
                 details {
+                    &::details-content {
+                        opacity: 0;
+                        transition: content-visibility 300ms allow-discrete, opacity 300ms;
+                    }
+
+                    &[open]::details-content {
+                        opacity: 1;
+                    }
+
                     menu {
                         position: absolute;
                         background-color: var(--secondary-bg);
@@ -137,15 +146,6 @@ header {
                             padding: 0.5em 1em;
                         }
                     }
-                }
-
-                details::details-content {
-                    opacity: 0;
-                    transition: content-visibility 300ms allow-discrete, opacity 300ms;
-                }
-
-                details[open]::details-content {
-                    opacity: 1;
                 }
             }
         }
