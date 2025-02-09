@@ -29,7 +29,7 @@ main {
             }
 
             h3 {
-                margin: 0.75em 10% 0.5em;
+                margin: 0.75em 10%;
             }
 
             a {
@@ -39,7 +39,7 @@ main {
                 margin: 0 10%;
                 text-wrap: balance;
                 text-align: center;
-                padding: 0.5em 1em;
+                padding: 1em 1em;
                 border-radius: 0.5em;
                 transition: transform 0.5s;
 

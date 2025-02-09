@@ -88,7 +88,7 @@ header {
 
     @media screen and (1024px <=width) {
         nav {
-            padding: 0.75rem 7.5vw;
+            padding: 0.5rem 7.5vw;
 
             [href="#main"] {
                 display: initial;
