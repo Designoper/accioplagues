@@ -3,7 +3,7 @@ main {
 		div {
 			display: flex;
 			flex-direction: column;
-			row-gap: 1.25rem;
+			row-gap: inherit;
 		}
 	}
 
@@ -35,7 +35,7 @@ main {
 			}
 
 			ul {
-				gap: 0.8rem;
+				gap: 1.25rem;
 			}
 		}
 	}
