@@ -10,12 +10,12 @@ footer {
 
     section {
         display: grid;
-        gap: 1.25em 0;
+        gap: 1.75em 0;
     }
 
     menu {
         display: grid;
-        gap: 0.4em 2.5em;
+        gap: 1em 2.5em;
     }
 
     ul {

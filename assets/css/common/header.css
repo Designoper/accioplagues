@@ -71,13 +71,17 @@ header {
             transition-duration: 0.7s;
 
             :is(summary, a) {
-                padding: 0.35em 2em;
+                padding: 0.6em 3em;
                 display: list-item;
                 text-align: left;
                 hyphens: none;
 
                 /* text-align: center; */
                 /* border-bottom: 2px solid blue; */
+            }
+
+            details::details-content {
+                margin-left: 1.25em;
             }
         }
     }
@@ -109,19 +113,16 @@ header {
                 display: none;
             }
 
-            span {
-                display: block;
-            }
-
             >menu {
                 all: unset;
                 display: flex;
                 list-style: none;
 
                 :is(summary, a) {
-                    padding: 0.5em 0.75em;
+                    padding: 0.75em 0.75em;
                     transition: background-color 0.35s;
                     border-radius: 0.2em;
+                    white-space: pre-line;
 
                     &:hover {
                         background-color: var(--background-text);
@@ -132,6 +133,7 @@ header {
                     &::details-content {
                         opacity: 0;
                         transition: content-visibility 300ms allow-discrete, opacity 300ms;
+                        margin-left: 0;
                     }
 
                     &[open]::details-content {
@@ -143,7 +145,7 @@ header {
                         background-color: var(--secondary-bg);
 
                         a {
-                            padding: 0.5em 1em;
+                            padding: 0.75em 1em;
                         }
                     }
                 }
