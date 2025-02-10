@@ -3,21 +3,17 @@ main {
 	gap: 5rem 0;
 	padding-bottom: 7rem;
 
-	>div {
-		position: relative;
-
-		img {
-			height: 375px;
-		}
+	>img {
+		anchor-name: --banner-img;
+		height: 375px;
 	}
 
 	h1 {
-		width: 100%;
-		padding: 0 10vw;
+		margin: 0 10vw;
 		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
+		position-anchor: --banner-img;
+		justify-self: anchor-center;
+		align-self: anchor-center;
 	}
 
 	h2 {
@@ -49,22 +45,18 @@ main {
 	}
 
 	@media screen and (541px <=width) {
-		>div {
-			img {
-				height: 550px;
-			}
+		>img {
+			height: 550px;
 		}
 	}
 
 	@media screen and (1024px <=width) {
-		>div {
-			img {
-				height: auto;
-			}
+		>img {
+			height: auto;
 		}
 
 		h1 {
-			padding: 0 7.5vw;
+			margin: 0 7.5vw;
 		}
 
 		section {
