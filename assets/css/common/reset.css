@@ -12,6 +12,7 @@
 	overflow-wrap: break-word;
 	color: inherit;
 	background-color: transparent;
+	break-inside: avoid;
 	flex-wrap: wrap;
 }
 
@@ -29,7 +30,6 @@ a {
 
 li {
 	/* list-style: inherit; */
-	break-inside: avoid;
 	text-wrap: initial;
 }
 
@@ -43,6 +43,20 @@ img {
 	object-fit: cover;
 }
 
-:is(button, summary) {
+:is(button, summary, select, input[type="file"]) {
 	cursor: pointer;
+}
+
+:is(input, datalist, select, textarea) {
+	width: 100%;
+	text-box: initial;
+}
+
+textarea,
+select {
+	field-sizing: content;
+}
+
+textarea {
+	resize: none;
 }
