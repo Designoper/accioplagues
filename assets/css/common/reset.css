@@ -18,6 +18,7 @@
 
 html {
 	font-family: sans-serif;
+	interpolate-size: allow-keywords;
 }
 
 a {
