@@ -33,16 +33,19 @@ main {
 					"a a a"
 					"b c .";
 			}
+
 			&:nth-of-type(4) {
 				grid-template-areas:
 					"a a a"
 					"b c .";
 			}
+
 			&:nth-of-type(5) {
 				grid-template-areas:
 					"a a a"
 					"b c d";
 			}
+
 			&:nth-of-type(6) {
 				grid-template-areas:
 					"a a a"
