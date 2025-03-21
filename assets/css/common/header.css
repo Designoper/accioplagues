@@ -51,10 +51,6 @@ header {
 
             summary {
                 list-style: none;
-
-                &::-webkit-details-marker {
-                    display: none;
-                }
             }
         }
 
@@ -71,7 +67,7 @@ header {
             transition-duration: 0.7s;
 
             :is(summary, a) {
-                padding: 0.6em 3em;
+                padding: 0.8em 3em;
                 display: list-item;
                 text-align: left;
                 hyphens: none;
@@ -138,6 +134,7 @@ header {
 
                     &[open]::details-content {
                         opacity: 1;
+
                     }
 
                     menu {
