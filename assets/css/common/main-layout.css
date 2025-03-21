@@ -3,13 +3,15 @@ main {
 	gap: 5rem 0;
 	padding-bottom: 7rem;
 
-	>img {
-		anchor-name: --banner-img;
-		height: 375px;
+	@scope(&) to (section) {
+		img {
+			anchor-name: --banner-img;
+			height: 375px;
+		}
 	}
 
 	h1 {
-		margin: 0 10vw;
+		margin-inline: 10vw;
 		position: absolute;
 		position-anchor: --banner-img;
 		justify-self: anchor-center;
@@ -45,14 +47,18 @@ main {
 	}
 
 	@media screen and (541px <=width) {
-		>img {
-			height: 550px;
+		@scope(&) to (section) {
+			img {
+				height: 550px;
+			}
 		}
 	}
 
 	@media screen and (1024px <=width) {
-		>img {
-			height: auto;
+		@scope(&) to (section) {
+			img {
+				height: auto;
+			}
 		}
 
 		h1 {
