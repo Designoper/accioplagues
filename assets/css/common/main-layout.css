@@ -27,7 +27,7 @@ main {
 		padding-inline: 10vw;
 
 		img {
-			min-height: 200px;
+			/* min-height: 200px; */
 		}
 	}
 

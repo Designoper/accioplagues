@@ -67,17 +67,14 @@ header {
             transition-duration: 0.7s;
 
             :is(summary, a) {
-                padding: 0.8em 3em;
+                padding: 0.8em 10vw;
                 display: list-item;
-                text-align: left;
-                hyphens: none;
-
                 /* text-align: center; */
                 /* border-bottom: 2px solid blue; */
             }
 
             details::details-content {
-                margin-left: 1.25em;
+                padding-left: 2rem;
             }
         }
     }
@@ -115,7 +112,7 @@ header {
                 list-style: none;
 
                 :is(summary, a) {
-                    padding: 0.75em 0.75em;
+                    padding: 0.75em;
                     transition: background-color 0.35s;
                     border-radius: 0.2em;
                     white-space: pre-line;
