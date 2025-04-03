@@ -28,27 +28,27 @@ main {
 		section {
 			&:nth-of-type(1) {
 				grid-template-areas:
-					"a a a"
-					"b c .";
+					"_1 _1 _1"
+					"_2 _3 .";
 			}
 
 			&:nth-of-type(2) {
 				grid-template-areas:
-					"a a a"
-					"b d f"
-					"c e g";
+					"_1 _1 _1"
+					"_2 _4 _6"
+					"_3 _5 _7";
 			}
 
 			&:nth-of-type(3) {
 				grid-template-areas:
-					"a a a"
-					"b c d";
+					"_1 _1 _1"
+					"_2 _3 _4";
 			}
 
 			&:nth-of-type(4) {
 				grid-template-areas:
-					"a a a"
-					"b b b";
+					"_1 _1 _1"
+					"_2 _2 _2";
 			}
 		}
 

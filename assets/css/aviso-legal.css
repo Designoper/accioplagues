@@ -18,16 +18,15 @@ main {
 			display: initial;
 		}
 
-				li {
+		li {
 			margin-bottom: 1.75em;
 		}
 
 		section {
 			&:nth-of-type(1) {
 				grid-template-areas:
-					"a a a"
-					"b b b"
-				;
+					"_1 _1 _1"
+					"_2 _2 _2";
 			}
 		}
 	}

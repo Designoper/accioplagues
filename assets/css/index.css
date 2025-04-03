@@ -86,15 +86,15 @@ main {
         section {
             &:nth-of-type(1) {
                 grid-template-areas:
-                    "a a a"
-                    "b c d";
+                    "_1 _1 _1"
+                    "_2 _3 _4";
             }
 
             &:nth-of-type(2) {
                 display: grid;
                 grid-template-areas:
-                    "a a a"
-                    "b c d";
+                    "_1 _1 _1"
+                    "_2 _3 _4";
 
                 img {
                     width: 65%;
@@ -109,11 +109,11 @@ main {
 
             &:nth-of-type(3) {
                 grid-template-areas:
-                    "a a a"
-                    "b c d"
-                    "e f g"
-                    "h i j"
-                    "k l m";
+                    "_1 _1 _1"
+                    "_2 _3 _4"
+                    "_5 _6 _7"
+                    "_8 _9 _10"
+                    "_11 _12 _13";
 
                 article {
                     width: 100%;

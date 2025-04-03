@@ -2,59 +2,59 @@ main {
 	@media screen and (1024px <=width) {
 		section {
 			&>:nth-child(1) {
-				grid-area: a;
+				grid-area: _1;
 			}
 
 			&>:nth-child(2) {
-				grid-area: b;
+				grid-area: _2;
 			}
 
 			&>:nth-child(3) {
-				grid-area: c;
+				grid-area: _3;
 			}
 
 			&>:nth-child(4) {
-				grid-area: d;
+				grid-area: _4;
 			}
 
 			&>:nth-child(5) {
-				grid-area: e;
+				grid-area: _5;
 			}
 
 			&>:nth-child(6) {
-				grid-area: f;
+				grid-area: _6;
 			}
 
 			&>:nth-child(7) {
-				grid-area: g;
+				grid-area: _7;
 			}
 
 			&>:nth-child(8) {
-				grid-area: h;
+				grid-area: _8;
 			}
 
 			&>:nth-child(9) {
-				grid-area: i;
+				grid-area: _9;
 			}
 
 			&>:nth-child(10) {
-				grid-area: j;
+				grid-area: _10;
 			}
 
 			&>:nth-child(11) {
-				grid-area: k;
+				grid-area: _11;
 			}
 
 			&>:nth-child(12) {
-				grid-area: l;
+				grid-area: _12;
 			}
 
 			&>:nth-child(13) {
-				grid-area: m;
+				grid-area: _13;
 			}
 
 			&>:nth-child(14) {
-				grid-area: n;
+				grid-area: _14;
 			}
 		}
 	}
