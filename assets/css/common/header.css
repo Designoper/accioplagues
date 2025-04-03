@@ -69,8 +69,6 @@ header {
             :is(summary, a) {
                 padding: 0.8em 10vw;
                 display: list-item;
-                /* text-align: center; */
-                /* border-bottom: 2px solid blue; */
             }
 
             details::details-content {
