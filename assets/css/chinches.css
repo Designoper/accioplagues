@@ -6,13 +6,13 @@ main {
 		padding-bottom: 2rem;
 		overflow: hidden;
 
-		>p {
-			padding: 0 2em 0;
+		>:not(img) {
+			padding-inline: 2rem;
 		}
 	}
 
 	h3 {
-		margin: 1.5em 0 0.5em;
+		margin: 1.25em 0 1em;
 	}
 
 	/* @media screen and (541px <=width) {

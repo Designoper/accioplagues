@@ -3,11 +3,9 @@ main {
 	gap: 5rem 0;
 	padding-bottom: 7rem;
 
-	@scope(&) to (section) {
-		img {
-			anchor-name: --banner-img;
-			height: 375px;
-		}
+	>img {
+		anchor-name: --banner-img;
+		height: 375px;
 	}
 
 	h1 {

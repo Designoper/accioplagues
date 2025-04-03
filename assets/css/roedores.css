@@ -10,7 +10,7 @@ main {
 		}
 
 		>:not(img) {
-			padding-inline: 2em;
+			padding-inline: 2rem;
 		}
 
 		>p {
@@ -18,7 +18,7 @@ main {
 		}
 	}
 
-	@media screen and (925px <=width) {
+	@media screen and (1024px <=width) {
 		section {
 			&:nth-of-type(1) {
 				grid-template-areas:

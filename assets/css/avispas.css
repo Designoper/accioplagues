@@ -1,16 +1,20 @@
 main {
 	h3 {
-		padding: 0.5em;
+		padding-block: 0.75em;
 	}
 
 	article {
 		box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
 		background-color: var(--secondary-bg);
 		border-radius: 0.5em;
+
+		>:not(img) {
+			padding-inline: 2rem;
+		}
 	}
 
 	ul {
-		padding: 2em;
+		padding-block: 2em;
 	}
 
 	@media screen and (1024px <=width) {

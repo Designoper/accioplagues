@@ -1,8 +1,18 @@
 main {
 	article {
-		display: grid;
-		gap: 1.25em;
-		align-content: flex-start;
+		border-radius: 0.5em;
+		box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+		background-color: var(--secondary-bg);
+		padding-bottom: 2rem;
+		overflow: hidden;
+
+		h3 {
+			padding-block: 1.5rem;
+		}
+
+		>:not(img) {
+			padding-inline: 2rem;
+		}
 	}
 
 	@media screen and (1024px <=width) {

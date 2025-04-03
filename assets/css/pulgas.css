@@ -1,16 +1,20 @@
 main {
 	section {
-		hgroup {
-			padding: 1rem 0;
-		}
-
 		article {
 			border-radius: 0.5em;
 			box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
 			background-color: var(--secondary-bg);
 
+			hgroup {
+				padding-block: 1rem;
+			}
+
 			>p {
-				padding: 2em;
+				padding-block: 2em;
+			}
+
+			>:not(img) {
+				padding-inline: 2rem;
 			}
 		}
 	}
