@@ -124,7 +124,7 @@ header {
                     &::details-content {
                         opacity: 0;
                         transition: content-visibility 300ms allow-discrete, opacity 300ms;
-                        margin-left: 0;
+                        padding-left: 0;
                     }
 
                     &[open]::details-content {
