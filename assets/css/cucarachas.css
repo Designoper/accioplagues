@@ -1,5 +1,5 @@
 main {
-	@media screen and (541px <=width) {
+	@media screen and (541px <=width<=1023px) {
 		section {
 			&:nth-of-type(3) {
 				display: flex;
@@ -32,15 +32,9 @@ main {
 			}
 
 			&:nth-of-type(3) {
-				display: grid;
 				grid-template-areas:
 					"_1 _1 _1"
 					"_2 _3 _4";
-				column-gap: 4rem;
-
-				figure {
-					width: 100%;
-				}
 			}
 		}
 	}
