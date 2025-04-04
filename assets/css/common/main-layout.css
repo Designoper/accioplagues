@@ -26,9 +26,9 @@ main {
 		gap: 2.5rem 3.25rem;
 		padding-inline: 10vw;
 
-		img {
-			/* min-height: 200px; */
-		}
+		/* img {
+			min-height: 200px;
+		} */
 	}
 
 	ul {

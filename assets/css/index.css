@@ -22,23 +22,26 @@ main {
                 border-radius: 0.5em;
                 background-color: var(--secondary-bg);
                 box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+
+                >:not(img) {
+                    margin-inline: 2rem;
+                }
             }
 
             p {
-                margin: 1.75em 10%;
+                margin: 1.75em 0;
             }
 
             h3 {
-                margin: 0.75em 10%;
+                margin: 0.75em 0;
             }
 
             a {
                 display: block;
                 background-color: var(--primary-bg);
-                margin: 0 10%;
                 text-wrap: balance;
                 text-align: center;
-                padding: 1em 1em;
+                padding: 1em;
                 border-radius: 0.5em;
                 transition: transform 0.5s;
 
@@ -89,10 +92,6 @@ main {
                 grid-template-areas:
                     "_1 _1 _1"
                     "_2 _3 _4";
-
-                h3 {
-                    font-size: 1.5em;
-                }
             }
 
             &:nth-of-type(3) {
