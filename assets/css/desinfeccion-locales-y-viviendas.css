@@ -6,7 +6,7 @@ main {
 		}
 	}
 
-	@media screen and (541px <=width) {
+	@media screen and (541px <=width<=1023px) {
 		section {
 			img {
 				width: 65%;
@@ -42,10 +42,6 @@ main {
 				grid-template-areas:
 					"_1 _1 _1"
 					"_2 _3 .";
-			}
-
-			img {
-				width: 100%;
 			}
 		}
 	}
