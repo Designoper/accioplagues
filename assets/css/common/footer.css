@@ -3,9 +3,11 @@ footer {
     gap: 3em 0;
     padding: 2em 10vw;
     background-color: var(--secondary-bg);
+    align-items: flex-start;
 
     h2 {
         text-align: left;
+        font-size: 1.5rem;
     }
 
     section {
@@ -28,39 +30,28 @@ footer {
     }
 
     @media screen and (541px <=width) {
+        grid-template-columns: auto 60%;
+
         h2 {
             font-size: 1.4em;
-        }
-
-        menu {
-            display: flex;
-        }
-
-        ul {
-            grid-template-columns: repeat(3, auto);
-            gap: 3em;
-            align-items: center;
-        }
-
-        img {
-            width: 100%;
         }
     }
 
     @media screen and (1024px <=width) {
         padding: 2em 7.5vw;
-        grid-template-columns: auto 60%;
+
+        ul {
+            grid-template-columns: repeat(3, auto);
+            gap: 5em;
+            align-items: center;
+        }
 
         h2 {
             font-size: 1.5em;
         }
 
-        menu {
-            display: grid;
-        }
-
-        ul {
-            gap: 5em;
+        img {
+            width: 100%;
         }
     }
 }
