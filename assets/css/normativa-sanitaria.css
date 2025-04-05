@@ -12,7 +12,6 @@ main {
 	@media screen and (1024px <=width) {
 		section {
 			&:nth-of-type(1) {
-				align-items: start;
 				grid-template-areas:
 					"_1 _1 _1"
 					"_2 _3 .";
