@@ -1,11 +1,4 @@
 main {
-	section {
-		div {
-			display: grid;
-			gap: inherit;
-		}
-	}
-
 	@media screen and (1024px <=width) {
 		section {
 			&:nth-of-type(1) {

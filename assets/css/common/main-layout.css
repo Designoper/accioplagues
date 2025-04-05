@@ -35,6 +35,11 @@ main {
 		} */
 	}
 
+	div {
+		display: grid;
+		gap: inherit;
+	}
+
 	ul {
 		display: grid;
 		row-gap: 2rem;

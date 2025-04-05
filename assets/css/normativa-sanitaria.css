@@ -1,9 +1,4 @@
 main {
-	div {
-		display: grid;
-		gap: inherit;
-	}
-
 	a {
 		text-decoration: underline;
 		color: revert;
