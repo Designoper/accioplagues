@@ -50,14 +50,14 @@ main {
 					"_1 _1 _1"
 					"_2 _2 _2";
 			}
-		}
 
-		ul {
-			display: initial;
-		}
+			ul {
+				display: initial;
+			}
 
-		li {
-			margin-bottom: 1.75em;
+			li {
+				margin-bottom: 1.75em;
+			}
 		}
 	}
 }
