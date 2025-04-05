@@ -1,6 +1,6 @@
 main {
-	@media screen and (1024px <=width) {
-		section {
+	section {
+		@media screen and (1024px <=width) {
 			&:nth-of-type(1) {
 				grid-template-areas:
 					"_1 _1 _1"
