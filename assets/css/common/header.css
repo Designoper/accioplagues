@@ -60,6 +60,7 @@ header {
             right: -100vw;
             width: 100vw;
             height: 100vh;
+            overflow-y: scroll;
             padding-top: 4rem;
             background-color: inherit;
             visibility: hidden;

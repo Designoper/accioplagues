@@ -26,7 +26,7 @@ main {
 		gap: 2.5rem 3.25rem;
 		padding-inline: 10vw;
 
-		&:has(div) {
+		&:has(>div) {
 			align-items: start;
 		}
 

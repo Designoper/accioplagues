@@ -18,26 +18,22 @@ main {
 
         &:nth-of-type(3) {
             article {
+                display: grid;
+                gap: 1.75em 0;
                 padding: 0 0 2.5em;
                 border-radius: 0.5em;
                 background-color: var(--secondary-bg);
                 box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+                overflow: hidden;
 
                 >:not(img) {
                     margin-inline: 2rem;
                 }
             }
 
-            p {
-                margin: 1.75em 0;
-            }
-
-            h3 {
-                margin: 0.75em 0;
-            }
-
             a {
                 display: block;
+                width: fit-content;
                 background-color: var(--primary-bg);
                 text-wrap: balance;
                 text-align: center;
@@ -71,8 +67,33 @@ main {
 
             &:nth-of-type(3) {
                 article {
-                    width: 80%;
-                    margin: auto;
+                    /* align-content: start; */
+                    padding-bottom: 0;
+                    display: grid;
+                    gap: 1em 0;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-areas:
+                        "_1 _2"
+                        "_1 _3"
+                        "_1 _4";
+
+                    img {
+                        grid-area: _1;
+                        height: 100%;
+                    }
+
+                    h3 {
+                        grid-area: _2;
+                    }
+
+                    p {
+                        grid-area: _3;
+                        margin-top: 0
+                    }
+
+                    a {
+                        grid-area: _4
+                    }
                 }
             }
         }
