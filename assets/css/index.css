@@ -90,9 +90,15 @@ main {
 
         @media screen and (1024px <=width) {
             &:nth-of-type(1) {
+                padding-inline: 15vw;
+                /* grid-template-areas:
+                    "_1 _1 _1"
+                    "_2 _3 _4"; */
                 grid-template-areas:
                     "_1 _1 _1"
-                    "_2 _3 _4";
+                    "_2 _2 _2"
+                    "_3 _3 _3"
+                    "_4 _4 _4";
             }
 
             &:nth-of-type(2) {
