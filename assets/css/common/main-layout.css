@@ -75,7 +75,7 @@ main {
 		section {
 			padding-inline: 7.5vw;
 			grid-template-columns: repeat(3, 1fr);
-			gap: 2.5rem 4rem;
+			gap: 2.5rem 4vw;
 
 			>img {
 				height: 100%;

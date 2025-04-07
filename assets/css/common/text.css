@@ -1,3 +1,7 @@
+html{
+	font-size: calc(18/16*1rem);
+}
+
 :is(h1, h2, h3) {
 	font-weight: bold;
 	text-align: center;
@@ -42,7 +46,7 @@ hgroup p {
 	font-weight: bold;
 }
 
-@media screen and (801px <=width) {
+@media screen and (800px <=width) {
 	html {
 		font-size: 1.2rem;
 	}
@@ -62,7 +66,7 @@ hgroup p {
 
 @media screen and (1024px <=width) {
 	html {
-		font-size: 0.9rem;
+		font-size: 1rem;
 	}
 
 	h1 {
