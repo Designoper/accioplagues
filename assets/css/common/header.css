@@ -25,7 +25,7 @@ header {
 
             path {
                 stroke: var(--text);
-                stroke-width: 4rem;
+                stroke-width: 72px;
             }
 
             &[open] {

@@ -24,7 +24,7 @@ main {
 	section {
 		display: grid;
 		gap: 2.5rem 3.25rem;
-		padding-inline: 10vw;
+		padding-inline: 10dvw;
 
 		&:has(>div) {
 			align-items: start;

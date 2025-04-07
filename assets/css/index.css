@@ -24,6 +24,16 @@ main {
                 box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
             }
 
+            div {
+                gap: 1.5em;
+                justify-items: center;
+                padding: 2em;
+            }
+
+            p {
+                text-align: center;
+            }
+
             a {
                 padding: 1em;
                 border-radius: 0.5em;
@@ -33,12 +43,6 @@ main {
                 &:hover {
                     transform: scale(1.07);
                 }
-            }
-
-            div {
-                gap: 1.5em;
-                justify-items: center;
-                padding: 2em;
             }
         }
 
