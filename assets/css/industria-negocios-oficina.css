@@ -1,13 +1,13 @@
 main {
 	section {
-		@media screen and (541px <=width<=1023px) {
+		@media screen and (541px <=width<=1279px) {
 			img {
 				width: 75%;
 				justify-self: center;
 			}
 		}
 
-		@media screen and (1024px <=width) {
+		@media screen and (1280px <=width) {
 			&:nth-of-type(1) {
 				grid-template-areas:
 					"_1 _1 _1"

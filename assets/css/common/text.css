@@ -68,15 +68,15 @@ hgroup p {
 	h1 {
 		font-size: 3.5rem;
 	}
-
-	h2 {
-		text-align: left;
-	}
 }
 
 @media screen and (1280px <=width) {
 	body {
 		font-size: 1rem;
+	}
+
+	h2 {
+		text-align: left;
 	}
 }
 

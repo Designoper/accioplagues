@@ -1,5 +1,15 @@
 main {
-	@media screen and (1024px <=width) {
+	@media screen and (768px <=width<=1280px) {
+		section {
+			grid-template-columns: repeat(6, 1fr);
+
+			&>* {
+				grid-column: 1/-1;
+			}
+		}
+	}
+
+	@media screen and (1280px <=width) {
 		section {
 			&>:nth-child(1) {
 				grid-area: _1;

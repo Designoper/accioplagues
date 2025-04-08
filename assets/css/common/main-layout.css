@@ -75,6 +75,15 @@ main {
 		}
 
 		section {
+			padding-inline: 17.5vw;
+		}
+	}
+	@media screen and (1280px <=width) {
+		h1 {
+			padding-inline: 7.5vw;
+		}
+
+		section {
 			padding-inline: 7.5vw;
 			grid-template-columns: repeat(3, 1fr);
 			gap: 2.5rem 4vw;
