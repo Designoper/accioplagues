@@ -78,6 +78,7 @@ main {
 			padding-inline: 17.5vw;
 		}
 	}
+
 	@media screen and (1280px <=width) {
 		h1 {
 			padding-inline: 7.5vw;
