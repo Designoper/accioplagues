@@ -123,22 +123,19 @@ header {
 
                 details {
                     &::details-content {
+                        position: absolute;
+                        padding-left: 0;
                         opacity: 0;
                         transition: content-visibility 300ms allow-discrete, opacity 300ms;
-                        padding-left: 0;
+                        background-color: var(--secondary-bg);
                     }
 
                     &[open]::details-content {
                         opacity: 1;
                     }
 
-                    menu {
-                        position: absolute;
-                        background-color: var(--secondary-bg);
-
-                        a {
-                            padding: 0.75em 1em;
-                        }
+                    a {
+                        padding: 0.75em 1em;
                     }
                 }
             }
