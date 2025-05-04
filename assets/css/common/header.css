@@ -2,113 +2,119 @@ header {
     position: sticky;
     top: 0;
     z-index: 1;
+    padding: 0.75rem 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-bg);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+
+    [href="#main"] {
+        display: none;
+    }
+
+    >[href="./index.html"] {
+        width: 2.5rem;
+    }
+
+    button {
+        width: 1.5rem;
+        /* height: auto; */
+
+        path {
+            stroke: var(--text);
+            stroke-width: 72px;
+        }
+    }
+
+    /* nav[popover]:popover-open {
+        visibility: visible;
+        right: 0;
+    }
+
+    nav[popover] {
+        visibility: hidden;
+        right: -100%;
+
+        transition-property: visibility, overlay, display, right;
+        transition-duration: 3s;
+        transition-behavior: allow-discrete;
+    }
+
+    @starting-style {
+        nav[popover] {
+            visibility: visible;
+            right: 0;
+        }
+    } */
 
     nav {
-        padding: 0.75rem 10vw;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: var(--secondary-bg);
-        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+        /* display: grid; */
+        /* anchor-name: --nav; */
+        position: fixed;
+        /* top: 0; */
+        /* right: -100vw; */
+        width: 100vw;
+        height: 100vh;
+        overflow-y: scroll;
+        /* padding-top: 0.75rem; */
+        background-color: inherit;
+        transition-property: right,
+        visibility;
+        transition-duration: 0.7s;
 
-        [href="#main"] {
-            display: none;
+        :is(summary, a) {
+            padding: 0.8em 10vw;
+            display: list-item;
         }
 
-        >[href="./index.html"] {
-            width: 2.5rem;
+        button {
+            display: block;
+            margin-left: auto;
+            /* display: block;
+            margin-left: auto; */
+            /* position: absolute; */
+            /* position-anchor: --nav; */
+            /* padding-top: 0.75rem; */
+            /* right: 10vw; */
         }
 
-        >details {
-            z-index: 1;
-            width: 1.5rem;
-
-            path {
-                stroke: var(--text);
-                stroke-width: 72px;
-            }
-
-            &[open] {
-                +menu {
-                    right: 0;
-                    visibility: initial;
-                }
-
-                svg {
-                    &:first-of-type {
-                        display: none;
-                    }
-                }
-            }
-
-            &:not([open]) {
-                svg {
-                    &:last-of-type {
-                        display: none;
-                    }
-                }
-            }
-
-            summary {
-                list-style: none;
-            }
-        }
-
-        >menu {
-            position: fixed;
-            top: 0;
-            right: -100vw;
-            width: 100vw;
-            height: 100vh;
-            overflow-y: scroll;
-            padding-top: 4rem;
-            background-color: inherit;
-            visibility: hidden;
-            transition-property: right, visibility;
-            transition-duration: 0.7s;
-
-            :is(summary, a) {
-                padding: 0.8em 10vw;
-                display: list-item;
-            }
-
-            details::details-content {
-                padding-left: 2rem;
-            }
+        details::details-content {
+            padding-left: 2rem;
         }
     }
 
     @media screen and (1024px <=width) {
+        padding: 0.5em 7.5vw;
+
+        [href="#main"] {
+            display: initial;
+            position: absolute;
+            top: -100%;
+
+            &:focus {
+                font-size: 1.5em;
+                padding: 1em;
+                top: 50vh;
+                left: 50vw;
+                transform: translate(-50%, -50%);
+                background-color: inherit;
+            }
+        }
+
+        >[href="./index.html"] {
+            width: 3rem;
+        }
+
+        button {
+            display: none;
+        }
+
         nav {
-            padding: 0.5em 7.5vw;
-
-            [href="#main"] {
-                display: initial;
-                position: absolute;
-                top: -100%;
-
-                &:focus {
-                    font-size: 1.5em;
-                    padding: 1em;
-                    top: 50vh;
-                    left: 50vw;
-                    transform: translate(-50%, -50%);
-                    background-color: inherit;
-                }
-            }
-
-            >[href="./index.html"] {
-                width: 3rem;
-            }
-
-            >details {
-                display: none;
-            }
+            all: unset;
 
             >menu {
-                all: unset;
                 display: flex;
-                list-style: none;
 
                 :is(summary, a) {
                     padding: 0.75em;
@@ -120,23 +126,23 @@ header {
                         background-color: var(--background-text);
                     }
                 }
+            }
 
-                details {
-                    &::details-content {
-                        position: absolute;
-                        padding-left: 0;
-                        opacity: 0;
-                        transition: content-visibility 300ms allow-discrete, opacity 300ms;
-                        background-color: var(--secondary-bg);
-                    }
+            details {
+                &::details-content {
+                    position: absolute;
+                    padding-left: 0;
+                    opacity: 0;
+                    transition: content-visibility 300ms allow-discrete, opacity 300ms;
+                    background-color: var(--secondary-bg);
+                }
 
-                    &[open]::details-content {
-                        opacity: 1;
-                    }
+                &[open]::details-content {
+                    opacity: 1;
+                }
 
-                    a {
-                        padding: 0.75em 1em;
-                    }
+                a {
+                    padding: 0.75em 1em;
                 }
             }
         }
