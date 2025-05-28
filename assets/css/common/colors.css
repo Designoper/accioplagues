@@ -1,7 +1,8 @@
 html {
 	--primary-bg: hsl(180, 42%, 93%);
 	--secondary-bg: hsl(180, 81%, 58%);
-	--background-text: hsl(from var(--secondary-bg) h s calc(l/1.25));
+	/* --background-text: hsl(from var(--secondary-bg) h s calc(l/1.25)); */
+	--background-text: --background(--secondary-bg);
 	--terciary-bg: hsl(180, 100%, 16%);
 	--text: hsl(0, 0%, 0%);
 	--text-light: hsl(0, 0%, 0%);

@@ -2,6 +2,10 @@
 	navigation: auto;
 }
 
+@function --background(--value) {
+	result: hsl(from var(--value) h s calc(l/1.25));
+}
+
 :is(*, *::before, *::after) {
 	margin: 0;
 	padding: 0;
