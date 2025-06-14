@@ -25,16 +25,11 @@ main {
 		display: grid;
 		gap: 2.5rem 3.25rem;
 		padding-inline: 10vw;
-		/* max-width: calc((480+20vw)*1px); */
-		/* max-width: 1920px; */
+		/* column-rule: 1.5px solid #ccc; */
 
 		&:has(>div) {
 			align-items: start;
 		}
-
-		/* img {
-			min-height: 200px;
-		} */
 	}
 
 	div {
