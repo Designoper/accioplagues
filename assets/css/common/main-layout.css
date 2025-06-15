@@ -61,7 +61,7 @@ main {
 			}
 
 			&:has(article) {
-				justify-content: center;
+				justify-items: center;
 			}
 		}
 	}
