@@ -21,6 +21,7 @@ main {
 				img {
 					width: 60%;
 					margin: auto;
+					/* grid-column: 3/-3; */
 				}
 			}
 		}

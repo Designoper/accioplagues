@@ -17,9 +17,23 @@ main {
 
 	@media screen and (768px <=width<1280px) {
 		section {
+			&:nth-of-type(2) {
+				figure {
+					grid-column: span 6;
+
+					&:last-of-type {
+						grid-column: 4/-4;
+					}
+				}
+			}
+
 			&:nth-of-type(6) {
 				article {
 					grid-column: span 6;
+
+					&:last-of-type {
+						grid-column: 4/-4;
+					}
 				}
 			}
 		}
@@ -36,8 +50,8 @@ main {
 			&:nth-of-type(2) {
 				grid-template-areas:
 					"_1 _1 _1"
-					"_2 _4 _6"
-					"_3 _5 _7";
+					"_2 _3 _4"
+					"_5 _6 _7";
 			}
 
 			&:nth-of-type(3) {
