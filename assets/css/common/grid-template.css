@@ -1,11 +1,11 @@
 main {
 	@media screen and (768px <=width<1280px) {
 		section {
-			/* grid-template-columns: repeat(6, 1fr);
+			grid-template-columns: repeat(12, 1fr);
 
 			&>* {
 				grid-column: 1/-1;
-			} */
+			}
 		}
 	}
 

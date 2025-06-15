@@ -6,9 +6,11 @@ main {
 			margin: 2em auto;
 		}
 
-		@media screen and (541px <=width) {
+		@media screen and (768px <=width<1280px) {
 			&:nth-of-type(2) {
-				grid-template-columns: repeat(2, 1fr);
+				article {
+					grid-column: span 6;
+				}
 			}
 		}
 

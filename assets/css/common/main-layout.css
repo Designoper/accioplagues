@@ -54,7 +54,7 @@ main {
 		}
 	}
 
-	@media screen and (width<768px) {
+	@media screen and (width<=768px) {
 		section {
 			article {
 				max-width: 360px;
@@ -69,16 +69,6 @@ main {
 	@media screen and (541px <=width) {
 		>img {
 			height: 550px;
-		}
-	}
-
-	@media screen and (768px <=width<1280px) {
-		section:has(article) {
-			grid-template-columns: repeat(2, 1fr);
-
-			/* article {
-				max-width: none;
-			} */
 		}
 	}
 
@@ -104,7 +94,7 @@ main {
 		section {
 			padding-inline: 7.5vw;
 			grid-template-columns: repeat(3, 1fr);
-			gap: 2.5rem 4vw;
+			gap: 2.75rem 4vw;
 
 			>img {
 				height: 100%;
