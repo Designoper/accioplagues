@@ -3,7 +3,7 @@ main {
 		section {
 			grid-template-columns: repeat(12, 1fr);
 
-			&>* {
+			>* {
 				grid-column: 1/-1;
 			}
 		}
@@ -11,59 +11,59 @@ main {
 
 	@media screen and (1280px <=width) {
 		section {
-			&>:nth-child(1) {
+			>:nth-child(1) {
 				grid-area: _1;
 			}
 
-			&>:nth-child(2) {
+			>:nth-child(2) {
 				grid-area: _2;
 			}
 
-			&>:nth-child(3) {
+			>:nth-child(3) {
 				grid-area: _3;
 			}
 
-			&>:nth-child(4) {
+			>:nth-child(4) {
 				grid-area: _4;
 			}
 
-			&>:nth-child(5) {
+			>:nth-child(5) {
 				grid-area: _5;
 			}
 
-			&>:nth-child(6) {
+			>:nth-child(6) {
 				grid-area: _6;
 			}
 
-			&>:nth-child(7) {
+			>:nth-child(7) {
 				grid-area: _7;
 			}
 
-			&>:nth-child(8) {
+			>:nth-child(8) {
 				grid-area: _8;
 			}
 
-			&>:nth-child(9) {
+			>:nth-child(9) {
 				grid-area: _9;
 			}
 
-			&>:nth-child(10) {
+			>:nth-child(10) {
 				grid-area: _10;
 			}
 
-			&>:nth-child(11) {
+			>:nth-child(11) {
 				grid-area: _11;
 			}
 
-			&>:nth-child(12) {
+			>:nth-child(12) {
 				grid-area: _12;
 			}
 
-			&>:nth-child(13) {
+			>:nth-child(13) {
 				grid-area: _13;
 			}
 
-			&>:nth-child(14) {
+			>:nth-child(14) {
 				grid-area: _14;
 			}
 		}
