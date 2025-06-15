@@ -18,11 +18,11 @@ main {
 		}
 	}
 
-	/* @media screen and (768px <=width<=1280px) {
+	@media screen and (768px <=width<1280px) {
 		article {
-			grid-column: span 3;
+			grid-column: span 6;
 		}
-	} */
+	}
 
 	@media screen and (1280px <=width) {
 		section {

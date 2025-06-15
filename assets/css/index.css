@@ -14,13 +14,11 @@ main {
             img {
                 width: 65%;
                 margin: auto;
-                border-radius: 50%;
+                clip-path: circle(50%);
             }
         }
 
         &:nth-of-type(3) {
-            justify-items: center;
-
             article {
                 border-radius: 0.5em;
                 overflow: hidden;
@@ -52,37 +50,19 @@ main {
 
         @media screen and (768px <=width<1280px) {
             &:nth-of-type(2) {
-                display: flex;
-                justify-content: space-between;
-
                 article {
-                    flex-basis: 40%;
+                    grid-column: span 6;
 
-                    &:nth-of-type(3) {
-                        margin: auto;
+                    &:last-of-type {
+                        grid-column: 4/-4;
                     }
-                }
-
-                img {
-                    width: 80%;
                 }
             }
 
             &:nth-of-type(3) {
-                  grid-template-areas:
-                    "_1 _1 _1 _1 _1 _1"
-                    "_2 _2 _3 _2 _2 _3";
-                /* article {
-                    display: grid;
-                    gap: 1em 0;
-                    align-items: center;
-                    grid-template-columns: repeat(2, 1fr);
-                    max-width: none;
-
-                    img {
-                        height: 100%;
-                    }
-                } */
+                article {
+                    grid-column: span 6;
+                }
             }
         }
 
@@ -106,10 +86,6 @@ main {
                     "_5 _6 _7"
                     "_8 _9 _10"
                     "_11 _12 _13";
-
-                article {
-                    max-width: none;
-                }
             }
         }
     }

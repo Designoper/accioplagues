@@ -1,4 +1,20 @@
 main {
+	@media screen and (768px <=width<1280px) {
+		section {
+			&:nth-of-type(1) {
+				img {
+					grid-column: span 6;
+				}
+			}
+
+			&:nth-of-type(4) {
+				img {
+					grid-column: span 6;
+				}
+			}
+		}
+	}
+
 	@media screen and (1280px <=width) {
 		section {
 			&:nth-of-type(1) {
