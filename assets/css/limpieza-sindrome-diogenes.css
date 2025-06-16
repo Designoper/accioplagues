@@ -1,5 +1,13 @@
 main {
 	section {
+		@media screen and (768px <=width<1280px) {
+			&:nth-of-type(4) {
+				img {
+					grid-column: 3/-3;
+				}
+			}
+		}
+
 		@media screen and (1280px <=width) {
 			&:nth-of-type(1) {
 				grid-template-areas:
