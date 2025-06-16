@@ -16,11 +16,6 @@ main {
 		align-self: anchor-center;
 	}
 
-	h2 {
-		flex-basis: 100%;
-		grid-column: 1/-1;
-	}
-
 	div {
 		display: grid;
 		gap: inherit;
