@@ -40,7 +40,7 @@ main {
 
 	hgroup {
 		display: grid;
-		gap: 0.75rem 0;
+		gap: 1rem 0;
 	}
 
 	section {
