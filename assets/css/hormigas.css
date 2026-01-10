@@ -15,7 +15,6 @@ main {
 
 				p:last-of-type {
 					grid-column: span 6;
-
 				}
 			}
 		}
