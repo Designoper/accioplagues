@@ -12,7 +12,7 @@ main {
             img {
                 width: 65%;
                 margin: auto;
-                clip-path: circle(50%);
+                clip-path: circle();
             }
         }
 

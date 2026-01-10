@@ -2,7 +2,7 @@ main {
 	section {
 		img {
 			width: 75%;
-			clip-path: circle(50%);
+			clip-path: circle();
 			margin: 2em auto;
 		}
 
