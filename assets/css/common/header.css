@@ -21,11 +21,19 @@ header {
 
         >details {
             z-index: 1;
-            width: 1.5rem;
+            /* padding: 1em; */
 
-            path {
-                stroke: var(--text);
-                stroke-width: 72px;
+            summary {
+                list-style: none;
+            }
+
+            svg {
+                width: 1.5rem;
+
+                path {
+                    stroke: var(--text);
+                    stroke-width: 72px;
+                }
             }
 
             &[open] {
@@ -48,10 +56,6 @@ header {
                     }
                 }
             }
-
-            summary {
-                list-style: none;
-            }
         }
 
         >menu {
@@ -60,7 +64,7 @@ header {
             right: -100vw;
             width: 100vw;
             height: 100vh;
-            overflow-y: scroll;
+            /* overflow-y: scroll; */
             padding-top: 4rem;
             background-color: inherit;
             visibility: hidden;
