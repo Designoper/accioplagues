@@ -61,7 +61,7 @@ main {
 		}
 	}
 
-	@media screen and (541px <=width) {
+	@media screen and (768px <=width) {
 		>img {
 			height: 550px;
 		}
