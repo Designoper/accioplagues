@@ -42,6 +42,10 @@ hgroup p {
 	font-weight: bold;
 }
 
+/* [aria-current="page"] {
+	text-decoration: underline;
+} */
+
 @media screen and (800px <=width) {
 	body {
 		font-size: 1.2rem;
