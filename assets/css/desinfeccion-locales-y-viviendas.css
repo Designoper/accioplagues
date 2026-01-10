@@ -3,7 +3,6 @@ main {
 		@media screen and (541px <=width<1280px) {
 			img {
 				width: 65%;
-				justify-self: center;
 			}
 		}
 

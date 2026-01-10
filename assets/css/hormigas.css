@@ -3,7 +3,6 @@ main {
 		section {
 			img {
 				width: 65%;
-				margin: auto;
 			}
 
 			&:nth-of-type(5) {
