@@ -51,13 +51,11 @@ main {
 	}
 
 	@media screen and (width<=768px) {
-		section:has(article, figure) {
-			justify-items: center;
 
-			article,
-			figure {
-				max-width: 360px;
-			}
+		article,
+		figure {
+			max-width: 360px;
+			justify-self: center;
 		}
 	}
 
