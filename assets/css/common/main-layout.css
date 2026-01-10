@@ -12,13 +12,13 @@ main {
 		padding-inline: 10vw;
 		position: absolute;
 		position-anchor: --banner-img;
-		justify-self: anchor-center;
-		align-self: anchor-center;
+		place-self: anchor-center;
 	}
 
 	div {
 		display: grid;
 		gap: inherit;
+		/* justify-items: center; */
 	}
 
 	ul {
@@ -40,6 +40,7 @@ main {
 
 	section {
 		display: grid;
+		/* justify-items: center; */
 		gap: 2.5rem 3.25rem;
 		padding-inline: 10vw;
 		/* column-rule: 1.5px solid #ccc; */
@@ -81,10 +82,6 @@ main {
 	}
 
 	@media screen and (1280px <=width) {
-		h1 {
-			padding-inline: 7.5vw;
-		}
-
 		section {
 			padding-inline: 7.5vw;
 			grid-template-columns: repeat(3, 1fr);
