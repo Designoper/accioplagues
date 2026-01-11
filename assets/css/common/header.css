@@ -87,14 +87,13 @@ header {
 
             [href="#main"] {
                 display: initial;
-                position: absolute;
+                position: fixed;
                 top: -100%;
 
                 &:focus {
                     font-size: 1.5em;
                     padding: 1em;
-                    top: 50vh;
-                    left: 50vw;
+                    inset: 50vh auto auto 50vw;
                     transform: translate(-50%, -50%);
                     background-color: inherit;
                 }
