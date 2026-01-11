@@ -84,8 +84,4 @@ body {
 			font-size: 1.75rem;
 		}
 	}
-
-	@media (1921px <=width) {
-		/* font-size: 1vw; */
-	}
 }
