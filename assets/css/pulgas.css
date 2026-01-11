@@ -6,7 +6,7 @@ main {
 			background-color: var(--secondary-bg);
 
 			hgroup {
-				padding-block: 1rem;
+				padding-block: 1em;
 			}
 
 			>p {
@@ -14,7 +14,7 @@ main {
 			}
 
 			>:not(img) {
-				padding-inline: 2rem;
+				padding-inline: 2em;
 			}
 		}
 
