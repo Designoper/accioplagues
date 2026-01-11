@@ -18,7 +18,6 @@ main {
 	div {
 		display: grid;
 		gap: inherit;
-		/* justify-items: center; */
 	}
 
 	ul {
@@ -32,6 +31,11 @@ main {
 	hgroup {
 		display: grid;
 		gap: 1rem 0;
+	}
+
+	article {
+		display: grid;
+		align-content: start;
 	}
 
 	section {
@@ -69,7 +73,7 @@ main {
 		}
 
 		h1 {
-			padding-inline: 7.5vw;
+			padding-inline: 17.5vw;
 		}
 
 		section {
@@ -78,6 +82,10 @@ main {
 	}
 
 	@media screen and (1280px <=width) {
+		h1 {
+			padding-inline: 7.5vw;
+		}
+
 		section {
 			padding-inline: 7.5vw;
 			grid-template-columns: repeat(3, 1fr);
