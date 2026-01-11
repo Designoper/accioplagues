@@ -64,12 +64,11 @@ header {
             right: -100vw;
             width: 100vw;
             height: 100vh;
-            /* overflow-y: scroll; */
+            overflow-y: scroll;
             padding-top: 4rem;
             background-color: inherit;
             visibility: hidden;
-            transition-property: right, visibility;
-            transition-duration: 0.7s;
+            transition: right 0.7s, visibility 0.7s;
 
             :is(summary, a) {
                 padding: 0.8em 10vw;
