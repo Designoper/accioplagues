@@ -1,5 +1,10 @@
 main {
 	section {
+		article {
+			display: grid;
+			align-content: start;
+		}
+
 		img {
 			width: 75%;
 			clip-path: circle();

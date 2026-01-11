@@ -39,6 +39,10 @@ main {
 		gap: 2.5rem 3.25rem;
 		padding-inline: 10vw;
 
+		img {
+			justify-self: center;
+		}
+
 		&:has(>div) {
 			align-items: start;
 		}
@@ -49,12 +53,6 @@ main {
 		article,
 		figure {
 			max-width: 360px;
-			justify-self: center;
-		}
-	}
-
-	@media screen and (width<1280px) {
-		img {
 			justify-self: center;
 		}
 	}
