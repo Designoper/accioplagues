@@ -1,4 +1,6 @@
 main {
+	--section-padding-inline: 10vw;
+
 	display: grid;
 	gap: 5rem 0;
 	padding-bottom: 7rem;
@@ -9,10 +11,10 @@ main {
 	}
 
 	h1 {
-		padding-inline: 10vw;
 		position: absolute;
 		position-anchor: --banner-img;
 		place-self: anchor-center;
+		padding-inline: var(--section-padding-inline);
 	}
 
 	div {
@@ -41,7 +43,7 @@ main {
 	section {
 		display: grid;
 		gap: 2.5rem 3.25rem;
-		padding-inline: 10vw;
+		padding-inline: var(--section-padding-inline);
 
 		img {
 			justify-self: center;
@@ -68,26 +70,17 @@ main {
 	}
 
 	@media screen and (1024px <=width) {
+		--section-padding-inline: 17.5vw;
+
 		>img {
 			height: auto;
-		}
-
-		h1 {
-			padding-inline: 17.5vw;
-		}
-
-		section {
-			padding-inline: 17.5vw;
 		}
 	}
 
 	@media screen and (1280px <=width) {
-		h1 {
-			padding-inline: 7.5vw;
-		}
+		--section-padding-inline: 7.5vw;
 
 		section {
-			padding-inline: 7.5vw;
 			grid-template-columns: repeat(3, 1fr);
 			gap: 2.75rem 4vw;
 
