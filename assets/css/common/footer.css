@@ -29,7 +29,7 @@ footer {
         width: 50%;
     }
 
-    @media screen and (541px <=width) {
+    @media (541px <=width) {
         grid-template-columns: 1fr 1fr;
 
         h2 {
@@ -41,7 +41,7 @@ footer {
         }
     }
 
-    @media screen and (1024px <=width) {
+    @media (1024px <=width) {
         padding: 2em 7.5vw;
         grid-template-columns: 1fr 60%;
 

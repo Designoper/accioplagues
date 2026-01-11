@@ -45,7 +45,7 @@ main {
             }
         }
 
-        @media screen and (768px <=width<1280px) {
+        @media (768px <=width<1280px) {
             &:nth-of-type(2) {
                 article {
                     grid-column: span 6;
@@ -63,7 +63,7 @@ main {
             }
         }
 
-        @media screen and (1280px <=width) {
+        @media (1280px <=width) {
             &:nth-of-type(1) {
                 grid-template-areas:
                     "_1 _1 _1"
