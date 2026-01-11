@@ -64,8 +64,8 @@ header {
             right: -100vw;
             width: 100vw;
             height: 100vh;
-            overflow-y: scroll;
-            padding-top: 4rem;
+            /* overflow-y: scroll; */
+            padding-top: 4em;
             background-color: inherit;
             visibility: hidden;
             transition: right 0.7s, visibility 0.7s;
@@ -76,7 +76,7 @@ header {
             }
 
             details::details-content {
-                padding-left: 2rem;
+                padding-left: 2em;
             }
         }
     }
