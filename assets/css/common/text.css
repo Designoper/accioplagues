@@ -86,8 +86,6 @@ body {
 	}
 
 	@media screen and (1921px <=width) {
-		/* body {
-		font-size: 1vw;
-	} */
+		/* font-size: 1vw; */
 	}
 }
