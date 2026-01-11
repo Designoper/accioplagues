@@ -19,16 +19,14 @@ main {
 
         &:nth-of-type(3) {
             article {
+                display: grid;
                 border-radius: 0.5em;
                 overflow: hidden;
                 background-color: var(--secondary-bg);
                 box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
-            }
-
-            div {
                 gap: 1.5em;
                 justify-items: center;
-                padding: 2em;
+                padding: 0 2em 2em;
             }
 
             p {
