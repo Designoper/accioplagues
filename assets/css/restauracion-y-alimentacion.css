@@ -2,7 +2,7 @@ main {
 	@media (768px <=width<1280px) {
 		section {
 			img {
-				width: 65%;
+				width: 55%;
 			}
 		}
 	}
