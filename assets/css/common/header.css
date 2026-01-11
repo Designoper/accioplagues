@@ -4,7 +4,7 @@ header {
     z-index: 1;
 
     nav {
-        padding: 0.75rem 10vw;
+        padding: 0.75em 10vw;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -16,7 +16,7 @@ header {
         }
 
         >[href="./index.html"] {
-            width: 2.5rem;
+            width: 2.5em;
         }
 
         >details {
@@ -28,11 +28,11 @@ header {
             }
 
             svg {
-                width: 1.5rem;
+                width: 1.5em;
 
                 path {
                     stroke: var(--text);
-                    stroke-width: 72px;
+                    stroke-width: 4em;
                 }
             }
 
@@ -101,7 +101,7 @@ header {
             }
 
             >[href="./index.html"] {
-                width: 3rem;
+                width: 3em;
             }
 
             >details {
