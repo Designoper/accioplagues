@@ -58,8 +58,7 @@ img {
 	text-box: initial;
 }
 
-textarea,
-select {
+:is(textarea, select) {
 	field-sizing: content;
 }
 

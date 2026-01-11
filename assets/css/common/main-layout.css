@@ -28,11 +28,7 @@ main {
 		column-count: 3;
 	}
 
-	figure {
-		display: grid;
-		gap: 1rem 0;
-	}
-
+	figure,
 	hgroup {
 		display: grid;
 		gap: 1rem 0;
