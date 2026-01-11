@@ -27,6 +27,15 @@ main {
 				}
 			}
 
+			ul {
+				display: initial;
+				column-count: 2;
+			}
+
+			li {
+				margin-bottom: 1.25em;
+			}
+
 			&:nth-of-type(6) {
 				article {
 					grid-column: span 6;

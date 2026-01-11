@@ -7,7 +7,7 @@ footer {
 
     h2 {
         text-align: left;
-        font-size: 1.5rem;
+        font-size: 1.5em;
     }
 
     section {
@@ -33,7 +33,7 @@ footer {
         grid-template-columns: 1fr 1fr;
 
         h2 {
-            font-size: 1.4rem;
+            font-size: 1.4em;
         }
 
         img {
@@ -52,7 +52,7 @@ footer {
         }
 
         h2 {
-            font-size: 1.5rem;
+            font-size: 1.5em;
         }
 
         img {
