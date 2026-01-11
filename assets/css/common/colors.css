@@ -23,8 +23,6 @@ h1 {
 	color: var(--text);
 }
 
-main {
-	>img {
-		filter: brightness(40%);
-	}
+img:has(+ h1) {
+	filter: brightness(40%);
 }
