@@ -2,10 +2,10 @@ main {
 	section {
 		article {
 			border-radius: 0.5em;
-			box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
-			background-color: var(--secondary-bg);
 			padding-bottom: 2rem;
 			overflow: hidden;
+			background-color: var(--secondary-bg);
+			box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
 
 			>:not(img) {
 				padding-inline: 2rem;
