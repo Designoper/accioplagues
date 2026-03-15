@@ -7,7 +7,7 @@ main {
 
 	>img {
 		anchor-name: --banner-img;
-		height: 375px;
+		height: 50dvh;
 	}
 
 	h1 {
@@ -60,12 +60,6 @@ main {
 		figure {
 			max-width: 360px;
 			justify-self: center;
-		}
-	}
-
-	@media (768px <=width) {
-		>img {
-			height: 550px;
 		}
 	}
 
