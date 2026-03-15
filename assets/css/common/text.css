@@ -1,3 +1,7 @@
+html {
+	word-spacing: 1.5px;
+}
+
 :is(h1, h2, h3) {
 	font-weight: bold;
 	text-align: center;
@@ -43,10 +47,6 @@ hgroup p {
 }
 
 @media (800px <=width) {
-	html {
-		font-size: 1.2rem;
-	}
-
 	h1 {
 		font-size: 3rem;
 	}
@@ -61,10 +61,6 @@ hgroup p {
 }
 
 @media (1024px <=width) {
-	html {
-		font-size: 1rem;
-	}
-
 	h1 {
 		font-size: 3.5rem;
 	}

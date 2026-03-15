@@ -42,7 +42,7 @@ main {
 
 	section {
 		display: grid;
-		gap: 2.5rem 3.25rem;
+		gap: 2.5rem 5vw;
 		padding-inline: var(--section-padding-inline);
 
 		img {
