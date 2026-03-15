@@ -4,7 +4,7 @@ header {
     z-index: 1;
 
     nav {
-        padding: 0.75em 10vw;
+        padding: 0.75rem 10vw;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -16,7 +16,7 @@ header {
         }
 
         >[href="./index.html"] {
-            width: 2.5em;
+            width: 2.5rem;
         }
 
         >details {
@@ -28,11 +28,11 @@ header {
             }
 
             svg {
-                width: 1.5em;
+                width: 1.5rem;
 
                 path {
                     stroke: var(--text);
-                    stroke-width: 4em;
+                    stroke-width: 4rem;
                 }
             }
 
@@ -83,7 +83,7 @@ header {
 
     @media (1024px <=width) {
         nav {
-            padding: 0.5em 7.5vw;
+            padding: 0.5rem 7.5vw;
 
             [href="#main"] {
                 display: initial;
@@ -91,7 +91,7 @@ header {
                 top: -100%;
 
                 &:focus {
-                    font-size: 1.5em;
+                    font-size: 1.5rem;
                     padding: 1em;
                     inset: 50vh auto auto 50vw;
                     transform: translate(-50%, -50%);
@@ -100,7 +100,7 @@ header {
             }
 
             >[href="./index.html"] {
-                width: 3em;
+                width: 3rem;
             }
 
             >details {

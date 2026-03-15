@@ -32,7 +32,7 @@ main {
 	figure,
 	hgroup {
 		display: grid;
-		gap: 1em 0;
+		gap: 1rem 0;
 	}
 
 	article {
@@ -82,7 +82,7 @@ main {
 
 		section {
 			grid-template-columns: repeat(3, 1fr);
-			gap: 2.75rem 4vw;
+			gap: 3vw 4vw;
 
 			>img {
 				height: 100%;

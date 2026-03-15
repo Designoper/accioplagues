@@ -1,9 +1,9 @@
 footer {
     display: grid;
     gap: 3em 2em;
+    align-items: flex-start;
     padding: 2em 10vw;
     background-color: var(--secondary-bg);
-    align-items: flex-start;
 
     h2 {
         text-align: left;
@@ -30,7 +30,7 @@ footer {
     }
 
     @media (541px <=width) {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
 
         h2 {
             font-size: 1.4rem;

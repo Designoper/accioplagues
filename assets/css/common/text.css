@@ -73,10 +73,6 @@ hgroup p {
 }
 
 @media (1700px <=width) {
-	html {
-		font-size: 1.3rem;
-	}
-
 	h2 {
 		font-size: 2.5rem;
 	}
