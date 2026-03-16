@@ -34,24 +34,19 @@
 
 	<header>
 
-		<nav>
+		<a href="#main">Ir al contenido principal</a>
 
-			<a href="#main">Ir al contenido principal</a>
+		<a href="./index.html" tabindex="-1">
+			<img src="./assets/img/svg/logo.svg" alt="Logo de la empresa">
+		</a>
 
-			<a href="./index.html" tabindex="-1">
-				<img src="./assets/img/svg/logo.svg" alt="Logo de la empresa">
-			</a>
+		<nav id="nav" popover>
 
-			<details>
-				<summary aria-label="Menú de navegación">
-					<svg viewBox="0 0 556 556">
-						<path d="M0 277.66h555.187M0 30.91h555.187M0 525.844h555.187" />
-					</svg>
-					<svg viewBox="0 0 556 556">
-						<path d="m24.336 24.336 506.648 506.648M530.984 24.336 24.336 530.984" />
-					</svg>
-				</summary>
-			</details>
+			<button type="button" commandfor="nav" command="hide-popover" aria-label="Cerrar menú de navegación">
+				<svg viewBox="0 0 556 556">
+					<path d="m24.336 24.336 506.648 506.648M530.984 24.336 24.336 530.984" />
+				</svg>
+			</button>
 
 			<menu>
 				<li><a href="./index.html">Inicio</a></li>
@@ -99,7 +94,14 @@
 					</details>
 				</li>
 			</menu>
+
 		</nav>
+
+		<button type="button" commandfor="nav" command="show-popover" aria-label="Abrir menú de navegación">
+			<svg viewBox="0 0 556 556">
+				<path d="M0 277.66h555.187M0 30.91h555.187M0 525.844h555.187" />
+			</svg>
+		</button>
 
 	</header>
 

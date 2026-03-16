@@ -2,145 +2,135 @@ header {
     position: sticky;
     top: 0;
     z-index: 1;
+    padding: 0.75rem 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-bg);
+    box-shadow: 0 2px 20px hsla(0, 0%, 0%, 0.2);
 
-    nav {
-        padding: 0.75rem 10vw;
+    [href="#main"] {
+        display: none;
+    }
+
+    >[href="./index.html"] {
+        width: 2.5rem;
+    }
+
+    button {
+        /* padding: 1em; */
+
+        svg {
+            width: 1.5rem;
+        }
+
+        path {
+            stroke: var(--text);
+            stroke-width: 4rem;
+        }
+    }
+
+    nav[popover] {
+        inset: unset;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: var(--secondary-bg);
-        box-shadow: 0 2px 20px hsla(0, 0%, 0%, 0.2);
+        flex-direction: column;
+        gap: 1.5rem 0;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        background-color: inherit;
+        visibility: hidden;
+        transition-property: right, visibility;
+        transition-duration: 0.7s;
 
-        [href="#main"] {
-            display: none;
-        }
+        &:popover-open {
+            right: 0;
+            visibility: visible;
 
-        >[href="./index.html"] {
-            width: 2.5rem;
-        }
-
-        >details {
-            z-index: 1;
-            /* padding: 1em; */
-
-            summary {
-                list-style: none;
-            }
-
-            svg {
-                width: 1.5rem;
-
-                path {
-                    stroke: var(--text);
-                    stroke-width: 4rem;
-                }
-            }
-
-            &[open] {
-                +menu {
-                    right: 0;
-                    visibility: initial;
-                }
-
-                svg {
-                    &:first-of-type {
-                        display: none;
-                    }
-                }
-            }
-
-            &:not([open]) {
-                svg {
-                    &:last-of-type {
-                        display: none;
-                    }
-                }
+            &::backdrop {
+                background-color: #000000;
+                opacity: 75%;
             }
         }
 
-        >menu {
-            position: fixed;
-            top: 0;
-            right: -100vw;
-            width: 100vw;
-            height: 100vh;
-            overflow-y: scroll;
-            scrollbar-width: none;
-            padding-top: 4em;
-            background-color: inherit;
-            visibility: hidden;
-            transition: right 0.7s, visibility 0.7s;
+        button {
+            margin: 1.25rem 10vw 0 auto;
+        }
 
-            :is(summary, a) {
-                padding: 0.8em 10vw;
-                display: list-item;
-            }
+        :is(summary, a) {
+            padding: 0.75rem 2.5rem;
+            display: list-item;
+            color: var(--text);
+        }
 
-            details::details-content {
-                padding-left: 2em;
+        details {
+            a {
+                padding-left: 4rem;
             }
         }
     }
 
     @media (1024px <=width) {
-        nav {
-            padding: 0.5rem 7.5vw;
+        padding: 0.5rem 7.5vw;
 
-            [href="#main"] {
-                display: initial;
-                position: fixed;
-                top: -100%;
+        [href="#main"] {
+            display: initial;
+            position: fixed;
+            top: -100%;
 
-                &:focus {
-                    font-size: 1.5rem;
-                    padding: 1em;
-                    inset: 50vh auto auto 50vw;
-                    transform: translate(-50%, -50%);
-                    background-color: inherit;
-                }
+            &:focus {
+                font-size: 1.5rem;
+                padding: 1em;
+                inset: 50vh auto auto 50vw;
+                transform: translate(-50%, -50%);
+                background-color: inherit;
             }
+        }
 
-            >[href="./index.html"] {
-                width: 3rem;
-            }
+        >[href="./index.html"] {
+            width: 3rem;
+        }
 
-            >details {
-                display: none;
-            }
+        button {
+            display: none;
+        }
+
+        nav[popover] {
+            all: unset;
 
             >menu {
-                all: unset;
                 display: flex;
-                list-style: none;
+                align-items: baseline;
+            }
 
-                :is(summary, a) {
-                    padding: 0.75em;
-                    transition: background-color 0.35s;
-                    border-radius: 0.2em;
-                    white-space: pre-line;
+            :is(summary, a) {
+                padding: 0.75em;
+                transition: background-color 0.35s;
+                border-radius: 0.2em;
+                white-space: pre-line;
 
-                    &:hover {
-                        background-color: var(--background-text);
-                    }
+                &:hover {
+                    background-color: var(--background-text);
+                }
+            }
+
+            details {
+                &::details-content {
+                    position: absolute;
+                    padding-left: 0;
+                    opacity: 0;
+                    transition: content-visibility 300ms allow-discrete, opacity 300ms;
+                    background-color: var(--secondary-bg);
+                    /* box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px; */
                 }
 
-                details {
-                    &::details-content {
-                        position: absolute;
-                        padding-left: 0;
-                        opacity: 0;
-                        transition: content-visibility 300ms allow-discrete, opacity 300ms;
-                        background-color: var(--secondary-bg);
-                        /* box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px; */
-                    }
+                &[open]::details-content {
+                    opacity: 1;
+                }
 
-                    &[open]::details-content {
-                        opacity: 1;
-                    }
-
-                    a {
-                        padding: 0.75em 1em;
-                    }
+                a {
+                    padding: 0.75rem 1rem;
                 }
             }
         }
