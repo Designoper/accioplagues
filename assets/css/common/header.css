@@ -56,7 +56,6 @@ header {
         :is(summary, a) {
             padding: 0.75rem 2.5rem;
             display: list-item;
-            color: var(--text);
         }
 
         details {
