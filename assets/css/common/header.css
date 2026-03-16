@@ -32,17 +32,15 @@ header {
     }
 
     nav {
-        inset: unset;
+        inset: 0 -100% auto auto;
         display: block;
-        top: 0;
-        right: -100%;
         height: 100vh;
         background-color: inherit;
         visibility: hidden;
-        transition: right 700ms, visibility 700ms;
+        transition: inset 700ms, visibility 700ms;
 
         &:popover-open {
-            right: 0;
+            inset: 0 0 auto auto;
             visibility: visible;
 
             &::backdrop {
