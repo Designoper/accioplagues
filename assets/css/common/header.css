@@ -44,8 +44,7 @@ header {
             visibility: visible;
 
             &::backdrop {
-                background-color: #000000;
-                opacity: 75%;
+                background-color: rgba(0, 0, 0, 0.75);
             }
         }
 
