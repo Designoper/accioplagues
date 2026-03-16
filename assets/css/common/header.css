@@ -34,8 +34,6 @@ header {
     nav {
         inset: unset;
         display: block;
-        gap: 1.5rem 0;
-        position: fixed;
         top: 0;
         right: -100%;
         height: 100vh;
