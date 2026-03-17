@@ -47,16 +47,10 @@ main {
 		img {
 			justify-self: center;
 		}
-
-		&:has(>div) {
-			align-items: start;
-		}
 	}
 
 	@media (width<768px) {
-
-		article,
-		figure {
+		:is(article, figure) {
 			max-width: 360px;
 			justify-self: center;
 		}

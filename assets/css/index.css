@@ -2,7 +2,7 @@ main {
     section {
         &:nth-of-type(2) {
             article {
-                gap: 1.75em 0;
+                gap: 1.75rem 0;
             }
 
             p {
