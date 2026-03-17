@@ -26,8 +26,8 @@ header {
         }
 
         path {
-            stroke: var(--text);
             stroke-width: 4rem;
+            stroke: var(--text);
         }
     }
 
@@ -35,9 +35,9 @@ header {
         inset: 0 -100% auto auto;
         display: block;
         height: 100vh;
-        background-color: inherit;
         visibility: hidden;
         transition: inset 700ms, visibility 700ms;
+        background-color: inherit;
 
         &:popover-open {
             inset: 0 0 auto auto;
