@@ -1,20 +1,24 @@
-header {
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    padding: 0.75rem 10vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--secondary-bg);
-    box-shadow: 0 2px 20px hsla(0, 0%, 0%, 0.2);
-
-    [href="#main"] {
-        display: none;
+@scope(header) {
+    :scope {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        padding: 0.75rem 10vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--secondary-bg);
+        box-shadow: 0 2px 20px hsla(0, 0%, 0%, 0.2);
     }
 
-    >[href="./index.html"] {
-        width: 2.5rem;
+    @scope(&) to (nav) {
+        [href="#main"] {
+            display: none;
+        }
+
+        [href="./index.html"] {
+            width: 2.5rem;
+        }
     }
 
     button {
@@ -65,24 +69,28 @@ header {
     }
 
     @media (1024px <=width) {
-        padding: 0.5rem 7.5vw;
-
-        [href="#main"] {
-            display: initial;
-            position: fixed;
-            top: -100%;
-
-            &:focus {
-                font-size: 1.5rem;
-                padding: 1rem;
-                inset: 50vh auto auto 50vw;
-                transform: translate(-50%, -50%);
-                background-color: inherit;
-            }
+        :scope {
+            padding: 0.5rem 7.5vw;
         }
 
-        >[href="./index.html"] {
-            width: 3rem;
+        @scope(&) to (nav) {
+            [href="#main"] {
+                display: initial;
+                position: fixed;
+                top: -100%;
+
+                &:focus {
+                    font-size: 1.5rem;
+                    padding: 1rem;
+                    inset: 50vh auto auto 50vw;
+                    transform: translate(-50%, -50%);
+                    background-color: inherit;
+                }
+            }
+
+            [href="./index.html"] {
+                width: 3rem;
+            }
         }
 
         button {
