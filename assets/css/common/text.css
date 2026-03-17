@@ -46,7 +46,7 @@ hgroup p {
 	font-weight: bold;
 }
 
-@media (800px <=width) {
+@media (768px <=width) {
 	h1 {
 		font-size: 3rem;
 	}
