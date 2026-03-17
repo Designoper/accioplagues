@@ -34,11 +34,13 @@ header {
     nav {
         inset: 0 -100% auto auto;
         display: block;
+        padding-bottom: 1.5rem;
+        /* width: 100vw; */
         height: 100vh;
         visibility: hidden;
         transition: inset 700ms, visibility 700ms;
         background-color: inherit;
-        box-shadow: -5px 0 20px hsla(0, 0%, 0%, 0.2);
+        /* box-shadow: -5px 0 20px hsla(0, 0%, 0%, 0.2); */
 
         &:popover-open {
             inset: 0 0 auto auto;
