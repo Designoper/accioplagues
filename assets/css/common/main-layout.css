@@ -18,7 +18,7 @@ main {
 	}
 
 	div {
-		display: grid;
+		display: inherit;
 		gap: inherit;
 	}
 
@@ -37,7 +37,6 @@ main {
 
 	article {
 		display: grid;
-		align-content: start;
 	}
 
 	section {
