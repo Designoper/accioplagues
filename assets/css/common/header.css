@@ -42,10 +42,10 @@ header {
         &:popover-open {
             inset: 0 0 auto auto;
             visibility: visible;
+        }
 
-            &::backdrop {
-                background-color: rgba(0, 0, 0, 0.75);
-            }
+        &::backdrop {
+            background-color: rgba(0, 0, 0, 0.75);
         }
 
         button {
