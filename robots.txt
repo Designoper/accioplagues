@@ -1,0 +1,3 @@
+Sitemap: https://www.accioplagues.com/sitemap.xml
+User-Agent: *
+Allow: /
