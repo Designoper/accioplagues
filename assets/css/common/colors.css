@@ -3,7 +3,7 @@ html {
 	--secondary-bg: hsla(180, 81%, 58%, 1);
 	--body-text: hsla(0, 0%, 0%, 0.85);
 	--heading-text: hsla(0, 0%, 0%, 1);
-	--hover-text: hsla(from var(--secondary-bg) h s calc(l/1.25) a);
+	--hover-text: hsla(from var(--secondary-bg) h s calc(l/1.25));
 
 	color: var(--body-text);
 	background-color: var(--primary-bg);
