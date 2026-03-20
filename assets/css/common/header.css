@@ -27,7 +27,7 @@ header {
 
         path {
             stroke-width: 4rem;
-            stroke: var(--text);
+            stroke: var(--heading-text);
         }
     }
 
@@ -48,7 +48,7 @@ header {
         }
 
         &::backdrop {
-            background-color: rgba(0, 0, 0, 0.75);
+            background-color: hsla(0, 0%, 0%, 0.75);
         }
 
         button {
