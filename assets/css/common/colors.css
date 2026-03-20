@@ -1,17 +1,17 @@
 html {
-	--primary-bg: hsl(180, 42%, 93%);
-	--secondary-bg: hsl(180, 81%, 58%);
-	--background-text: hsl(from var(--secondary-bg) h s calc(l/1.25));
-	--text: hsl(0, 0%, 0%);
-	--text-light: hsla(0, 0%, 0%, 0.85);
+	--primary-bg: hsla(180, 42%, 93%, 1);
+	--secondary-bg: hsla(180, 81%, 58%, 1);
+	--body-text: hsla(0, 0%, 0%, 0.85);
+	--heading-text: hsla(0, 0%, 0%, 1);
+	--hover-text: hsla(from var(--secondary-bg) h s calc(l/1.25));
 
-	color: var(--text-light);
+	color: var(--body-text);
 	background-color: var(--primary-bg);
 	scrollbar-color: var(--secondary-bg) var(--primary-bg);
 }
 
 :focus-visible {
-	outline: var(--text) solid 4px;
+	outline: var(--body-text) solid 4px;
 }
 
 h1 {
@@ -19,7 +19,7 @@ h1 {
 }
 
 :is(h2, h3, strong) {
-	color: var(--text);
+	color: var(--heading-text);
 }
 
 img:has(+h1) {
