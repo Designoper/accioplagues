@@ -2,8 +2,7 @@ main {
 	section {
 		img {
 			clip-path: circle();
-			width: auto;
-			zoom: 0.65;
+			width: 65%;
 		}
 
 		@media (768px <=width<1280px) {

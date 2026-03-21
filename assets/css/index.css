@@ -17,13 +17,14 @@ main {
 
         &:nth-of-type(3) {
             article {
-                justify-items: center;
+                /* justify-items: center; */
 
                 >:not(img) {
                     text-align: center;
                 }
 
                 a {
+                    justify-self: center;
                     padding: 1em;
                     clip-path: inset(0 round 10px);
                     transition: scale 0.5s;
