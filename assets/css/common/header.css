@@ -7,7 +7,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: var(--secondary-bg);
-    box-shadow: 0 2px 20px hsla(0, 0%, 0%, 0.2);
+    box-shadow: 0 2px 20px var(--box-shadow);
 
     [href="#main"] {
         display: none;
@@ -40,7 +40,7 @@ header {
         visibility: hidden;
         transition: inset 700ms, visibility 700ms;
         background-color: inherit;
-        /* box-shadow: -5px 0 20px hsla(0, 0%, 0%, 0.2); */
+        box-shadow: -5px 0 20px var(--box-shadow);
 
         &:popover-open {
             inset: 0 0 auto auto;
@@ -48,7 +48,7 @@ header {
         }
 
         &::backdrop {
-            background-color: hsla(0, 0%, 0%, 0.75);
+            backdrop-filter: brightness(0.25);
         }
 
         button {
