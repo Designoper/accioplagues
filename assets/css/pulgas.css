@@ -9,7 +9,7 @@ main {
 			background-color: var(--secondary-bg);
 
 			>:not(img) {
-				padding-inline: 2em;
+				padding-inline: 2rem;
 			}
 		}
 
