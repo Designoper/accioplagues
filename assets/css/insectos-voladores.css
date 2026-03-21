@@ -1,13 +1,11 @@
 main {
 	article {
+		display: grid;
+		gap: 2rem;
 		padding-bottom: 2rem;
 		clip-path: inset(0 round 10px);
 		background-color: var(--secondary-bg);
 		box-shadow: 0 2px 20px hsla(0, 0%, 0%, 0.2);
-
-		h3 {
-			padding-block: 1.5rem;
-		}
 
 		>:not(img) {
 			padding-inline: 2rem;
