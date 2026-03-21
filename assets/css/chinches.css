@@ -1,6 +1,8 @@
 main {
 	section {
 		article {
+			display: grid;
+			gap: 2rem;
 			clip-path: inset(0 round 10px);
 			padding-bottom: 2rem;
 			background-color: var(--secondary-bg);
@@ -9,10 +11,6 @@ main {
 			>:not(img) {
 				padding-inline: 2rem;
 			}
-		}
-
-		h3 {
-			margin: 1.25em 0 1em;
 		}
 
 		@media (541px <=width<1280px) {
