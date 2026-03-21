@@ -17,7 +17,7 @@ main {
 			}
 
 			li {
-				margin-bottom: 1.25em;
+				margin-bottom: 1.5em;
 			}
 
 			&:nth-of-type(6) {
@@ -76,7 +76,7 @@ main {
 			}
 
 			li {
-				margin-bottom: 1.25em;
+				margin-bottom: 1.5em;
 			}
 		}
 	}
