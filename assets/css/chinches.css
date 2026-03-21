@@ -1,9 +1,8 @@
 main {
 	section {
 		article {
-			border-radius: 0.5em;
+			clip-path: inset(0 round 10px);
 			padding-bottom: 2rem;
-			overflow: hidden;
 			background-color: var(--secondary-bg);
 			box-shadow: 0 2px 20px hsla(0, 0%, 0%, 0.2);
 
