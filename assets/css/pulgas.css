@@ -1,17 +1,5 @@
 main {
 	section {
-		article {
-			gap: 2rem;
-			padding-bottom: 2rem;
-			clip-path: inset(0 round 10px);
-			box-shadow: 0 2px 20px hsla(0, 0%, 0%, 0.2);
-			background-color: var(--secondary-bg);
-
-			>:not(img) {
-				padding-inline: 2rem;
-			}
-		}
-
 		@media (768px <=width<1280px) {
 			&:nth-of-type(2) {
 				article {
