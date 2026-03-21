@@ -102,7 +102,7 @@ header {
             :is(summary, a) {
                 padding: 0.75rem;
                 transition: background-color 350ms;
-                border-radius: 0.2rem;
+                clip-path: inset(0 round 5px);
                 white-space: pre-line;
 
                 &:hover {

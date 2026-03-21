@@ -34,7 +34,7 @@ main {
 
             a {
                 padding: 1em;
-                border-radius: 0.5em;
+                clip-path: inset(0 round 10px);
                 transition: scale 0.5s;
                 background-color: var(--primary-bg);
 
