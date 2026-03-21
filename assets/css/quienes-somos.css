@@ -3,7 +3,7 @@ main {
 		img {
 			width: 75%;
 			clip-path: circle();
-			margin: 2em 0;
+			margin: 2rem 0;
 		}
 
 		@media (768px <=width<1280px) {
