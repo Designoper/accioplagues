@@ -8,19 +8,27 @@ main {
 		gap: 1rem;
 	}
 
-	@media (1280px <=width) {
-		ul {
-			grid-template-columns: repeat(3, 1fr);
-		}
-
-		li {
-			gap: 1.25rem;
-		}
-
+	@media (768px <=width) {
 		section {
 			grid-template-areas:
-				"_1 _1 _1"
-				"_2 _2 _2";
+				"_1 _1 _1 _1 _1 _1 _1 _1 _1 _1 _1 _1"
+				"_2 _2 _2 _2 _2 _2 _2 _2 _2 _2 _2 _2"
+		}
+
+		@media (1280px <=width) {
+			ul {
+				grid-template-columns: repeat(3, 1fr);
+			}
+
+			li {
+				gap: 1.25rem;
+			}
+
+			section {
+				grid-template-areas:
+					"_1 _1 _1 _1 _1 _1 _1 _1 _1 _1 _1 _1"
+					"_2 _2 _2 _2 _2 _2 _2 _2 _2 _2 _2 _2";
+			}
 		}
 	}
 }

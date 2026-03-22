@@ -1,16 +1,8 @@
 main {
-	@media (768px <=width<1280px) {
+	@media (768px <=width) {
 		section {
 			grid-template-columns: repeat(12, 1fr);
 
-			>* {
-				grid-column: 1/-1;
-			}
-		}
-	}
-
-	@media (1280px <=width) {
-		section {
 			>:nth-child(1) {
 				grid-area: _1;
 			}
