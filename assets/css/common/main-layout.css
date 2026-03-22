@@ -38,7 +38,7 @@ main {
 	article {
 		display: grid;
 		gap: 2rem;
-		padding-bottom: 2rem;
+		padding-bottom: 2.5rem;
 		clip-path: inset(0 round 10px);
 		background-color: var(--secondary-bg);
 		box-shadow: 0 2px 20px var(--box-shadow);
