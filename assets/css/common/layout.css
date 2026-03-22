@@ -1,3 +1,7 @@
+@view-transition {
+	navigation: auto;
+}
+
 main {
 	--section-padding-inline: 10vw;
 
