@@ -103,7 +103,6 @@ header {
                 padding: 0.75rem;
                 transition: background-color 350ms;
                 clip-path: inset(0 round 5px);
-                white-space: pre-line;
 
                 &:hover {
                     background-color: var(--hover-text);
