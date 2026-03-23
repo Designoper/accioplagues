@@ -53,7 +53,8 @@ main {
 		display: grid;
 		gap: 2rem;
 		padding-bottom: 2.5rem;
-		clip-path: inset(0 round 10px);
+		border-radius: 10px;
+		overflow: clip;
 
 		>:not(img) {
 			padding-inline: 2rem;
