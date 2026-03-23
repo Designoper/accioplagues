@@ -20,6 +20,7 @@
 
 html {
 	font-family: sans-serif;
+	font-size-adjust: from-font;
 	interpolate-size: allow-keywords;
 	scroll-behavior: smooth;
 }
