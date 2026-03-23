@@ -19,20 +19,20 @@ main {
 	}
 
 	@media (1280px <=width) {
-		ul {
-			grid-template-columns: repeat(3, 1fr);
-		}
-
-		li {
-			gap: 1.25rem;
-		}
-
 		section {
 			&:nth-of-type(1) {
 				grid-template-areas:
 					"_1 _1 _1 _1 _1 _1 _1 _1 _1 _1 _1 _1"
 					"_2 _2 _2 _2 _2 _2 _2 _2 _2 _2 _2 _2";
 			}
+		}
+
+		ul {
+			display: initial;
+		}
+
+		li {
+			margin-bottom: 1.75em;
 		}
 	}
 }
