@@ -21,6 +21,7 @@
 html {
 	font-family: sans-serif;
 	interpolate-size: allow-keywords;
+	scroll-behavior: smooth;
 }
 
 a {

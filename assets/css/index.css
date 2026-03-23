@@ -20,7 +20,7 @@ main {
                 a {
                     justify-self: center;
                     padding: 1em;
-                    clip-path: inset(0 round 10px);
+                    border-radius: 10px;
                     transition: scale 500ms;
                     background-color: var(--primary-bg);
 
