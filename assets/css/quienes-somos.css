@@ -1,10 +1,5 @@
 main {
 	section {
-		img {
-			clip-path: circle();
-			width: 65%;
-		}
-
 		@media (768px <=width) {
 			&:nth-of-type(1) {
 				grid-template-areas:
@@ -30,6 +25,7 @@ main {
 			}
 
 			&:nth-of-type(2) {
+				gap: 2.25rem 3vw;
 				grid-template-areas:
 					"_1 _1 _1 _1 _1 _1 _1 _1 _1 _1 _1 _1"
 					"_2 _2 _2 _3 _3 _3 _4 _4 _4 _5 _5 _5";
