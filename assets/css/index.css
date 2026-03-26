@@ -4,11 +4,6 @@ main {
             p {
                 text-align: center;
             }
-
-            img {
-                /* width: 65%;
-                clip-path: circle(); */
-            }
         }
 
         &:nth-of-type(3) {
