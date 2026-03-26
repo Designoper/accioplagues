@@ -1,27 +1,19 @@
 main {
     section {
-        &:nth-of-type(2) {
-            p {
+        article {
+            >:not(img) {
                 text-align: center;
             }
-        }
 
-        &:nth-of-type(3) {
-            article {
-                >:not(img) {
-                    text-align: center;
-                }
+            a {
+                justify-self: center;
+                padding: 1em;
+                border-radius: 10px;
+                transition: scale 500ms;
+                background-color: var(--primary-bg);
 
-                a {
-                    justify-self: center;
-                    padding: 1em;
-                    border-radius: 10px;
-                    transition: scale 500ms;
-                    background-color: var(--primary-bg);
-
-                    &:hover {
-                        scale: 1.07;
-                    }
+                &:hover {
+                    scale: 1.07;
                 }
             }
         }
