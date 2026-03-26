@@ -6,8 +6,8 @@ main {
             }
 
             img {
-                width: 65%;
-                clip-path: circle();
+                /* width: 65%;
+                clip-path: circle(); */
             }
         }
 
