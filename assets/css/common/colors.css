@@ -1,8 +1,8 @@
 html {
-	--primary-bg: hsla(180, 42%, 93%, 1);
-	--secondary-bg: hsla(180, 81%, 58%, 1);
+	--primary-bg: hsl(163, 47%, 94%);
+	--secondary-bg: hsl(161, 49%, 71%);
 	--body-text: hsla(0, 0%, 0%, 0.85);
-	--heading-text: hsla(0, 0%, 0%, 1);
+	--heading-text: hsl(170, 96%, 10%);
 	--box-shadow: hsla(0, 0%, 0%, 0.25);
 	--hover-text: hsla(from var(--secondary-bg) h s calc(l/1.25));
 
