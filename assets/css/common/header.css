@@ -15,6 +15,10 @@ header {
 
     >[href="./index.html"] {
         width: 40px;
+
+        path {
+            fill: var(--heading-text)
+        }
     }
 
     button {
