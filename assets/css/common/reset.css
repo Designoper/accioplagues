@@ -12,6 +12,7 @@
 	text-box: trim-both cap alphabetic;
 	text-wrap: pretty;
 	text-align: justify;
+	text-decoration: none;
 	hyphens: auto;
 	overflow-wrap: break-word;
 	color: inherit;
@@ -27,10 +28,6 @@ html {
 	font-size-adjust: from-font;
 	interpolate-size: allow-keywords;
 	scroll-behavior: smooth;
-}
-
-a {
-	text-decoration: none;
 }
 
 :is(ul, ol, menu) {
