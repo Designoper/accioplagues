@@ -14,7 +14,7 @@ header {
     }
 
     >[href="./index.html"] {
-        width: 2.5rem;
+        width: 45px;
     }
 
     button {
@@ -22,7 +22,7 @@ header {
         /* padding: 1em; */
 
         svg {
-            width: 1.5rem;
+            width: 30px;
         }
 
         path {
@@ -81,10 +81,6 @@ header {
                 transform: translate(-50%, -50%);
                 background-color: inherit;
             }
-        }
-
-        >[href="./index.html"] {
-            width: 3rem;
         }
 
         button {
