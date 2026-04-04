@@ -17,7 +17,7 @@ header {
         width: 40px;
 
         path {
-            fill: var(--heading-text)
+            fill: var(--body-text)
         }
     }
 
