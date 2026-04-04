@@ -1,6 +1,7 @@
 @font-face {
 	font-family: "Rubik";
 	src: url("../../fonts/rubik/rubik.woff2") format("woff2-variations");
+	font-display: swap;
 }
 
 html {
