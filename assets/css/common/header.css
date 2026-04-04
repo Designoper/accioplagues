@@ -60,6 +60,17 @@ header {
         }
 
         details {
+            &::details-content {
+                height: 0;
+                transition: content-visibility 400ms allow-discrete, height 400ms;
+                background-color: var(--secondary-bg);
+                overflow: clip;
+            }
+
+            &[open]::details-content {
+                height: auto;
+            }
+
             a {
                 padding-left: 4rem;
             }
@@ -112,20 +123,10 @@ header {
             details {
                 &::details-content {
                     position: absolute;
-                    opacity: 0;
-                    transition: content-visibility 300ms allow-discrete, opacity 300ms;
-                    background-color: var(--secondary-bg);
-                    /* box-shadow: hsla(0, 0%, 0%, 0.19) 0 10px 20px; */
-                    /* box-shadow: 0 10px 10px var(--box-shadow); */
-                    /* border: 2px solid var(--box-shadow) 2px solid var(--box-shadow); */
-                }
-
-                &[open]::details-content {
-                    opacity: 1;
                 }
 
                 a {
-                    padding: 0.75rem 1rem;
+                    padding: 0.85rem 1.25rem;
                 }
             }
         }
