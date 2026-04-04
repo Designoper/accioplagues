@@ -14,7 +14,7 @@ header {
     }
 
     >[href="./index.html"] {
-        width: 45px;
+        width: 40px;
     }
 
     button {
@@ -22,7 +22,7 @@ header {
         /* padding: 1em; */
 
         svg {
-            width: 30px;
+            width: 25px;
         }
 
         path {
@@ -63,6 +63,11 @@ header {
             a {
                 padding-left: 4rem;
             }
+        }
+
+        :is(details:has([aria-current="page"]) summary, [aria-current="page"]) {
+            font-weight: bold;
+            text-decoration: underline solid currentColor;
         }
     }
 
