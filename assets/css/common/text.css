@@ -1,12 +1,10 @@
 @font-face {
-  font-family: "Rubik";
-  src: url("../../fonts/rubik/rubik.woff2") format("woff2-variations");
-  /* font-display: swap; */
+	font-family: "Rubik";
+	src: url("../../fonts/rubik/rubik.woff2") format("woff2-variations");
 }
 
 html {
 	font-family: 'Rubik';
-	/* word-spacing: 1.5px; */
 }
 
 :is(h1, h2, h3) {
@@ -15,7 +13,6 @@ html {
 	text-wrap: balance;
 	hyphens: none;
 	line-height: 1.3;
-	/* letter-spacing: 1px; */
 }
 
 h1 {
