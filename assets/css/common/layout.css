@@ -49,12 +49,13 @@ main {
 	article {
 		display: grid;
 		gap: 2rem;
+		justify-items: center;
 		padding-bottom: 2.5rem;
 		border-radius: 10px;
 		overflow: clip;
 
 		>:not(img) {
-			padding-inline: 2rem;
+			max-width: 80%;
 		}
 	}
 
