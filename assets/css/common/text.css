@@ -51,6 +51,10 @@ hgroup p {
 	font-weight: bold;
 }
 
+:is(details:has([aria-current="page"]) summary, [aria-current="page"]) {
+	text-decoration: underline solid currentColor;
+}
+
 @media (768px <=width) {
 	h1 {
 		font-size: 3rem;

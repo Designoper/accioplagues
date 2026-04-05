@@ -85,10 +85,6 @@ header {
                 padding-left: 4rem;
             }
         }
-
-        :is(details:has([aria-current="page"]) summary, [aria-current="page"]) {
-            text-decoration: underline solid currentColor;
-        }
     }
 
     @media (1024px <=width) {
