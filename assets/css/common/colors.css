@@ -12,7 +12,8 @@ html {
 }
 
 :focus-visible {
-	outline: var(--body-text) solid 4px;
+	outline: none;
+	box-shadow: 0 0 0 4px var(--body-text) inset;
 }
 
 h1 {
