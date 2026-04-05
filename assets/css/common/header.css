@@ -22,8 +22,14 @@ header {
     }
 
     button {
+        position: relative;
         display: list-item;
-        /* padding: 1em; */
+
+        &::after {
+            content: "";
+            position: absolute;
+            inset: -20px;
+        }
 
         svg {
             width: 25px;
