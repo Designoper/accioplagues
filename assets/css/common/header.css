@@ -73,8 +73,8 @@ header {
             &::details-content {
                 height: 0;
                 transition: content-visibility 500ms allow-discrete, height 500ms;
-                background-color: var(--secondary-bg);
                 overflow: clip;
+                background-color: var(--secondary-bg);
             }
 
             &[open]::details-content {
