@@ -81,7 +81,6 @@ header {
         }
 
         :is(details:has([aria-current="page"]) summary, [aria-current="page"]) {
-            /* font-weight: bold; */
             text-decoration: underline solid currentColor;
         }
     }
