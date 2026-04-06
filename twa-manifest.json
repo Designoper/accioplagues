@@ -17,7 +17,7 @@
   "splashScreenFadeOutDuration": 300,
   "signingKey": {
     "path": "C:\\Users\\Axel\\Archivos\\accioplagues\\android.keystore",
-    "alias": "android"
+    "alias": "test"
   },
   "appVersionName": "1",
   "appVersionCode": 1,
