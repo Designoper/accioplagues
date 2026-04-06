@@ -4,7 +4,7 @@ const CORE_ASSETS = [
 	"/accioplagues/",
 	"/accioplagues/index.html",
 	"/accioplagues/manifest.json",
-	"/accioplagues/assets/img/icons/icon-192.png",
+	"/accioplagues/assets/img/icons/icon-512.png",
 ];
 
 // Instalación: cachea solo lo esencial
