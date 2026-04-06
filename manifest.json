@@ -1,0 +1,17 @@
+{
+	"name": "Accio Plagues",
+	"short_name": "AccioPlagues",
+	"start_url": "/accioplagues/index.html",
+	"scope": "/accioplagues/",
+	"display": "standalone",
+	"version": "1.0",
+	"background_color": "#ffffff",
+	"theme_color": "#0a3d62",
+	"icons": [
+		{
+			"src": "/accioplagues/assets/img/icons/icon-512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	]
+}
