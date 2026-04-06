@@ -14,7 +14,7 @@ header {
     }
 
     >[href="./index.html"] {
-        width: 40px;
+        width: 2.5rem;
 
         path {
             fill: var(--body-text)
@@ -32,7 +32,7 @@ header {
         }
 
         svg {
-            width: 25px;
+            width: 1.65rem;
         }
 
         path {
