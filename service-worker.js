@@ -1,4 +1,4 @@
-const CACHE_NAME = "accioplagues-v1";
+const CACHE_NAME = "accioplagues-v2";
 
 const CORE_ASSETS = [
 	"/accioplagues/",
