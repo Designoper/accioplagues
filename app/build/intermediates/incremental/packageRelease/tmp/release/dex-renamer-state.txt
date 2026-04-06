@@ -1,4 +1,0 @@
-#Mon Apr 06 12:43:35 CEST 2026
-base.0=C\:\\Users\\Axel\\Archivos\\accioplagues\\app\\build\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
-renamed.0=classes.dex
-path.0=classes.dex
