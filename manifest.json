@@ -1,7 +1,7 @@
 {
 	"name": "Accio Plagues",
 	"short_name": "AccioPlagues",
-	"start_url": "/accioplagues/index.html",
+	"start_url": "/accioplagues/",
 	"scope": "/accioplagues/",
 	"display": "standalone",
 	"version": "1.0",
