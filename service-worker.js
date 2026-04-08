@@ -1,4 +1,4 @@
-const VERSION = "1.0.9";
+const VERSION = "1.0.10";
 const ROOT = "/accioplagues/";
 
 // Instalación: activar inmediatamente
@@ -25,8 +25,9 @@ self.addEventListener("fetch", event => {
 	// Network-first para HTML
 	if (request.headers.get("accept").includes("text/html")) {
 		event.respondWith(
-			fetch(request)
+			fetch(request, { cache: "no-store" })
 				.then(response => {
+					// Guardamos una copia en caché por si hay offline
 					caches.open(VERSION).then(cache => cache.put(request, response.clone()));
 					return response;
 				})
@@ -34,6 +35,7 @@ self.addEventListener("fetch", event => {
 		);
 		return;
 	}
+
 
 
 	// Cache-first para el resto
