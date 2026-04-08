@@ -36,8 +36,6 @@ self.addEventListener("fetch", event => {
 		return;
 	}
 
-
-
 	// Cache-first para el resto
 	event.respondWith(
 		caches.match(request).then(cached => {
