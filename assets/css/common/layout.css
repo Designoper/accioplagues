@@ -25,17 +25,13 @@ main {
 
 		img {
 			justify-self: center;
-			/* height: 100%; */
+			height: 100%;
 		}
 
-		/* >img {
-			height: 100%;
-		} */
-	}
-
-	div {
-		display: grid;
-		gap: inherit;
+		>div {
+			display: inherit;
+			gap: inherit;
+		}
 	}
 
 	ul {
@@ -146,10 +142,6 @@ main {
 
 		section {
 			gap: 2.25rem 4vw;
-
-			>img {
-				height: 100%;
-			}
 		}
 	}
 }
