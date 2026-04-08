@@ -25,7 +25,12 @@ main {
 
 		img {
 			justify-self: center;
+			/* height: 100%; */
 		}
+
+		/* >img {
+			height: 100%;
+		} */
 	}
 
 	div {
