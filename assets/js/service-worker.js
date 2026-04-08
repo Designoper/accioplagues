@@ -47,7 +47,7 @@ self.addEventListener("fetch", event => {
 				})
 				.catch(() => {
 					if (request.headers.get("accept").includes("text/html")) {
-						return caches.match("/accioplagues/index.html");
+						return caches.match(`${SUBDIRECTORY}index.html`);
 					}
 				});
 		})
