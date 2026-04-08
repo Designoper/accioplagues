@@ -1,10 +1,14 @@
-const CACHE_NAME = "accioplagues-v2";
+const NAME = "accioplagues";
+const VERSION = "1.0.0";
+const CACHE_NAME = `${NAME}-v${VERSION}`;
+
+const SUBDIRECTORY = "/accioplagues/";
 
 const CORE_ASSETS = [
-	"/accioplagues/",
-	"/accioplagues/index.html",
-	"/accioplagues/manifest.json",
-	"/accioplagues/assets/img/icons/icon-512.png",
+	`${SUBDIRECTORY}`,
+	`${SUBDIRECTORY}index.html`,
+	`${SUBDIRECTORY}manifest.json`,
+	`${SUBDIRECTORY}assets/img/icons/icon-512.png`,
 ];
 
 // Instalación: cachea solo lo esencial
