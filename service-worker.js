@@ -1,5 +1,5 @@
 const NAME = "accioplagues";
-const VERSION = "1.0.0";
+const VERSION = "1.0.1";
 const CACHE_NAME = `${NAME}-v${VERSION}`;
 
 // Activación: limpia caches antiguos
@@ -30,11 +30,11 @@ self.addEventListener("fetch", event => {
 					}
 					return response;
 				})
-				.catch(() => {
-					if (request.headers.get("accept").includes("text/html")) {
-						return caches.match(`${SUBDIRECTORY}index.html`);
-					}
-				});
+				// .catch(() => {
+				// 	if (request.headers.get("accept").includes("text/html")) {
+				// 		return caches.match(`${SUBDIRECTORY}index.html`);
+				// 	}
+				// });
 		})
 	);
 });
