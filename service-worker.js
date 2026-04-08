@@ -1,12 +1,11 @@
-const NAME = "accioplagues";
-const VERSION = "1.0.1";
-const CACHE_NAME = `${NAME}-v${VERSION}`;
+const VERSION = "1.0.2";
+const ROOT = "/accioplagues/";
 
 // Activación: limpia caches antiguos
 self.addEventListener("activate", event => {
 	event.waitUntil(
 		caches.keys().then(keys =>
-			Promise.all(keys.filter(key => key !== CACHE_NAME).map(key => caches.delete(key)))
+			Promise.all(keys.filter(key => key !== VERSION).map(key => caches.delete(key)))
 		)
 	);
 	self.clients.claim();
@@ -32,7 +31,7 @@ self.addEventListener("fetch", event => {
 				})
 				// .catch(() => {
 				// 	if (request.headers.get("accept").includes("text/html")) {
-				// 		return caches.match(`${SUBDIRECTORY}index.html`);
+				// 		return caches.match(`${ROOT}index.html`);
 				// 	}
 				// });
 		})
