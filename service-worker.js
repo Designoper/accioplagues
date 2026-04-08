@@ -1,5 +1,4 @@
-const VERSION = "1.0.12";
-const ROOT = "/accioplagues/";
+const VERSION = "1.0.13";
 
 // Instalación: activar inmediatamente
 self.addEventListener("install", event => {
