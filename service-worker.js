@@ -2,21 +2,6 @@ const NAME = "accioplagues";
 const VERSION = "1.0.0";
 const CACHE_NAME = `${NAME}-v${VERSION}`;
 
-const SUBDIRECTORY = "/accioplagues/";
-
-const CORE_ASSETS = [
-	`${SUBDIRECTORY}`,
-	`${SUBDIRECTORY}index.html`,
-	`${SUBDIRECTORY}manifest.json`,
-	`${SUBDIRECTORY}assets/img/icons/icon-512.png`,
-];
-
-// Instalación: cachea solo lo esencial
-self.addEventListener("install", event => {
-	event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(CORE_ASSETS)));
-	self.skipWaiting();
-});
-
 // Activación: limpia caches antiguos
 self.addEventListener("activate", event => {
 	event.waitUntil(
