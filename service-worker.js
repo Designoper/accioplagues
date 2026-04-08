@@ -1,4 +1,4 @@
-const VERSION = "1.0.6";
+const VERSION = "1.0.7";
 const ROOT = "/accioplagues/";
 
 // Instalación: activar inmediatamente
@@ -27,14 +27,14 @@ self.addEventListener("fetch", event => {
 		event.respondWith(
 			fetch(request)
 				.then(response => {
-					const cloned = response.clone();
-					caches.open(VERSION).then(cache => cache.put(request, cloned));
+					caches.open(VERSION).then(cache => cache.put(request, response.clone()));
 					return response;
 				})
 				.catch(() => caches.match(request))
 		);
 		return;
 	}
+
 
 	// Cache-first para el resto
 	event.respondWith(
