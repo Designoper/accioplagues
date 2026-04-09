@@ -1,4 +1,4 @@
-const VERSION = "1.0.18";
+const VERSION = "1.0.19";
 
 // Instalación: activar inmediatamente
 self.addEventListener("install", event => {
