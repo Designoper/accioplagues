@@ -23,7 +23,7 @@ header {
 
     button {
         position: relative;
-        display: list-item;
+        display: block;
 
         &::after {
             content: "";
