@@ -23,7 +23,7 @@ header {
 
     button {
         position: relative;
-        display: block;
+        /* display: block; */
 
         &::after {
             content: "";

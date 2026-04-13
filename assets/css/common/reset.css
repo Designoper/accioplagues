@@ -48,6 +48,10 @@ img {
 	object-fit: cover;
 }
 
+button {
+	display: block;
+}
+
 :is(button, summary, select, input[type="file"]) {
 	cursor: pointer;
 }
