@@ -1,4 +1,4 @@
-const VERSION = "static-" + Date.now();
+const VERSION = "static-";
 
 // Instalación: activar inmediatamente
 self.addEventListener("install", event => {
