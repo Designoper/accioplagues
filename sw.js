@@ -1,37 +1,56 @@
-const VERSION = "static-";
+const VERSION = 1;
 
 // Instalación: activar inmediatamente
 self.addEventListener("install", event => {
 	self.skipWaiting();
 });
 
-// Activación: limpiar caches antiguos
+// Activación: limpiar caches antiguos + activar navigation preload
 self.addEventListener("activate", event => {
 	event.waitUntil(
-		caches.keys().then(keys =>
-			Promise.all(keys.filter(key => key !== VERSION).map(key => caches.delete(key)))
-		)
+		(async () => {
+			// Limpiar caches viejos
+			const keys = await caches.keys();
+			await Promise.all(keys.filter(key => key !== VERSION).map(key => caches.delete(key)));
+
+			// Activar navigation preload (evita el error del body usado)
+			if (self.registration.navigationPreload) {
+				await self.registration.navigationPreload.enable();
+			}
+		})()
 	);
+
 	self.clients.claim();
 });
 
 // Fetch
 self.addEventListener("fetch", event => {
 	const request = event.request;
+	const url = new URL(request.url);
 
-	if (request.method !== "GET") return;
+	// ❌ No interceptar tus APIs
+	if (url.pathname.startsWith("/api/")) {
+		return;
+	}
 
-	// Network-first para HTML
-	if (request.headers.get("accept").includes("text/html")) {
-		event.respondWith(
-			fetch(request, { cache: "no-store" })
-				.then(response => {
-					// Guardamos una copia en caché por si hay offline
-					caches.open(VERSION).then(cache => cache.put(request, response.clone()));
-					return response;
-				})
-				.catch(() => caches.match(request))
-		);
+	// Network-first para HTML con navigation preload
+	if (request.headers.get("accept")?.includes("text/html")) {
+		event.respondWith((async () => {
+			try {
+				// Usar preload si existe (evita el error del body consumido)
+				const preload = await event.preloadResponse;
+				const response = preload || await fetch(request, { cache: "no-store" });
+
+				// Guardar copia en caché
+				const cache = await caches.open(VERSION);
+				cache.put(request, response.clone());
+
+				return response;
+			} catch (err) {
+				// Offline → usar caché
+				return caches.match(request);
+			}
+		})());
 		return;
 	}
 
