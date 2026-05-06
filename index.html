@@ -88,39 +88,33 @@
                 <li><a href="./index.html" aria-current="page">Inicio</a></li>
                 <li><a href="./quienes-somos.html">Quiénes somos</a></li>
                 <li>
-                    <details>
-                        <summary>Tratamientos</summary>
-                        <menu focusgroup="menu">
-                            <li><a href="./chinches.html">Chinches</a></li>
-                            <li><a href="./cucarachas.html">Cucarachas</a></li>
-                            <li><a href="./roedores.html">Roedores</a></li>
-                            <li><a href="./hormigas.html">Hormigas</a></li>
-                            <li><a href="./voladores.html">Voladores</a></li>
-                            <li><a href="./avispas.html">Avispas</a></li>
-                            <li><a href="./pulgas.html">Pulgas</a></li>
-                            <li><a href="./xilofagos.html">Xilófagos</a></li>
-                            <li><a href="./aves.html">Aves</a></li>
-                        </menu>
-                    </details>
+                    <button type="button" commandfor="menu1" command="toggle-popover">Tratamientos</button>
+                    <menu focusgroup="menu" id="menu1" popover>
+                        <li><a href="./chinches.html">Chinches</a></li>
+                        <li><a href="./cucarachas.html">Cucarachas</a></li>
+                        <li><a href="./roedores.html">Roedores</a></li>
+                        <li><a href="./hormigas.html">Hormigas</a></li>
+                        <li><a href="./voladores.html">Voladores</a></li>
+                        <li><a href="./avispas.html">Avispas</a></li>
+                        <li><a href="./pulgas.html">Pulgas</a></li>
+                        <li><a href="./xilofagos.html">Xilófagos</a></li>
+                        <li><a href="./aves.html">Aves</a></li>
+                    </menu>
                 </li>
                 <li>
-                    <details>
-                        <summary>Control de plagas</summary>
-                        <menu focusgroup="menu">
-                            <li><a href="./empresas.html">Empresas</a></li>
-                            <li><a href="./alimentacion.html">Alimentación</a></li>
-                        </menu>
-                    </details>
+                    <button type="button" commandfor="menu2" command="toggle-popover">Control de plagas</button>
+                    <menu focusgroup="menu" id="menu2" popover>
+                        <li><a href="./empresas.html">Empresas</a></li>
+                        <li><a href="./alimentacion.html">Alimentación</a></li>
+                    </menu>
                 </li>
                 <li>
-                    <details>
-                        <summary>Desinfección y limpieza</summary>
-                        <menu focusgroup="menu">
-                            <li><a href="./inmuebles.html">Inmuebles</a></li>
-                            <li><a href="./sindrome-diogenes.html">Síndrome Diógenes</a></li>
-                            <li><a href="./higiene-ambiental.html">Higiene ambiental</a></li>
-                        </menu>
-                    </details>
+                    <button type="button" commandfor="menu3" command="toggle-popover">Desinfección y limpieza</button>
+                    <menu focusgroup="menu" id="menu3" popover>
+                        <li><a href="./inmuebles.html">Inmuebles</a></li>
+                        <li><a href="./sindrome-diogenes.html">Síndrome Diógenes</a></li>
+                        <li><a href="./higiene-ambiental.html">Higiene ambiental</a></li>
+                    </menu>
                 </li>
             </menu>
 

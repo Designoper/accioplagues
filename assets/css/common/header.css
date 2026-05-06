@@ -17,7 +17,7 @@ header {
         }
     }
 
-    button {
+    [commandfor="nav"] {
         position: relative;
         /* display: block; */
 
@@ -37,6 +37,10 @@ header {
         }
     }
 
+    /* [popover] {
+        inset: unset;
+    } */
+
     nav {
         inset: 0 -100% auto auto;
         display: block;
@@ -52,15 +56,24 @@ header {
             visibility: visible;
         }
 
+        [focusgroup="menu"] {
+            top: anchor(bottom);
+            left: anchor(left);
+        }
+
         &::backdrop {
             backdrop-filter: brightness(0.25);
         }
 
-        button {
+        [commandfor="nav"] {
             margin: 1.25rem 10vw 0.75rem auto;
         }
 
-        :is(summary, a) {
+        [command="toggle-popover"] {
+            /* anchor-scope: --button; */
+        }
+
+        :is([command="toggle-popover"], a) {
             padding: 0.75rem 2.5rem;
             display: list-item;
         }
@@ -86,7 +99,7 @@ header {
     @media (1024px <=width) {
         padding: 0.5rem 7.5vw;
 
-        button {
+        [commandfor="nav"] {
             display: none;
         }
 
@@ -97,7 +110,7 @@ header {
                 display: flex;
             }
 
-            :is(summary, a) {
+            :is([command="toggle-popover"], a) {
                 padding: 0.75rem;
                 transition: background-color 350ms;
                 border-radius: 5px;
