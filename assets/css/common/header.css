@@ -9,10 +9,6 @@ header {
     background-color: var(--secondary-bg);
     box-shadow: 0 2px 20px var(--box-shadow);
 
-    [href="#main"] {
-        display: none;
-    }
-
     >[href="./index.html"] {
         width: 2.5rem;
 
@@ -89,20 +85,6 @@ header {
 
     @media (1024px <=width) {
         padding: 0.5rem 7.5vw;
-
-        [href="#main"] {
-            display: initial;
-            position: fixed;
-            top: -100%;
-
-            &:focus {
-                font-size: 1.5rem;
-                padding: 1rem;
-                inset: 50vh auto auto 50vw;
-                transform: translate(-50%, -50%);
-                background-color: inherit;
-            }
-        }
 
         button {
             display: none;

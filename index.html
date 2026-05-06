@@ -49,7 +49,7 @@
     <link href="./assets/css/index.css" rel="preload stylesheet" as="style">
     <link href="./assets/css/common/footer.css" rel="preload stylesheet" as="style">
 
-	<script src="./sw-register.js" defer></script>
+    <script src="./sw-register.js" defer></script>
 
 </head>
 
@@ -60,8 +60,6 @@
     -->
 
     <header>
-
-        <a href="#main">Ir al contenido principal</a>
 
         <a href="./index.html" tabindex="-1" aria-label="Inicio">
             <svg viewBox="0 0 432.458 432.458">
@@ -78,7 +76,7 @@
 
         <nav id="nav" popover>
 
-            <menu>
+            <menu focusgroup="menubar">
                 <li>
                     <button type="button" commandfor="nav" command="hide-popover"
                         aria-label="Cerrar menú de navegación">
@@ -92,7 +90,7 @@
                 <li>
                     <details>
                         <summary>Tratamientos</summary>
-                        <menu>
+                        <menu focusgroup="menu">
                             <li><a href="./chinches.html">Chinches</a></li>
                             <li><a href="./cucarachas.html">Cucarachas</a></li>
                             <li><a href="./roedores.html">Roedores</a></li>
@@ -108,7 +106,7 @@
                 <li>
                     <details>
                         <summary>Control de plagas</summary>
-                        <menu>
+                        <menu focusgroup="menu">
                             <li><a href="./empresas.html">Empresas</a></li>
                             <li><a href="./alimentacion.html">Alimentación</a></li>
                         </menu>
@@ -117,7 +115,7 @@
                 <li>
                     <details>
                         <summary>Desinfección y limpieza</summary>
-                        <menu>
+                        <menu focusgroup="menu">
                             <li><a href="./inmuebles.html">Inmuebles</a></li>
                             <li><a href="./sindrome-diogenes.html">Síndrome Diógenes</a></li>
                             <li><a href="./higiene-ambiental.html">Higiene ambiental</a></li>
