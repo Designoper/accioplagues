@@ -10,6 +10,7 @@
 	font: inherit;
 	line-height: 1.5;
 	text-box: trim-both cap alphabetic;
+	margin-trim: block;
 	text-wrap: pretty;
 	text-align: justify;
 	text-decoration: none;
